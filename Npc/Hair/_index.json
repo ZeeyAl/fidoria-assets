@@ -1,0 +1,74 @@
+[
+ {
+  "file": "npc_hair_adult_male_1_elder_balding.png",
+  "age": "adult",
+  "gender": "male",
+  "color": "#b8b8c4"
+ },
+ {
+  "file": "npc_hair_adult_male_2_cropped.png",
+  "age": "adult",
+  "gender": "male",
+  "color": "#2e2a30"
+ },
+ {
+  "file": "npc_hair_adult_male_3_messy_beard.png",
+  "age": "adult",
+  "gender": "male",
+  "color": "#8a4a2a"
+ },
+ {
+  "file": "npc_hair_adult_female_1_low_bun.png",
+  "age": "adult",
+  "gender": "female",
+  "color": "#a04a30"
+ },
+ {
+  "file": "npc_hair_adult_female_2_side_braid.png",
+  "age": "adult",
+  "gender": "female",
+  "color": "#d8b050"
+ },
+ {
+  "file": "npc_hair_adult_female_3_wavy_shoulder.png",
+  "age": "adult",
+  "gender": "female",
+  "color": "#3a2a30"
+ },
+ {
+  "file": "npc_hair_child_male_1_bowl_cut.png",
+  "age": "child",
+  "gender": "male",
+  "color": "#e0c060"
+ },
+ {
+  "file": "npc_hair_child_male_2_cowlick_tuft.png",
+  "age": "child",
+  "gender": "male",
+  "color": "#7a4a2a"
+ },
+ {
+  "file": "npc_hair_child_male_3_messy_short.png",
+  "age": "child",
+  "gender": "male",
+  "color": "#c8602a"
+ },
+ {
+  "file": "npc_hair_child_female_1_bob_ribbon.png",
+  "age": "child",
+  "gender": "female",
+  "color": "#2e2a30"
+ },
+ {
+  "file": "npc_hair_child_female_2_small_pigtails.png",
+  "age": "child",
+  "gender": "female",
+  "color": "#b07a48"
+ },
+ {
+  "file": "npc_hair_child_female_3_side_ponytail.png",
+  "age": "child",
+  "gender": "female",
+  "color": "#e0c060"
+ }
+]
