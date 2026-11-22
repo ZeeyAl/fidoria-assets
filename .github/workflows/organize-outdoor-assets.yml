@@ -1,0 +1,332 @@
+
+name: Organize Outdoor Assets
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "fidoria_outdoor_assets.zip"
+      - ".github/workflows/organize-outdoor-assets.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: organize-outdoor-assets
+  cancel-in-progress: false
+
+jobs:
+  organize:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Migrate and Organize Outdoor Assets
+        shell: bash
+        run: |
+          python <<'PY'
+          import hashlib
+          import json
+          import shutil
+          import struct
+          import zipfile
+          from pathlib import Path, PurePosixPath
+
+          ROOT = Path.cwd()
+          OUT = ROOT / "Outdoor-decoration"
+          ZIP = ROOT / "fidoria_outdoor_assets.zip"
+
+          if not ZIP.exists():
+              raise SystemExit("Outdoor ZIP tidak ditemukan!")
+
+          # Folder tujuan
+          CATEGORIES = [
+              "Trees",
+              "Bushes",
+              "Plants",
+              "Flowers",
+              "Rocks",
+              "Fences-Gates",
+              "Street-Decor",
+              "Buildings-Decor",
+              "Market-Props",
+              "Planters",
+              "Water-Decor",
+              "Structures",
+              "Unsorted-Legacy"
+          ]
+
+          for category in CATEGORIES:
+              (OUT / category).mkdir(parents=True, exist_ok=True)
+
+          # Kategori dari ZIP
+          ZIP_CATEGORIES = {
+              "trees": "Trees",
+              "bushes": "Bushes",
+              "plants": "Plants",
+              "flowers": "Flowers",
+              "rocks": "Rocks",
+              "fences_gates": "Fences-Gates",
+              "decor": "Street-Decor",
+              "market": "Market-Props",
+              "planters": "Planters",
+              "structures": "Structures",
+              "water": "Water-Decor"
+          }
+
+          def classify(name):
+              n = name.lower()
+
+              rules = [
+                  ("Trees", ["tree", "oak", "pine", "birch",
+                             "willow", "cherry_blossom"]),
+                  ("Bushes", ["bush", "shrub"]),
+                  ("Flowers", ["flower", "blossom"]),
+                  ("Plants", ["grass", "tuft", "mushroom",
+                              "plant", "cactus", "herb"]),
+                  ("Rocks", ["rock", "boulder", "pebble",
+                             "cliff", "stone_cluster"]),
+                  ("Fences-Gates", ["fence", "gate"]),
+                  ("Market-Props", ["barrel", "crate", "cart",
+                                    "wagon", "stall", "sack", "cage"]),
+                  ("Planters", ["planter", "pot_", "flower_box"]),
+                  ("Water-Decor", ["well", "fountain", "water"]),
+                  ("Structures", ["bridge", "platform", "stairs",
+                                  "farm_plot", "haystack", "ruin_wall"]),
+                  ("Street-Decor", ["lamp", "lantern", "bench",
+                                    "sign", "banner", "notice_board"]),
+                  ("Buildings-Decor", ["chimney", "roof", "door",
+                                       "window", "awning"])
+              ]
+
+              for category, keywords in rules:
+                  if any(word in n for word in keywords):
+                      return category
+
+              # Nama seperti asset_01.png perlu pemeriksaan manual.
+              return "Unsorted-Legacy"
+
+          def sha(data):
+              return hashlib.sha256(data).hexdigest()
+
+          def png_info(data):
+              if data[:8] != b"\x89PNG\r\n\x1a\n":
+                  return None, None, None
+
+              width, height = struct.unpack(">II", data[16:24])
+              alpha = data[25] in (4, 6)
+
+              # Periksa transparency chunk untuk indexed PNG.
+              pos = 8
+              while pos + 12 <= len(data):
+                  size = struct.unpack(">I", data[pos:pos+4])[0]
+                  chunk = data[pos+4:pos+8]
+                  if chunk == b"tRNS":
+                      alpha = True
+                      break
+                  pos += size + 12
+                  if chunk == b"IEND":
+                      break
+
+              return width, height, alpha
+
+          hashes = {}
+          path_map = {}
+
+          # 1. Indeks aset yang sudah berada di subfolder.
+          for file in sorted(OUT.rglob("*.png")):
+              if file.parent == OUT:
+                  continue
+
+              data = file.read_bytes()
+              digest = sha(data)
+              relative = file.relative_to(ROOT).as_posix()
+              hashes.setdefault(digest, relative)
+
+          # 2. PINDAHKAN aset lama dari root ke subfolder.
+          old_files = sorted(
+              f for f in OUT.iterdir()
+              if f.is_file() and f.suffix.lower() == ".png"
+          )
+
+          for old in old_files:
+              data = old.read_bytes()
+              digest = sha(data)
+              old_path = old.relative_to(ROOT).as_posix()
+
+              # Duplikat identik: gunakan file yang sudah ada.
+              if digest in hashes:
+                  path_map[old_path] = hashes[digest]
+                  old.unlink()
+                  print("Duplicate removed:", old.name)
+                  continue
+
+              category = classify(old.name)
+              destination_dir = OUT / category
+              destination = destination_dir / old.name
+
+              if destination.exists():
+                  destination = destination_dir / (
+                      f"{old.stem}__{digest[:8]}{old.suffix}"
+                  )
+
+              shutil.move(str(old), str(destination))
+
+              new_path = destination.relative_to(ROOT).as_posix()
+              hashes[digest] = new_path
+              path_map[old_path] = new_path
+
+              print("MOVED:", old.name, "->", category)
+
+          # 3. IMPORT aset baru dari ZIP.
+          with zipfile.ZipFile(ZIP) as archive:
+
+              for item in sorted(
+                  archive.infolist(),
+                  key=lambda x: x.filename.lower()
+              ):
+                  if item.is_dir():
+                      continue
+
+                  member = PurePosixPath(item.filename)
+
+                  # Proteksi ZIP path traversal.
+                  if member.is_absolute() or ".." in member.parts:
+                      print("Skipped unsafe path:", item.filename)
+                      continue
+
+                  if member.suffix.lower() != ".png":
+                      continue
+
+                  folder = (
+                      member.parts[-2].lower()
+                      if len(member.parts) >= 2 else ""
+                  )
+
+                  category = ZIP_CATEGORIES.get(
+                      folder,
+                      classify(member.name)
+                  )
+
+                  data = archive.read(item)
+                  digest = sha(data)
+
+                  if digest in hashes:
+                      path_map[item.filename] = hashes[digest]
+                      print("Duplicate ZIP asset:", member.name)
+                      continue
+
+                  destination_dir = OUT / category
+                  destination = destination_dir / member.name
+
+                  if destination.exists():
+                      destination = destination_dir / (
+                          f"{member.stem}__{digest[:8]}{member.suffix}"
+                      )
+
+                  destination.write_bytes(data)
+
+                  new_path = destination.relative_to(ROOT).as_posix()
+                  hashes[digest] = new_path
+                  path_map[item.filename] = new_path
+
+                  print("IMPORTED:", member.name, "->", category)
+
+          # 4. BUAT MANIFEST seluruh aset.
+          assets = []
+
+          for file in sorted(OUT.rglob("*.png")):
+              data = file.read_bytes()
+              digest = sha(data)
+              width, height, transparent = png_info(data)
+
+              category = file.parent.name
+              relative = file.relative_to(ROOT).as_posix()
+
+              assets.append({
+                  "asset_id": file.stem.lower().replace("-", "_"),
+                  "filename": file.name,
+                  "path": relative,
+                  "category": category,
+                  "width": width,
+                  "height": height,
+                  "transparent": transparent,
+                  "sha256": digest
+              })
+
+          manifest = {
+              "schema_version": 1,
+              "project": "Fidoria",
+              "collection": "Outdoor Decoration",
+              "source_archive": ZIP.name,
+              "total_assets": len(assets),
+              "categories": CATEGORIES,
+              "assets": assets
+          }
+
+          (OUT / "manifest.json").write_text(
+              json.dumps(manifest, indent=2, ensure_ascii=False) + "\n",
+              encoding="utf-8"
+          )
+
+          (OUT / "path-map.json").write_text(
+              json.dumps(path_map, indent=2, ensure_ascii=False) + "\n",
+              encoding="utf-8"
+          )
+
+          print("--------------------------------")
+          print("OUTDOOR MIGRATION COMPLETED")
+          print("Total assets:", len(assets))
+          print("Moved old assets:", len(old_files))
+          print("Path mappings:", len(path_map))
+          print("--------------------------------")
+          PY
+
+      - name: Validate Migration
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          out = Path("Outdoor-decoration")
+          manifest = json.loads(
+              (out / "manifest.json").read_text()
+          )
+
+          assert manifest["total_assets"] > 0
+
+          for asset in manifest["assets"]:
+              path = Path(asset["path"])
+              assert path.is_file(), f"Missing: {path}"
+
+          root_png = list(out.glob("*.png"))
+          assert not root_png, f"PNG masih tertinggal: {root_png}"
+
+          print("All assets validated successfully!")
+          PY
+
+      - name: Commit Organized Assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A Outdoor-decoration/
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Migrate and organize Outdoor assets"
+            git push origin main
+          fi
