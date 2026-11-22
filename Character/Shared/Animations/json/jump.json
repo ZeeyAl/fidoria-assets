@@ -1,0 +1,391 @@
+{
+ "meta": {
+  "app": "Eris Esra Character Template 4.1 (converted)",
+  "image": "sheets/jump.png",
+  "size": {
+   "w": 160,
+   "h": 160
+  },
+  "frameSize": {
+   "w": 32,
+   "h": 32
+  },
+  "cols": 5,
+  "rows": 5,
+  "rowOrder": [
+   "down",
+   "down_right",
+   "right",
+   "up_right",
+   "up"
+  ],
+  "layers": [
+   "Layer 1"
+  ],
+  "frameTags": [
+   {
+    "name": "Jump_Down",
+    "direction": "down",
+    "from": 0,
+    "to": 4,
+    "aseprite_direction": "forward"
+   },
+   {
+    "name": "Jump_Down_Side",
+    "direction": "down_right",
+    "from": 5,
+    "to": 9,
+    "aseprite_direction": "forward"
+   },
+   {
+    "name": "Jump_Side",
+    "direction": "right",
+    "from": 10,
+    "to": 14,
+    "aseprite_direction": "forward"
+   },
+   {
+    "name": "Jump_Up_Side",
+    "direction": "up_right",
+    "from": 15,
+    "to": 19,
+    "aseprite_direction": "forward"
+   },
+   {
+    "name": "Jump_Side",
+    "direction": "up",
+    "from": 20,
+    "to": 24,
+    "aseprite_direction": "forward"
+   }
+  ],
+  "notes": "Baris sheet = arah (down, down_right, right, up_right, up). Arah kiri = mirror dari kanan (flip_x)."
+ },
+ "frames": [
+  {
+   "filename": "frames/jump/down/jump_down_00.png",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "down",
+   "index": 0,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/jump/down/jump_down_01.png",
+   "frame": {
+    "x": 32,
+    "y": 0,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "down",
+   "index": 1,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/jump/down/jump_down_02.png",
+   "frame": {
+    "x": 64,
+    "y": 0,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "down",
+   "index": 2,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/jump/down/jump_down_03.png",
+   "frame": {
+    "x": 96,
+    "y": 0,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "down",
+   "index": 3,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/jump/down/jump_down_04.png",
+   "frame": {
+    "x": 128,
+    "y": 0,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "down",
+   "index": 4,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/jump/down_right/jump_down_right_00.png",
+   "frame": {
+    "x": 0,
+    "y": 32,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "down_right",
+   "index": 0,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/jump/down_right/jump_down_right_01.png",
+   "frame": {
+    "x": 32,
+    "y": 32,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "down_right",
+   "index": 1,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/jump/down_right/jump_down_right_02.png",
+   "frame": {
+    "x": 64,
+    "y": 32,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "down_right",
+   "index": 2,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/jump/down_right/jump_down_right_03.png",
+   "frame": {
+    "x": 96,
+    "y": 32,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "down_right",
+   "index": 3,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/jump/down_right/jump_down_right_04.png",
+   "frame": {
+    "x": 128,
+    "y": 32,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "down_right",
+   "index": 4,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/jump/right/jump_right_00.png",
+   "frame": {
+    "x": 0,
+    "y": 64,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "right",
+   "index": 0,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/jump/right/jump_right_01.png",
+   "frame": {
+    "x": 32,
+    "y": 64,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "right",
+   "index": 1,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/jump/right/jump_right_02.png",
+   "frame": {
+    "x": 64,
+    "y": 64,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "right",
+   "index": 2,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/jump/right/jump_right_03.png",
+   "frame": {
+    "x": 96,
+    "y": 64,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "right",
+   "index": 3,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/jump/right/jump_right_04.png",
+   "frame": {
+    "x": 128,
+    "y": 64,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "right",
+   "index": 4,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/jump/up_right/jump_up_right_00.png",
+   "frame": {
+    "x": 0,
+    "y": 96,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "up_right",
+   "index": 0,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/jump/up_right/jump_up_right_01.png",
+   "frame": {
+    "x": 32,
+    "y": 96,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "up_right",
+   "index": 1,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/jump/up_right/jump_up_right_02.png",
+   "frame": {
+    "x": 64,
+    "y": 96,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "up_right",
+   "index": 2,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/jump/up_right/jump_up_right_03.png",
+   "frame": {
+    "x": 96,
+    "y": 96,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "up_right",
+   "index": 3,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/jump/up_right/jump_up_right_04.png",
+   "frame": {
+    "x": 128,
+    "y": 96,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "up_right",
+   "index": 4,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/jump/up/jump_up_00.png",
+   "frame": {
+    "x": 0,
+    "y": 128,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "up",
+   "index": 0,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/jump/up/jump_up_01.png",
+   "frame": {
+    "x": 32,
+    "y": 128,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "up",
+   "index": 1,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/jump/up/jump_up_02.png",
+   "frame": {
+    "x": 64,
+    "y": 128,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "up",
+   "index": 2,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/jump/up/jump_up_03.png",
+   "frame": {
+    "x": 96,
+    "y": 128,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "up",
+   "index": 3,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/jump/up/jump_up_04.png",
+   "frame": {
+    "x": 128,
+    "y": 128,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "up",
+   "index": 4,
+   "mirrored": false
+  }
+ ]
+}

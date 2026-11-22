@@ -1,0 +1,9 @@
+{
+  "id": 5,
+  "name": "Kapten Arga",
+  "role": "Elite Guard",
+  "gender": "Laki-laki",
+  "costume": "NPC/Kapten_Arga/costume.png",
+  "headgear": "NPC/Kapten_Arga/headgear.png",
+  "hair": "Hair/Short/npc_male_02_short_crop.png"
+}

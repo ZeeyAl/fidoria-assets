@@ -1,0 +1,521 @@
+{
+ "meta": {
+  "app": "Eris Esra Character Template 4.1 (converted)",
+  "image": "sheets/attack.png",
+  "size": {
+   "w": 224,
+   "h": 160
+  },
+  "frameSize": {
+   "w": 32,
+   "h": 32
+  },
+  "cols": 7,
+  "rows": 5,
+  "rowOrder": [
+   "down",
+   "down_right",
+   "right",
+   "up_right",
+   "up"
+  ],
+  "layers": [
+   "Flattened"
+  ],
+  "frameTags": [
+   {
+    "name": "Punch_Down",
+    "direction": "down",
+    "from": 0,
+    "to": 6,
+    "aseprite_direction": "forward"
+   },
+   {
+    "name": "Punch_Down_Side",
+    "direction": "down_right",
+    "from": 7,
+    "to": 13,
+    "aseprite_direction": "forward"
+   },
+   {
+    "name": "Punch_Side",
+    "direction": "right",
+    "from": 14,
+    "to": 20,
+    "aseprite_direction": "forward"
+   },
+   {
+    "name": "Punch_Up_Side",
+    "direction": "up_right",
+    "from": 21,
+    "to": 27,
+    "aseprite_direction": "forward"
+   },
+   {
+    "name": "Punch_Up",
+    "direction": "up",
+    "from": 28,
+    "to": 34,
+    "aseprite_direction": "forward"
+   }
+  ],
+  "notes": "Baris sheet = arah (down, down_right, right, up_right, up). Arah kiri = mirror dari kanan (flip_x)."
+ },
+ "frames": [
+  {
+   "filename": "frames/attack/down/attack_down_00.png",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "down",
+   "index": 0,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/down/attack_down_01.png",
+   "frame": {
+    "x": 32,
+    "y": 0,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "down",
+   "index": 1,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/down/attack_down_02.png",
+   "frame": {
+    "x": 64,
+    "y": 0,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 200,
+   "direction": "down",
+   "index": 2,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/down/attack_down_03.png",
+   "frame": {
+    "x": 96,
+    "y": 0,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 50,
+   "direction": "down",
+   "index": 3,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/down/attack_down_04.png",
+   "frame": {
+    "x": 128,
+    "y": 0,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "down",
+   "index": 4,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/down/attack_down_05.png",
+   "frame": {
+    "x": 160,
+    "y": 0,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "down",
+   "index": 5,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/down/attack_down_06.png",
+   "frame": {
+    "x": 192,
+    "y": 0,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "down",
+   "index": 6,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/down_right/attack_down_right_00.png",
+   "frame": {
+    "x": 0,
+    "y": 32,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "down_right",
+   "index": 0,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/down_right/attack_down_right_01.png",
+   "frame": {
+    "x": 32,
+    "y": 32,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "down_right",
+   "index": 1,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/down_right/attack_down_right_02.png",
+   "frame": {
+    "x": 64,
+    "y": 32,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 200,
+   "direction": "down_right",
+   "index": 2,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/down_right/attack_down_right_03.png",
+   "frame": {
+    "x": 96,
+    "y": 32,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 50,
+   "direction": "down_right",
+   "index": 3,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/down_right/attack_down_right_04.png",
+   "frame": {
+    "x": 128,
+    "y": 32,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "down_right",
+   "index": 4,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/down_right/attack_down_right_05.png",
+   "frame": {
+    "x": 160,
+    "y": 32,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "down_right",
+   "index": 5,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/down_right/attack_down_right_06.png",
+   "frame": {
+    "x": 192,
+    "y": 32,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "down_right",
+   "index": 6,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/right/attack_right_00.png",
+   "frame": {
+    "x": 0,
+    "y": 64,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "right",
+   "index": 0,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/right/attack_right_01.png",
+   "frame": {
+    "x": 32,
+    "y": 64,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "right",
+   "index": 1,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/right/attack_right_02.png",
+   "frame": {
+    "x": 64,
+    "y": 64,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 200,
+   "direction": "right",
+   "index": 2,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/right/attack_right_03.png",
+   "frame": {
+    "x": 96,
+    "y": 64,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 50,
+   "direction": "right",
+   "index": 3,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/right/attack_right_04.png",
+   "frame": {
+    "x": 128,
+    "y": 64,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "right",
+   "index": 4,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/right/attack_right_05.png",
+   "frame": {
+    "x": 160,
+    "y": 64,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "right",
+   "index": 5,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/right/attack_right_06.png",
+   "frame": {
+    "x": 192,
+    "y": 64,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "right",
+   "index": 6,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/up_right/attack_up_right_00.png",
+   "frame": {
+    "x": 0,
+    "y": 96,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "up_right",
+   "index": 0,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/up_right/attack_up_right_01.png",
+   "frame": {
+    "x": 32,
+    "y": 96,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "up_right",
+   "index": 1,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/up_right/attack_up_right_02.png",
+   "frame": {
+    "x": 64,
+    "y": 96,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 200,
+   "direction": "up_right",
+   "index": 2,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/up_right/attack_up_right_03.png",
+   "frame": {
+    "x": 96,
+    "y": 96,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 50,
+   "direction": "up_right",
+   "index": 3,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/up_right/attack_up_right_04.png",
+   "frame": {
+    "x": 128,
+    "y": 96,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "up_right",
+   "index": 4,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/up_right/attack_up_right_05.png",
+   "frame": {
+    "x": 160,
+    "y": 96,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "up_right",
+   "index": 5,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/up_right/attack_up_right_06.png",
+   "frame": {
+    "x": 192,
+    "y": 96,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "up_right",
+   "index": 6,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/up/attack_up_00.png",
+   "frame": {
+    "x": 0,
+    "y": 128,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "up",
+   "index": 0,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/up/attack_up_01.png",
+   "frame": {
+    "x": 32,
+    "y": 128,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "up",
+   "index": 1,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/up/attack_up_02.png",
+   "frame": {
+    "x": 64,
+    "y": 128,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 200,
+   "direction": "up",
+   "index": 2,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/up/attack_up_03.png",
+   "frame": {
+    "x": 96,
+    "y": 128,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 50,
+   "direction": "up",
+   "index": 3,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/up/attack_up_04.png",
+   "frame": {
+    "x": 128,
+    "y": 128,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "up",
+   "index": 4,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/up/attack_up_05.png",
+   "frame": {
+    "x": 160,
+    "y": 128,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "up",
+   "index": 5,
+   "mirrored": false
+  },
+  {
+   "filename": "frames/attack/up/attack_up_06.png",
+   "frame": {
+    "x": 192,
+    "y": 128,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100,
+   "direction": "up",
+   "index": 6,
+   "mirrored": false
+  }
+ ]
+}

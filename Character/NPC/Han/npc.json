@@ -1,0 +1,9 @@
+{
+  "id": 4,
+  "name": "Han",
+  "role": "Child",
+  "gender": "Laki-laki",
+  "costume": "NPC/Han/costume.png",
+  "headgear": null,
+  "hair": "Hair/Spiky/npc_male_06_spiky.png"
+}

@@ -1,0 +1,9 @@
+{
+  "id": 3,
+  "name": "Nana",
+  "role": "Child",
+  "gender": "Perempuan",
+  "costume": "NPC/Nana/costume.png",
+  "headgear": "NPC/Nana/headgear.png",
+  "hair": "Hair/Pigtails/npc_female_14_short_pigtails.png"
+}

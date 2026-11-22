@@ -1,0 +1,9 @@
+{
+  "id": 1,
+  "name": "Pak Bambang",
+  "role": "Blacksmith",
+  "gender": "Laki-laki",
+  "costume": "NPC/Pak_Bambang/costume.png",
+  "headgear": "NPC/Pak_Bambang/headgear.png",
+  "hair": "Hair/Short/npc_male_01_buzz_cut.png"
+}

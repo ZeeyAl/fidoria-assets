@@ -1,0 +1,9 @@
+{
+  "id": 21,
+  "name": "Pastor Elias",
+  "role": "Priest",
+  "gender": "Laki-laki",
+  "costume": "NPC/Pastor_Elias/costume.png",
+  "headgear": null,
+  "hair": "Hair/Short/npc_male_24_receding_gray.png"
+}

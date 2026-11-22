@@ -1,0 +1,9 @@
+{
+  "id": 7,
+  "name": "Raka",
+  "role": "Town Guard",
+  "gender": "Laki-laki",
+  "costume": "NPC/Raka/costume.png",
+  "headgear": "NPC/Raka/headgear.png",
+  "hair": "Hair/Short/npc_male_03_side_part.png"
+}

@@ -1,0 +1,102 @@
+{
+ "meta": {
+  "image": "sheets/rotate.png",
+  "size": {
+   "w": 256,
+   "h": 32
+  },
+  "frameSize": {
+   "w": 32,
+   "h": 32
+  },
+  "frameTags": [
+   {
+    "name": "Rotate",
+    "from": 0,
+    "to": 7
+   }
+  ]
+ },
+ "frames": [
+  {
+   "filename": "frames/rotate/rotate_00.png",
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100
+  },
+  {
+   "filename": "frames/rotate/rotate_01.png",
+   "frame": {
+    "x": 32,
+    "y": 0,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100
+  },
+  {
+   "filename": "frames/rotate/rotate_02.png",
+   "frame": {
+    "x": 64,
+    "y": 0,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100
+  },
+  {
+   "filename": "frames/rotate/rotate_03.png",
+   "frame": {
+    "x": 96,
+    "y": 0,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100
+  },
+  {
+   "filename": "frames/rotate/rotate_04.png",
+   "frame": {
+    "x": 128,
+    "y": 0,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100
+  },
+  {
+   "filename": "frames/rotate/rotate_05.png",
+   "frame": {
+    "x": 160,
+    "y": 0,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100
+  },
+  {
+   "filename": "frames/rotate/rotate_06.png",
+   "frame": {
+    "x": 192,
+    "y": 0,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100
+  },
+  {
+   "filename": "frames/rotate/rotate_07.png",
+   "frame": {
+    "x": 224,
+    "y": 0,
+    "w": 32,
+    "h": 32
+   },
+   "duration": 100
+  }
+ ]
+}

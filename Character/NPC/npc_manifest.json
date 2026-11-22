@@ -1,0 +1,200 @@
+[
+  {
+    "id": 1,
+    "name": "Pak Bambang",
+    "role": "Blacksmith",
+    "gender": "Laki-laki",
+    "costume": "NPC/Pak_Bambang/costume.png",
+    "headgear": "NPC/Pak_Bambang/headgear.png",
+    "hair": "Hair/Short/npc_male_01_buzz_cut.png"
+  },
+  {
+    "id": 2,
+    "name": "Bimo",
+    "role": "Child",
+    "gender": "Laki-laki",
+    "costume": "NPC/Bimo/costume.png",
+    "headgear": null,
+    "hair": "Hair/Short/npc_male_11_bowl_cut.png"
+  },
+  {
+    "id": 3,
+    "name": "Nana",
+    "role": "Child",
+    "gender": "Perempuan",
+    "costume": "NPC/Nana/costume.png",
+    "headgear": "NPC/Nana/headgear.png",
+    "hair": "Hair/Pigtails/npc_female_14_short_pigtails.png"
+  },
+  {
+    "id": 4,
+    "name": "Han",
+    "role": "Child",
+    "gender": "Laki-laki",
+    "costume": "NPC/Han/costume.png",
+    "headgear": null,
+    "hair": "Hair/Spiky/npc_male_06_spiky.png"
+  },
+  {
+    "id": 5,
+    "name": "Kapten Arga",
+    "role": "Elite Guard",
+    "gender": "Laki-laki",
+    "costume": "NPC/Kapten_Arga/costume.png",
+    "headgear": "NPC/Kapten_Arga/headgear.png",
+    "hair": "Hair/Short/npc_male_02_short_crop.png"
+  },
+  {
+    "id": 6,
+    "name": "Pak Tani Joko",
+    "role": "Farmer",
+    "gender": "Laki-laki",
+    "costume": "NPC/Pak_Tani_Joko/costume.png",
+    "headgear": "NPC/Pak_Tani_Joko/headgear.png",
+    "hair": "Hair/Short/npc_male_02_short_crop.png"
+  },
+  {
+    "id": 7,
+    "name": "Raka",
+    "role": "Town Guard",
+    "gender": "Laki-laki",
+    "costume": "NPC/Raka/costume.png",
+    "headgear": "NPC/Raka/headgear.png",
+    "hair": "Hair/Short/npc_male_03_side_part.png"
+  },
+  {
+    "id": 8,
+    "name": "Tabib Sari",
+    "role": "Healer",
+    "gender": "Perempuan",
+    "costume": "NPC/Tabib_Sari/costume.png",
+    "headgear": "NPC/Tabib_Sari/headgear.png",
+    "hair": "Hair/Long/npc_female_06_long_straight.png"
+  },
+  {
+    "id": 9,
+    "name": "Nenek Rukmini",
+    "role": "Herbalist",
+    "gender": "Perempuan",
+    "costume": "NPC/Nenek_Rukmini/costume.png",
+    "headgear": null,
+    "hair": "Hair/Bun/npc_female_18_low_bun_gray.png"
+  },
+  {
+    "id": 10,
+    "name": "Bu Mira",
+    "role": "Merchant",
+    "gender": "Perempuan",
+    "costume": "NPC/Bu_Mira/costume.png",
+    "headgear": null,
+    "hair": "Hair/Bun/npc_female_17_top_bun.png"
+  },
+  {
+    "id": 11,
+    "name": "Damar",
+    "role": "Ranger",
+    "gender": "Laki-laki",
+    "costume": "NPC/Damar/costume.png",
+    "headgear": "NPC/Damar/headgear.png",
+    "hair": "Hair/Ponytail/npc_male_16_low_ponytail.png"
+  },
+  {
+    "id": 12,
+    "name": "Pak Darno",
+    "role": "Villager",
+    "gender": "Laki-laki",
+    "costume": "NPC/Pak_Darno/costume.png",
+    "headgear": "NPC/Pak_Darno/headgear.png",
+    "hair": "Hair/Curly/npc_male_21_short_curly.png"
+  },
+  {
+    "id": 13,
+    "name": "Master Aldric",
+    "role": "Weapon Master",
+    "gender": "Laki-laki",
+    "costume": "NPC/Master_Aldric/costume.png",
+    "headgear": "NPC/Master_Aldric/headgear.png",
+    "hair": "Hair/Short/npc_male_09_flat_top.png"
+  },
+  {
+    "id": 14,
+    "name": "Elara",
+    "role": "Mage Instructor",
+    "gender": "Perempuan",
+    "costume": "NPC/Elara/costume.png",
+    "headgear": "NPC/Elara/headgear.png",
+    "hair": "Hair/Long/npc_female_07_long_wavy.png"
+  },
+  {
+    "id": 15,
+    "name": "Pak Surya",
+    "role": "Innkeeper",
+    "gender": "Laki-laki",
+    "costume": "NPC/Pak_Surya/costume.png",
+    "headgear": null,
+    "hair": "Hair/Medium/npc_male_13_medium_swept.png"
+  },
+  {
+    "id": 16,
+    "name": "Nona Livia",
+    "role": "Quest Administrator",
+    "gender": "Perempuan",
+    "costume": "NPC/Nona_Livia/costume.png",
+    "headgear": null,
+    "hair": "Hair/Short/npc_female_02_chin_bob.png"
+  },
+  {
+    "id": 17,
+    "name": "Kakek Bram",
+    "role": "Fisherman",
+    "gender": "Laki-laki",
+    "costume": "NPC/Kakek_Bram/costume.png",
+    "headgear": "NPC/Kakek_Bram/headgear.png",
+    "hair": "Hair/Short/npc_male_25_elder_wispy.png"
+  },
+  {
+    "id": 18,
+    "name": "Tuan Felix",
+    "role": "Jeweler",
+    "gender": "Laki-laki",
+    "costume": "NPC/Tuan_Felix/costume.png",
+    "headgear": "NPC/Tuan_Felix/headgear.png",
+    "hair": "Hair/Medium/npc_male_12_center_part_curtains.png"
+  },
+  {
+    "id": 19,
+    "name": "Nadia",
+    "role": "Tailor",
+    "gender": "Perempuan",
+    "costume": "NPC/Nadia/costume.png",
+    "headgear": null,
+    "hair": "Hair/Medium/npc_female_20_half_up.png"
+  },
+  {
+    "id": 20,
+    "name": "Rowan",
+    "role": "Stable Keeper",
+    "gender": "Laki-laki",
+    "costume": "NPC/Rowan/costume.png",
+    "headgear": "NPC/Rowan/headgear.png",
+    "hair": "Hair/Medium/npc_male_26_mullet.png"
+  },
+  {
+    "id": 21,
+    "name": "Pastor Elias",
+    "role": "Priest",
+    "gender": "Laki-laki",
+    "costume": "NPC/Pastor_Elias/costume.png",
+    "headgear": null,
+    "hair": "Hair/Short/npc_male_24_receding_gray.png"
+  },
+  {
+    "id": 22,
+    "name": "Vex",
+    "role": "Traveling Merchant",
+    "gender": "Laki-laki",
+    "costume": "NPC/Vex/costume.png",
+    "headgear": "NPC/Vex/headgear.png",
+    "hair": "Hair/Curly/npc_male_22_dreadlocks.png"
+  }
+]

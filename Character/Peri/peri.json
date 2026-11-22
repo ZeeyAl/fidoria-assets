@@ -1,0 +1,218 @@
+{
+  "name": "Peri",
+  "frameSize": {
+    "w": 32,
+    "h": 32
+  },
+  "scale_vs_human": 0.7,
+  "hover_px": 2,
+  "layer_stack_bottom_to_top": [
+    "Layers/peri_wings_back.png",
+    "Layers/peri_hair_back.png",
+    "Layers/peri_body.png",
+    "Layers/peri_dress.png",
+    "Layers/peri_wings_front.png",
+    "Layers/peri_hair_front.png"
+  ],
+  "atlas": "atlas.json",
+  "effects": {
+    "glow_aura": {
+      "file": "Effects/glow_aura.png",
+      "frameSize": {
+        "w": 32,
+        "h": 32
+      },
+      "frames": 4,
+      "fps": 8,
+      "loop": true,
+      "anchor": [
+        16,
+        16
+      ],
+      "note": "taruh di belakang karakter, pusat = tengah badan"
+    },
+    "twinkle": {
+      "file": "Effects/twinkle.png",
+      "frameSize": {
+        "w": 9,
+        "h": 9
+      },
+      "frames": 6,
+      "fps": 12,
+      "loop": false,
+      "anchor": [
+        4,
+        4
+      ],
+      "note": "kilau kecil acak di sekitar peri/sayap"
+    },
+    "pixie_dust": {
+      "file": "Effects/pixie_dust.png",
+      "frameSize": {
+        "w": 16,
+        "h": 16
+      },
+      "frames": 6,
+      "fps": 10,
+      "loop": true,
+      "anchor": [
+        8,
+        2
+      ],
+      "note": "emitter di pangkal sayap; ikut dipakai saat walk/run/idle"
+    },
+    "magic_burst": {
+      "file": "Effects/magic_burst.png",
+      "frameSize": {
+        "w": 48,
+        "h": 48
+      },
+      "frames": 7,
+      "fps": 14,
+      "loop": false,
+      "anchor": [
+        24,
+        24
+      ],
+      "note": "ledakan sihir; pakai di titik serangan (attack frame 3-4)"
+    },
+    "magic_orb": {
+      "file": "Effects/magic_orb.png",
+      "frameSize": {
+        "w": 16,
+        "h": 16
+      },
+      "frames": 4,
+      "fps": 12,
+      "loop": true,
+      "anchor": [
+        10,
+        8
+      ],
+      "note": "proyektil menghadap kanan; flip_x untuk kiri"
+    },
+    "orb_hit": {
+      "file": "Effects/orb_hit.png",
+      "frameSize": {
+        "w": 32,
+        "h": 32
+      },
+      "frames": 5,
+      "fps": 14,
+      "loop": false,
+      "anchor": [
+        16,
+        16
+      ],
+      "note": "saat orb mengenai target"
+    },
+    "blessing": {
+      "file": "Effects/blessing.png",
+      "frameSize": {
+        "w": 32,
+        "h": 40
+      },
+      "frames": 8,
+      "fps": 10,
+      "loop": false,
+      "anchor": [
+        16,
+        36
+      ],
+      "note": "efek interaksi/berkat; pusat di kaki"
+    },
+    "landing_pollen": {
+      "file": "Effects/landing_pollen.png",
+      "frameSize": {
+        "w": 32,
+        "h": 16
+      },
+      "frames": 5,
+      "fps": 12,
+      "loop": false,
+      "anchor": [
+        16,
+        13
+      ],
+      "note": "saat mendarat setelah jump"
+    },
+    "warp_in": {
+      "file": "Effects/warp_in.png",
+      "frameSize": {
+        "w": 32,
+        "h": 32
+      },
+      "frames": 8,
+      "fps": 12,
+      "loop": false,
+      "anchor": [
+        16,
+        16
+      ],
+      "note": "muncul; warp_out = putar balik urutan frame"
+    },
+    "ground_shadow": {
+      "file": "Effects/ground_shadow.png",
+      "frameSize": {
+        "w": 16,
+        "h": 8
+      },
+      "frames": 3,
+      "fps": 0,
+      "loop": false,
+      "anchor": [
+        8,
+        4
+      ],
+      "note": "bayangan di tanah (peri melayang 2px); frame 0 normal, 1-2 saat jump"
+    },
+    "warp_out": {
+      "file": "Effects/warp_in.png",
+      "frameSize": {
+        "w": 32,
+        "h": 32
+      },
+      "frames": 8,
+      "fps": 12,
+      "loop": false,
+      "anchor": [
+        16,
+        16
+      ],
+      "note": "sama dengan warp_in, mainkan urutan frame terbalik",
+      "reverse_of": "warp_in"
+    }
+  },
+  "effect_cues": {
+    "idle": [
+      "glow_aura (loop, di belakang)",
+      "pixie_dust (loop, dari pangkal sayap)",
+      "ground_shadow[0]"
+    ],
+    "walk": [
+      "pixie_dust",
+      "ground_shadow[0]"
+    ],
+    "run": [
+      "pixie_dust (dobel)",
+      "ground_shadow[0]"
+    ],
+    "interact": [
+      "blessing"
+    ],
+    "jump": [
+      "ground_shadow[0..2] sesuai tinggi",
+      "landing_pollen saat frame terakhir"
+    ],
+    "attack": [
+      "magic_orb di frame 3 (lempar)",
+      "orb_hit / magic_burst saat kena"
+    ],
+    "spawn": [
+      "warp_in"
+    ],
+    "despawn": [
+      "warp_out"
+    ]
+  }
+}

@@ -1,0 +1,945 @@
+{
+ "frameSize": {
+  "w": 32,
+  "h": 32
+ },
+ "directions": {
+  "original": [
+   "down",
+   "down_right",
+   "right",
+   "up_right",
+   "up"
+  ],
+  "mirrored": {
+   "down_left": "down_right",
+   "left": "right",
+   "up_left": "up_right"
+  }
+ },
+ "animations": {
+  "idle_down": {
+   "frames": [
+    "frames/idle/down/idle_down_00.png",
+    "frames/idle/down/idle_down_01.png",
+    "frames/idle/down/idle_down_02.png",
+    "frames/idle/down/idle_down_03.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "source_tag": "Idle_Down"
+  },
+  "idle_down_right": {
+   "frames": [
+    "frames/idle/down_right/idle_down_right_00.png",
+    "frames/idle/down_right/idle_down_right_01.png",
+    "frames/idle/down_right/idle_down_right_02.png",
+    "frames/idle/down_right/idle_down_right_03.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "source_tag": "Idle_Down_Side"
+  },
+  "idle_down_left": {
+   "frames": [
+    "frames/idle/down_left/idle_down_left_00.png",
+    "frames/idle/down_left/idle_down_left_01.png",
+    "frames/idle/down_left/idle_down_left_02.png",
+    "frames/idle/down_left/idle_down_left_03.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "mirrored_from": "down_right",
+   "flip_x": true,
+   "source_tag": "Idle_Down_Side"
+  },
+  "idle_right": {
+   "frames": [
+    "frames/idle/right/idle_right_00.png",
+    "frames/idle/right/idle_right_01.png",
+    "frames/idle/right/idle_right_02.png",
+    "frames/idle/right/idle_right_03.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "source_tag": "Idle_Side"
+  },
+  "idle_left": {
+   "frames": [
+    "frames/idle/left/idle_left_00.png",
+    "frames/idle/left/idle_left_01.png",
+    "frames/idle/left/idle_left_02.png",
+    "frames/idle/left/idle_left_03.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "mirrored_from": "right",
+   "flip_x": true,
+   "source_tag": "Idle_Side"
+  },
+  "idle_up_right": {
+   "frames": [
+    "frames/idle/up_right/idle_up_right_00.png",
+    "frames/idle/up_right/idle_up_right_01.png",
+    "frames/idle/up_right/idle_up_right_02.png",
+    "frames/idle/up_right/idle_up_right_03.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "source_tag": "Idle_Up_Side"
+  },
+  "idle_up_left": {
+   "frames": [
+    "frames/idle/up_left/idle_up_left_00.png",
+    "frames/idle/up_left/idle_up_left_01.png",
+    "frames/idle/up_left/idle_up_left_02.png",
+    "frames/idle/up_left/idle_up_left_03.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "mirrored_from": "up_right",
+   "flip_x": true,
+   "source_tag": "Idle_Up_Side"
+  },
+  "idle_up": {
+   "frames": [
+    "frames/idle/up/idle_up_00.png",
+    "frames/idle/up/idle_up_01.png",
+    "frames/idle/up/idle_up_02.png",
+    "frames/idle/up/idle_up_03.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "source_tag": "Idle_Up"
+  },
+  "walk_down": {
+   "frames": [
+    "frames/walk/down/walk_down_00.png",
+    "frames/walk/down/walk_down_01.png",
+    "frames/walk/down/walk_down_02.png",
+    "frames/walk/down/walk_down_03.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "source_tag": "Walk_Down"
+  },
+  "walk_down_right": {
+   "frames": [
+    "frames/walk/down_right/walk_down_right_00.png",
+    "frames/walk/down_right/walk_down_right_01.png",
+    "frames/walk/down_right/walk_down_right_02.png",
+    "frames/walk/down_right/walk_down_right_03.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "source_tag": "Walk_Down_Side"
+  },
+  "walk_down_left": {
+   "frames": [
+    "frames/walk/down_left/walk_down_left_00.png",
+    "frames/walk/down_left/walk_down_left_01.png",
+    "frames/walk/down_left/walk_down_left_02.png",
+    "frames/walk/down_left/walk_down_left_03.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "mirrored_from": "down_right",
+   "flip_x": true,
+   "source_tag": "Walk_Down_Side"
+  },
+  "walk_right": {
+   "frames": [
+    "frames/walk/right/walk_right_00.png",
+    "frames/walk/right/walk_right_01.png",
+    "frames/walk/right/walk_right_02.png",
+    "frames/walk/right/walk_right_03.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "source_tag": "Walk_Side"
+  },
+  "walk_left": {
+   "frames": [
+    "frames/walk/left/walk_left_00.png",
+    "frames/walk/left/walk_left_01.png",
+    "frames/walk/left/walk_left_02.png",
+    "frames/walk/left/walk_left_03.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "mirrored_from": "right",
+   "flip_x": true,
+   "source_tag": "Walk_Side"
+  },
+  "walk_up_right": {
+   "frames": [
+    "frames/walk/up_right/walk_up_right_00.png",
+    "frames/walk/up_right/walk_up_right_01.png",
+    "frames/walk/up_right/walk_up_right_02.png",
+    "frames/walk/up_right/walk_up_right_03.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "source_tag": "Walk_Side_Up"
+  },
+  "walk_up_left": {
+   "frames": [
+    "frames/walk/up_left/walk_up_left_00.png",
+    "frames/walk/up_left/walk_up_left_01.png",
+    "frames/walk/up_left/walk_up_left_02.png",
+    "frames/walk/up_left/walk_up_left_03.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "mirrored_from": "up_right",
+   "flip_x": true,
+   "source_tag": "Walk_Side_Up"
+  },
+  "walk_up": {
+   "frames": [
+    "frames/walk/up/walk_up_00.png",
+    "frames/walk/up/walk_up_01.png",
+    "frames/walk/up/walk_up_02.png",
+    "frames/walk/up/walk_up_03.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "source_tag": "Walk_Up"
+  },
+  "run_down": {
+   "frames": [
+    "frames/run/down/run_down_00.png",
+    "frames/run/down/run_down_01.png",
+    "frames/run/down/run_down_02.png",
+    "frames/run/down/run_down_03.png",
+    "frames/run/down/run_down_04.png",
+    "frames/run/down/run_down_05.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "source_tag": "Run_Down"
+  },
+  "run_down_right": {
+   "frames": [
+    "frames/run/down_right/run_down_right_00.png",
+    "frames/run/down_right/run_down_right_01.png",
+    "frames/run/down_right/run_down_right_02.png",
+    "frames/run/down_right/run_down_right_03.png",
+    "frames/run/down_right/run_down_right_04.png",
+    "frames/run/down_right/run_down_right_05.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "source_tag": "Run_Down_Side"
+  },
+  "run_down_left": {
+   "frames": [
+    "frames/run/down_left/run_down_left_00.png",
+    "frames/run/down_left/run_down_left_01.png",
+    "frames/run/down_left/run_down_left_02.png",
+    "frames/run/down_left/run_down_left_03.png",
+    "frames/run/down_left/run_down_left_04.png",
+    "frames/run/down_left/run_down_left_05.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "mirrored_from": "down_right",
+   "flip_x": true,
+   "source_tag": "Run_Down_Side"
+  },
+  "run_right": {
+   "frames": [
+    "frames/run/right/run_right_00.png",
+    "frames/run/right/run_right_01.png",
+    "frames/run/right/run_right_02.png",
+    "frames/run/right/run_right_03.png",
+    "frames/run/right/run_right_04.png",
+    "frames/run/right/run_right_05.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "source_tag": "Run_Side"
+  },
+  "run_left": {
+   "frames": [
+    "frames/run/left/run_left_00.png",
+    "frames/run/left/run_left_01.png",
+    "frames/run/left/run_left_02.png",
+    "frames/run/left/run_left_03.png",
+    "frames/run/left/run_left_04.png",
+    "frames/run/left/run_left_05.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "mirrored_from": "right",
+   "flip_x": true,
+   "source_tag": "Run_Side"
+  },
+  "run_up_right": {
+   "frames": [
+    "frames/run/up_right/run_up_right_00.png",
+    "frames/run/up_right/run_up_right_01.png",
+    "frames/run/up_right/run_up_right_02.png",
+    "frames/run/up_right/run_up_right_03.png",
+    "frames/run/up_right/run_up_right_04.png",
+    "frames/run/up_right/run_up_right_05.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "source_tag": "Run_Up_Side"
+  },
+  "run_up_left": {
+   "frames": [
+    "frames/run/up_left/run_up_left_00.png",
+    "frames/run/up_left/run_up_left_01.png",
+    "frames/run/up_left/run_up_left_02.png",
+    "frames/run/up_left/run_up_left_03.png",
+    "frames/run/up_left/run_up_left_04.png",
+    "frames/run/up_left/run_up_left_05.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "mirrored_from": "up_right",
+   "flip_x": true,
+   "source_tag": "Run_Up_Side"
+  },
+  "run_up": {
+   "frames": [
+    "frames/run/up/run_up_00.png",
+    "frames/run/up/run_up_01.png",
+    "frames/run/up/run_up_02.png",
+    "frames/run/up/run_up_03.png",
+    "frames/run/up/run_up_04.png",
+    "frames/run/up/run_up_05.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "source_tag": "Run_Up"
+  },
+  "interact_down": {
+   "frames": [
+    "frames/interact/down/interact_down_00.png",
+    "frames/interact/down/interact_down_01.png",
+    "frames/interact/down/interact_down_02.png",
+    "frames/interact/down/interact_down_03.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "source_tag": "Interact_Down"
+  },
+  "interact_down_right": {
+   "frames": [
+    "frames/interact/down_right/interact_down_right_00.png",
+    "frames/interact/down_right/interact_down_right_01.png",
+    "frames/interact/down_right/interact_down_right_02.png",
+    "frames/interact/down_right/interact_down_right_03.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "source_tag": "Interact_Down_Side"
+  },
+  "interact_down_left": {
+   "frames": [
+    "frames/interact/down_left/interact_down_left_00.png",
+    "frames/interact/down_left/interact_down_left_01.png",
+    "frames/interact/down_left/interact_down_left_02.png",
+    "frames/interact/down_left/interact_down_left_03.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "mirrored_from": "down_right",
+   "flip_x": true,
+   "source_tag": "Interact_Down_Side"
+  },
+  "interact_right": {
+   "frames": [
+    "frames/interact/right/interact_right_00.png",
+    "frames/interact/right/interact_right_01.png",
+    "frames/interact/right/interact_right_02.png",
+    "frames/interact/right/interact_right_03.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "source_tag": "Interact_Side"
+  },
+  "interact_left": {
+   "frames": [
+    "frames/interact/left/interact_left_00.png",
+    "frames/interact/left/interact_left_01.png",
+    "frames/interact/left/interact_left_02.png",
+    "frames/interact/left/interact_left_03.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "mirrored_from": "right",
+   "flip_x": true,
+   "source_tag": "Interact_Side"
+  },
+  "interact_up_right": {
+   "frames": [
+    "frames/interact/up_right/interact_up_right_00.png",
+    "frames/interact/up_right/interact_up_right_01.png",
+    "frames/interact/up_right/interact_up_right_02.png",
+    "frames/interact/up_right/interact_up_right_03.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "source_tag": "Interact_Up_Side"
+  },
+  "interact_up_left": {
+   "frames": [
+    "frames/interact/up_left/interact_up_left_00.png",
+    "frames/interact/up_left/interact_up_left_01.png",
+    "frames/interact/up_left/interact_up_left_02.png",
+    "frames/interact/up_left/interact_up_left_03.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "mirrored_from": "up_right",
+   "flip_x": true,
+   "source_tag": "Interact_Up_Side"
+  },
+  "interact_up": {
+   "frames": [
+    "frames/interact/up/interact_up_00.png",
+    "frames/interact/up/interact_up_01.png",
+    "frames/interact/up/interact_up_02.png",
+    "frames/interact/up/interact_up_03.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true,
+   "source_tag": "Interact_Up"
+  },
+  "jump_down": {
+   "frames": [
+    "frames/jump/down/jump_down_00.png",
+    "frames/jump/down/jump_down_01.png",
+    "frames/jump/down/jump_down_02.png",
+    "frames/jump/down/jump_down_03.png",
+    "frames/jump/down/jump_down_04.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": false,
+   "source_tag": "Jump_Down"
+  },
+  "jump_down_right": {
+   "frames": [
+    "frames/jump/down_right/jump_down_right_00.png",
+    "frames/jump/down_right/jump_down_right_01.png",
+    "frames/jump/down_right/jump_down_right_02.png",
+    "frames/jump/down_right/jump_down_right_03.png",
+    "frames/jump/down_right/jump_down_right_04.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": false,
+   "source_tag": "Jump_Down_Side"
+  },
+  "jump_down_left": {
+   "frames": [
+    "frames/jump/down_left/jump_down_left_00.png",
+    "frames/jump/down_left/jump_down_left_01.png",
+    "frames/jump/down_left/jump_down_left_02.png",
+    "frames/jump/down_left/jump_down_left_03.png",
+    "frames/jump/down_left/jump_down_left_04.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": false,
+   "mirrored_from": "down_right",
+   "flip_x": true,
+   "source_tag": "Jump_Down_Side"
+  },
+  "jump_right": {
+   "frames": [
+    "frames/jump/right/jump_right_00.png",
+    "frames/jump/right/jump_right_01.png",
+    "frames/jump/right/jump_right_02.png",
+    "frames/jump/right/jump_right_03.png",
+    "frames/jump/right/jump_right_04.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": false,
+   "source_tag": "Jump_Side"
+  },
+  "jump_left": {
+   "frames": [
+    "frames/jump/left/jump_left_00.png",
+    "frames/jump/left/jump_left_01.png",
+    "frames/jump/left/jump_left_02.png",
+    "frames/jump/left/jump_left_03.png",
+    "frames/jump/left/jump_left_04.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": false,
+   "mirrored_from": "right",
+   "flip_x": true,
+   "source_tag": "Jump_Side"
+  },
+  "jump_up_right": {
+   "frames": [
+    "frames/jump/up_right/jump_up_right_00.png",
+    "frames/jump/up_right/jump_up_right_01.png",
+    "frames/jump/up_right/jump_up_right_02.png",
+    "frames/jump/up_right/jump_up_right_03.png",
+    "frames/jump/up_right/jump_up_right_04.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": false,
+   "source_tag": "Jump_Up_Side"
+  },
+  "jump_up_left": {
+   "frames": [
+    "frames/jump/up_left/jump_up_left_00.png",
+    "frames/jump/up_left/jump_up_left_01.png",
+    "frames/jump/up_left/jump_up_left_02.png",
+    "frames/jump/up_left/jump_up_left_03.png",
+    "frames/jump/up_left/jump_up_left_04.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": false,
+   "mirrored_from": "up_right",
+   "flip_x": true,
+   "source_tag": "Jump_Up_Side"
+  },
+  "jump_up": {
+   "frames": [
+    "frames/jump/up/jump_up_00.png",
+    "frames/jump/up/jump_up_01.png",
+    "frames/jump/up/jump_up_02.png",
+    "frames/jump/up/jump_up_03.png",
+    "frames/jump/up/jump_up_04.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": false,
+   "source_tag": "Jump_Side"
+  },
+  "attack_down": {
+   "frames": [
+    "frames/attack/down/attack_down_00.png",
+    "frames/attack/down/attack_down_01.png",
+    "frames/attack/down/attack_down_02.png",
+    "frames/attack/down/attack_down_03.png",
+    "frames/attack/down/attack_down_04.png",
+    "frames/attack/down/attack_down_05.png",
+    "frames/attack/down/attack_down_06.png"
+   ],
+   "durations": [
+    100,
+    100,
+    200,
+    50,
+    100,
+    100,
+    100
+   ],
+   "loop": false,
+   "source_tag": "Punch_Down"
+  },
+  "attack_down_right": {
+   "frames": [
+    "frames/attack/down_right/attack_down_right_00.png",
+    "frames/attack/down_right/attack_down_right_01.png",
+    "frames/attack/down_right/attack_down_right_02.png",
+    "frames/attack/down_right/attack_down_right_03.png",
+    "frames/attack/down_right/attack_down_right_04.png",
+    "frames/attack/down_right/attack_down_right_05.png",
+    "frames/attack/down_right/attack_down_right_06.png"
+   ],
+   "durations": [
+    100,
+    100,
+    200,
+    50,
+    100,
+    100,
+    100
+   ],
+   "loop": false,
+   "source_tag": "Punch_Down_Side"
+  },
+  "attack_down_left": {
+   "frames": [
+    "frames/attack/down_left/attack_down_left_00.png",
+    "frames/attack/down_left/attack_down_left_01.png",
+    "frames/attack/down_left/attack_down_left_02.png",
+    "frames/attack/down_left/attack_down_left_03.png",
+    "frames/attack/down_left/attack_down_left_04.png",
+    "frames/attack/down_left/attack_down_left_05.png",
+    "frames/attack/down_left/attack_down_left_06.png"
+   ],
+   "durations": [
+    100,
+    100,
+    200,
+    50,
+    100,
+    100,
+    100
+   ],
+   "loop": false,
+   "mirrored_from": "down_right",
+   "flip_x": true,
+   "source_tag": "Punch_Down_Side"
+  },
+  "attack_right": {
+   "frames": [
+    "frames/attack/right/attack_right_00.png",
+    "frames/attack/right/attack_right_01.png",
+    "frames/attack/right/attack_right_02.png",
+    "frames/attack/right/attack_right_03.png",
+    "frames/attack/right/attack_right_04.png",
+    "frames/attack/right/attack_right_05.png",
+    "frames/attack/right/attack_right_06.png"
+   ],
+   "durations": [
+    100,
+    100,
+    200,
+    50,
+    100,
+    100,
+    100
+   ],
+   "loop": false,
+   "source_tag": "Punch_Side"
+  },
+  "attack_left": {
+   "frames": [
+    "frames/attack/left/attack_left_00.png",
+    "frames/attack/left/attack_left_01.png",
+    "frames/attack/left/attack_left_02.png",
+    "frames/attack/left/attack_left_03.png",
+    "frames/attack/left/attack_left_04.png",
+    "frames/attack/left/attack_left_05.png",
+    "frames/attack/left/attack_left_06.png"
+   ],
+   "durations": [
+    100,
+    100,
+    200,
+    50,
+    100,
+    100,
+    100
+   ],
+   "loop": false,
+   "mirrored_from": "right",
+   "flip_x": true,
+   "source_tag": "Punch_Side"
+  },
+  "attack_up_right": {
+   "frames": [
+    "frames/attack/up_right/attack_up_right_00.png",
+    "frames/attack/up_right/attack_up_right_01.png",
+    "frames/attack/up_right/attack_up_right_02.png",
+    "frames/attack/up_right/attack_up_right_03.png",
+    "frames/attack/up_right/attack_up_right_04.png",
+    "frames/attack/up_right/attack_up_right_05.png",
+    "frames/attack/up_right/attack_up_right_06.png"
+   ],
+   "durations": [
+    100,
+    100,
+    200,
+    50,
+    100,
+    100,
+    100
+   ],
+   "loop": false,
+   "source_tag": "Punch_Up_Side"
+  },
+  "attack_up_left": {
+   "frames": [
+    "frames/attack/up_left/attack_up_left_00.png",
+    "frames/attack/up_left/attack_up_left_01.png",
+    "frames/attack/up_left/attack_up_left_02.png",
+    "frames/attack/up_left/attack_up_left_03.png",
+    "frames/attack/up_left/attack_up_left_04.png",
+    "frames/attack/up_left/attack_up_left_05.png",
+    "frames/attack/up_left/attack_up_left_06.png"
+   ],
+   "durations": [
+    100,
+    100,
+    200,
+    50,
+    100,
+    100,
+    100
+   ],
+   "loop": false,
+   "mirrored_from": "up_right",
+   "flip_x": true,
+   "source_tag": "Punch_Up_Side"
+  },
+  "attack_up": {
+   "frames": [
+    "frames/attack/up/attack_up_00.png",
+    "frames/attack/up/attack_up_01.png",
+    "frames/attack/up/attack_up_02.png",
+    "frames/attack/up/attack_up_03.png",
+    "frames/attack/up/attack_up_04.png",
+    "frames/attack/up/attack_up_05.png",
+    "frames/attack/up/attack_up_06.png"
+   ],
+   "durations": [
+    100,
+    100,
+    200,
+    50,
+    100,
+    100,
+    100
+   ],
+   "loop": false,
+   "source_tag": "Punch_Up"
+  },
+  "rotate": {
+   "frames": [
+    "frames/rotate/rotate_00.png",
+    "frames/rotate/rotate_01.png",
+    "frames/rotate/rotate_02.png",
+    "frames/rotate/rotate_03.png",
+    "frames/rotate/rotate_04.png",
+    "frames/rotate/rotate_05.png",
+    "frames/rotate/rotate_06.png",
+    "frames/rotate/rotate_07.png"
+   ],
+   "durations": [
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100,
+    100
+   ],
+   "loop": true
+  }
+ }
+}
