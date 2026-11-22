@@ -1,0 +1,144 @@
+{
+  "class": "Archer",
+  "note": "Frame PNGs sliced from sprite sheets. Cells are uniform per skill and transparent. Frames are horizontally centered; for wind_arrow and ultimate_celestial_barrage frames are also vertically centered.",
+  "skills": [
+    {
+      "id": "01_quick_shot",
+      "name": "quick_shot",
+      "frames": 11,
+      "cell_width": 148,
+      "cell_height": 129,
+      "files": [
+        "quick_shot_01.png",
+        "quick_shot_02.png",
+        "quick_shot_03.png",
+        "quick_shot_04.png",
+        "quick_shot_05.png",
+        "quick_shot_06.png",
+        "quick_shot_07.png",
+        "quick_shot_08.png",
+        "quick_shot_09.png",
+        "quick_shot_10.png",
+        "quick_shot_11.png"
+      ]
+    },
+    {
+      "id": "02_double_shot",
+      "name": "double_shot",
+      "frames": 6,
+      "cell_width": 127,
+      "cell_height": 172,
+      "files": [
+        "double_shot_01.png",
+        "double_shot_02.png",
+        "double_shot_03.png",
+        "double_shot_04.png",
+        "double_shot_05.png",
+        "double_shot_06.png"
+      ]
+    },
+    {
+      "id": "03_piercing_arrow",
+      "name": "piercing_arrow",
+      "frames": 5,
+      "cell_width": 220,
+      "cell_height": 140,
+      "files": [
+        "piercing_arrow_01.png",
+        "piercing_arrow_02.png",
+        "piercing_arrow_03.png",
+        "piercing_arrow_04.png",
+        "piercing_arrow_05.png"
+      ]
+    },
+    {
+      "id": "04_arrow_rain",
+      "name": "arrow_rain",
+      "frames": 4,
+      "cell_width": 367,
+      "cell_height": 171,
+      "files": [
+        "arrow_rain_01.png",
+        "arrow_rain_02.png",
+        "arrow_rain_03.png",
+        "arrow_rain_04.png"
+      ]
+    },
+    {
+      "id": "05_explosive_arrow",
+      "name": "explosive_arrow",
+      "frames": 6,
+      "cell_width": 153,
+      "cell_height": 154,
+      "files": [
+        "explosive_arrow_01.png",
+        "explosive_arrow_02.png",
+        "explosive_arrow_03.png",
+        "explosive_arrow_04.png",
+        "explosive_arrow_05.png",
+        "explosive_arrow_06.png"
+      ]
+    },
+    {
+      "id": "06_multi_shot",
+      "name": "multi_shot",
+      "frames": 5,
+      "cell_width": 175,
+      "cell_height": 176,
+      "files": [
+        "multi_shot_01.png",
+        "multi_shot_02.png",
+        "multi_shot_03.png",
+        "multi_shot_04.png",
+        "multi_shot_05.png"
+      ]
+    },
+    {
+      "id": "07_wind_arrow",
+      "name": "wind_arrow",
+      "frames": 10,
+      "cell_width": 193,
+      "cell_height": 163,
+      "files": [
+        "wind_arrow_01.png",
+        "wind_arrow_02.png",
+        "wind_arrow_03.png",
+        "wind_arrow_04.png",
+        "wind_arrow_05.png",
+        "wind_arrow_06.png",
+        "wind_arrow_07.png",
+        "wind_arrow_08.png",
+        "wind_arrow_09.png",
+        "wind_arrow_10.png"
+      ]
+    },
+    {
+      "id": "08_ultimate_celestial_barrage",
+      "name": "ultimate_celestial_barrage",
+      "frames": 19,
+      "cell_width": 180,
+      "cell_height": 295,
+      "files": [
+        "ultimate_celestial_barrage_01.png",
+        "ultimate_celestial_barrage_02.png",
+        "ultimate_celestial_barrage_03.png",
+        "ultimate_celestial_barrage_04.png",
+        "ultimate_celestial_barrage_05.png",
+        "ultimate_celestial_barrage_06.png",
+        "ultimate_celestial_barrage_07.png",
+        "ultimate_celestial_barrage_08.png",
+        "ultimate_celestial_barrage_09.png",
+        "ultimate_celestial_barrage_10.png",
+        "ultimate_celestial_barrage_11.png",
+        "ultimate_celestial_barrage_12.png",
+        "ultimate_celestial_barrage_13.png",
+        "ultimate_celestial_barrage_14.png",
+        "ultimate_celestial_barrage_15.png",
+        "ultimate_celestial_barrage_16.png",
+        "ultimate_celestial_barrage_17.png",
+        "ultimate_celestial_barrage_18.png",
+        "ultimate_celestial_barrage_19.png"
+      ]
+    }
+  ]
+}

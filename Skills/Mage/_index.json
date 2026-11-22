@@ -1,0 +1,152 @@
+{
+  "class": "Mage",
+  "note": "Frame PNGs sliced from sprite sheets. Cells are uniform per skill, transparent, frames horizontally centered, vertical position kept as in the original sheet (ground effects keep their baseline).",
+  "skills": [
+    {
+      "id": "01_magic_bolt",
+      "name": "magic_bolt",
+      "frames": 10,
+      "cell_width": 195,
+      "cell_height": 121,
+      "files": [
+        "magic_bolt_01.png",
+        "magic_bolt_02.png",
+        "magic_bolt_03.png",
+        "magic_bolt_04.png",
+        "magic_bolt_05.png",
+        "magic_bolt_06.png",
+        "magic_bolt_07.png",
+        "magic_bolt_08.png",
+        "magic_bolt_09.png",
+        "magic_bolt_10.png"
+      ]
+    },
+    {
+      "id": "02_fireball",
+      "name": "fireball",
+      "frames": 9,
+      "cell_width": 248,
+      "cell_height": 120,
+      "files": [
+        "fireball_01.png",
+        "fireball_02.png",
+        "fireball_03.png",
+        "fireball_04.png",
+        "fireball_05.png",
+        "fireball_06.png",
+        "fireball_07.png",
+        "fireball_08.png",
+        "fireball_09.png"
+      ]
+    },
+    {
+      "id": "03_ice_spike",
+      "name": "ice_spike",
+      "frames": 10,
+      "cell_width": 216,
+      "cell_height": 135,
+      "files": [
+        "ice_spike_01.png",
+        "ice_spike_02.png",
+        "ice_spike_03.png",
+        "ice_spike_04.png",
+        "ice_spike_05.png",
+        "ice_spike_06.png",
+        "ice_spike_07.png",
+        "ice_spike_08.png",
+        "ice_spike_09.png",
+        "ice_spike_10.png"
+      ]
+    },
+    {
+      "id": "04_lightning",
+      "name": "lightning",
+      "frames": 9,
+      "cell_width": 201,
+      "cell_height": 127,
+      "files": [
+        "lightning_01.png",
+        "lightning_02.png",
+        "lightning_03.png",
+        "lightning_04.png",
+        "lightning_05.png",
+        "lightning_06.png",
+        "lightning_07.png",
+        "lightning_08.png",
+        "lightning_09.png"
+      ]
+    },
+    {
+      "id": "05_arcane_explosion",
+      "name": "arcane_explosion",
+      "frames": 11,
+      "cell_width": 162,
+      "cell_height": 125,
+      "files": [
+        "arcane_explosion_01.png",
+        "arcane_explosion_02.png",
+        "arcane_explosion_03.png",
+        "arcane_explosion_04.png",
+        "arcane_explosion_05.png",
+        "arcane_explosion_06.png",
+        "arcane_explosion_07.png",
+        "arcane_explosion_08.png",
+        "arcane_explosion_09.png",
+        "arcane_explosion_10.png",
+        "arcane_explosion_11.png"
+      ]
+    },
+    {
+      "id": "06_blizzard",
+      "name": "blizzard",
+      "frames": 9,
+      "cell_width": 217,
+      "cell_height": 133,
+      "files": [
+        "blizzard_01.png",
+        "blizzard_02.png",
+        "blizzard_03.png",
+        "blizzard_04.png",
+        "blizzard_05.png",
+        "blizzard_06.png",
+        "blizzard_07.png",
+        "blizzard_08.png",
+        "blizzard_09.png"
+      ]
+    },
+    {
+      "id": "07_meteor",
+      "name": "meteor",
+      "frames": 9,
+      "cell_width": 197,
+      "cell_height": 157,
+      "files": [
+        "meteor_01.png",
+        "meteor_02.png",
+        "meteor_03.png",
+        "meteor_04.png",
+        "meteor_05.png",
+        "meteor_06.png",
+        "meteor_07.png",
+        "meteor_08.png",
+        "meteor_09.png"
+      ]
+    },
+    {
+      "id": "08_arcane_cataclysm",
+      "name": "arcane_cataclysm",
+      "frames": 7,
+      "cell_width": 347,
+      "cell_height": 164,
+      "files": [
+        "arcane_cataclysm_01.png",
+        "arcane_cataclysm_02.png",
+        "arcane_cataclysm_03.png",
+        "arcane_cataclysm_04.png",
+        "arcane_cataclysm_05.png",
+        "arcane_cataclysm_06.png",
+        "arcane_cataclysm_07.png"
+      ]
+    }
+  ]
+}
