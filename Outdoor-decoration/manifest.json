@@ -1,0 +1,1774 @@
+{
+  "schema_version": 1,
+  "project": "Fidoria",
+  "collection": "Outdoor Decoration",
+  "source_archive": "fidoria_outdoor_assets.zip",
+  "total_assets": 175,
+  "categories": [
+    "Trees",
+    "Bushes",
+    "Plants",
+    "Flowers",
+    "Rocks",
+    "Fences-Gates",
+    "Street-Decor",
+    "Buildings-Decor",
+    "Market-Props",
+    "Planters",
+    "Water-Decor",
+    "Structures",
+    "Unsorted-Legacy"
+  ],
+  "assets": [
+    {
+      "asset_id": "door_wooden_arched",
+      "filename": "door_wooden_arched.png",
+      "path": "Outdoor-decoration/Buildings-Decor/door_wooden_arched.png",
+      "category": "Buildings-Decor",
+      "width": 61,
+      "height": 81,
+      "transparent": true,
+      "sha256": "fb7f1bf5d2606df2b966f181af833489246b70ebfaa90d16fff4e965ab7cb100"
+    },
+    {
+      "asset_id": "bush_berry_orange",
+      "filename": "bush_berry_orange.png",
+      "path": "Outdoor-decoration/Bushes/bush_berry_orange.png",
+      "category": "Bushes",
+      "width": 50,
+      "height": 52,
+      "transparent": true,
+      "sha256": "e2cb4644ae68e002a4981bdcf7338e9d1a1f8d9a24f7e8833831f7c0eee7d187"
+    },
+    {
+      "asset_id": "bush_berry_red",
+      "filename": "bush_berry_red.png",
+      "path": "Outdoor-decoration/Bushes/bush_berry_red.png",
+      "category": "Bushes",
+      "width": 55,
+      "height": 48,
+      "transparent": true,
+      "sha256": "cddd44cabf89a15a3cb9f2af9fbfe7176ef19d549e7a3abf65b1b14c5c1c2e02"
+    },
+    {
+      "asset_id": "bush_berry_small",
+      "filename": "bush_berry_small.png",
+      "path": "Outdoor-decoration/Bushes/bush_berry_small.png",
+      "category": "Bushes",
+      "width": 54,
+      "height": 50,
+      "transparent": true,
+      "sha256": "4d66e0409e8af0922ef8c2c14c90175ff6136bc979d14f3ec3f0c882d69c128f"
+    },
+    {
+      "asset_id": "bush_clover",
+      "filename": "bush_clover.png",
+      "path": "Outdoor-decoration/Bushes/bush_clover.png",
+      "category": "Bushes",
+      "width": 45,
+      "height": 51,
+      "transparent": true,
+      "sha256": "7ea3525eb8fe7c4f0295dbe5d147a54e7e8a27d3eed9925202871cbc535f160a"
+    },
+    {
+      "asset_id": "bush_flower_blue",
+      "filename": "bush_flower_blue.png",
+      "path": "Outdoor-decoration/Bushes/bush_flower_blue.png",
+      "category": "Bushes",
+      "width": 75,
+      "height": 75,
+      "transparent": true,
+      "sha256": "478695ab74a8584f0eb9ca00d3b502253e3aa241e59625336a5307eae11745aa"
+    },
+    {
+      "asset_id": "bush_flower_pale",
+      "filename": "bush_flower_pale.png",
+      "path": "Outdoor-decoration/Bushes/bush_flower_pale.png",
+      "category": "Bushes",
+      "width": 56,
+      "height": 49,
+      "transparent": true,
+      "sha256": "13db8fc4d4bfe9eff230474a8bd6f0ffe75ecac2cf162774b88c531c96e4ccf2"
+    },
+    {
+      "asset_id": "bush_flower_pink",
+      "filename": "bush_flower_pink.png",
+      "path": "Outdoor-decoration/Bushes/bush_flower_pink.png",
+      "category": "Bushes",
+      "width": 75,
+      "height": 75,
+      "transparent": true,
+      "sha256": "0e20bbf657f5a2fdd7b5f5824c48bf5fb641982b1a90acd61394640652030bca"
+    },
+    {
+      "asset_id": "bush_flower_white",
+      "filename": "bush_flower_white.png",
+      "path": "Outdoor-decoration/Bushes/bush_flower_white.png",
+      "category": "Bushes",
+      "width": 80,
+      "height": 76,
+      "transparent": true,
+      "sha256": "717c6dc4d68c9a410468190dde1f74dab0aaf90644a8416ea128a0ce11aefbd7"
+    },
+    {
+      "asset_id": "bush_green_01",
+      "filename": "bush_green_01.png",
+      "path": "Outdoor-decoration/Bushes/bush_green_01.png",
+      "category": "Bushes",
+      "width": 88,
+      "height": 90,
+      "transparent": true,
+      "sha256": "e496cd7a9c4466c3e33326a3965a8f05011eb26fb65dc41effa238eca04cfade"
+    },
+    {
+      "asset_id": "bush_green_02",
+      "filename": "bush_green_02.png",
+      "path": "Outdoor-decoration/Bushes/bush_green_02.png",
+      "category": "Bushes",
+      "width": 78,
+      "height": 89,
+      "transparent": true,
+      "sha256": "769c8f1bb0b559237abc7194cc3687dde4e03af7ceffaecd1656ecb8c655131d"
+    },
+    {
+      "asset_id": "bush_green_03",
+      "filename": "bush_green_03.png",
+      "path": "Outdoor-decoration/Bushes/bush_green_03.png",
+      "category": "Bushes",
+      "width": 77,
+      "height": 90,
+      "transparent": true,
+      "sha256": "c51f18a5efcd9ce1bf3891d40b9e4ffc4e2fdcf965191025f2132d62bf821bd3"
+    },
+    {
+      "asset_id": "bush_green_a",
+      "filename": "bush_green_a.png",
+      "path": "Outdoor-decoration/Bushes/bush_green_a.png",
+      "category": "Bushes",
+      "width": 47,
+      "height": 51,
+      "transparent": true,
+      "sha256": "104ab13fcdf5ba75d0ca8b941b71bf292c94841db7cea3bf01e466722b2ce77a"
+    },
+    {
+      "asset_id": "bush_green_b",
+      "filename": "bush_green_b.png",
+      "path": "Outdoor-decoration/Bushes/bush_green_b.png",
+      "category": "Bushes",
+      "width": 43,
+      "height": 52,
+      "transparent": true,
+      "sha256": "0480c87918f0bb1ea4c04f1bcb3fd8905bfa5cc8a3ed94a670f7ba70dbdef554"
+    },
+    {
+      "asset_id": "bush_green_c",
+      "filename": "bush_green_c.png",
+      "path": "Outdoor-decoration/Bushes/bush_green_c.png",
+      "category": "Bushes",
+      "width": 48,
+      "height": 51,
+      "transparent": true,
+      "sha256": "af577f5adf6bf6ea777b2a6ed875bcf356b7d8aa5c9b484d559749639f085460"
+    },
+    {
+      "asset_id": "bush_green_d",
+      "filename": "bush_green_d.png",
+      "path": "Outdoor-decoration/Bushes/bush_green_d.png",
+      "category": "Bushes",
+      "width": 41,
+      "height": 46,
+      "transparent": true,
+      "sha256": "02f88b87e734333776b6cacfd29b50c3671bc5113709ea92e986d69df7089aad"
+    },
+    {
+      "asset_id": "bush_green_e",
+      "filename": "bush_green_e.png",
+      "path": "Outdoor-decoration/Bushes/bush_green_e.png",
+      "category": "Bushes",
+      "width": 43,
+      "height": 51,
+      "transparent": true,
+      "sha256": "ad09a2da2cdac8a468abf4b10bc3385bf864009188fe1712656918da110772df"
+    },
+    {
+      "asset_id": "bush_green_f",
+      "filename": "bush_green_f.png",
+      "path": "Outdoor-decoration/Bushes/bush_green_f.png",
+      "category": "Bushes",
+      "width": 48,
+      "height": 51,
+      "transparent": true,
+      "sha256": "07e171cb19a92e73323981d841aaa69d1134470cbfb7ed7cdc5267749ec39872"
+    },
+    {
+      "asset_id": "bush_purple_flowers",
+      "filename": "bush_purple_flowers.png",
+      "path": "Outdoor-decoration/Bushes/bush_purple_flowers.png",
+      "category": "Bushes",
+      "width": 63,
+      "height": 51,
+      "transparent": true,
+      "sha256": "94d2ebba0e584dae90a4926cdd8f1e8d105fe0040aae8fc663ad280e8bc35f9e"
+    },
+    {
+      "asset_id": "bush_round_01",
+      "filename": "bush_round_01.png",
+      "path": "Outdoor-decoration/Bushes/bush_round_01.png",
+      "category": "Bushes",
+      "width": 75,
+      "height": 72,
+      "transparent": true,
+      "sha256": "93f065a8c716fce59018faa5fb07b4760b18afbf0d235f0b9f0fb714eb935d3a"
+    },
+    {
+      "asset_id": "bush_round_02",
+      "filename": "bush_round_02.png",
+      "path": "Outdoor-decoration/Bushes/bush_round_02.png",
+      "category": "Bushes",
+      "width": 73,
+      "height": 69,
+      "transparent": true,
+      "sha256": "63603c2a332e5c4e07e273d42cef2c93496559e796c1192b66c55557e8775862"
+    },
+    {
+      "asset_id": "bush_round_03",
+      "filename": "bush_round_03.png",
+      "path": "Outdoor-decoration/Bushes/bush_round_03.png",
+      "category": "Bushes",
+      "width": 68,
+      "height": 65,
+      "transparent": true,
+      "sha256": "02baaa9768dda2598ecc23d9925e585a63e2963ec11efe84b31324de79a59dec"
+    },
+    {
+      "asset_id": "bush_small_01",
+      "filename": "bush_small_01.png",
+      "path": "Outdoor-decoration/Bushes/bush_small_01.png",
+      "category": "Bushes",
+      "width": 47,
+      "height": 43,
+      "transparent": true,
+      "sha256": "fef88ae6ea972c0925f14d468b43b162565ae7c0cfea0edcea9da995bb06b98d"
+    },
+    {
+      "asset_id": "bush_small_02",
+      "filename": "bush_small_02.png",
+      "path": "Outdoor-decoration/Bushes/bush_small_02.png",
+      "category": "Bushes",
+      "width": 63,
+      "height": 46,
+      "transparent": true,
+      "sha256": "93eb0e650a4c4cfcd5df24c7c2d6c5a00b0c61c105243173a63bd16b6c08fc1a"
+    },
+    {
+      "asset_id": "bush_small_03",
+      "filename": "bush_small_03.png",
+      "path": "Outdoor-decoration/Bushes/bush_small_03.png",
+      "category": "Bushes",
+      "width": 45,
+      "height": 57,
+      "transparent": true,
+      "sha256": "ba88778227047e1a3260d66b51ab51525345305b5d5fab6831b82139241e45dc"
+    },
+    {
+      "asset_id": "bush_small_04",
+      "filename": "bush_small_04.png",
+      "path": "Outdoor-decoration/Bushes/bush_small_04.png",
+      "category": "Bushes",
+      "width": 68,
+      "height": 47,
+      "transparent": true,
+      "sha256": "30a986acc0f978719c27c4e0acb16d2cc29a974180df96c0688035a267611e3d"
+    },
+    {
+      "asset_id": "bush_small_05",
+      "filename": "bush_small_05.png",
+      "path": "Outdoor-decoration/Bushes/bush_small_05.png",
+      "category": "Bushes",
+      "width": 49,
+      "height": 44,
+      "transparent": true,
+      "sha256": "b89b8f3e28280e6ff1d4861e32fead5bf4190033f8b30e7e01c3031ecc246838"
+    },
+    {
+      "asset_id": "bush_small_06",
+      "filename": "bush_small_06.png",
+      "path": "Outdoor-decoration/Bushes/bush_small_06.png",
+      "category": "Bushes",
+      "width": 45,
+      "height": 42,
+      "transparent": true,
+      "sha256": "e4d70b77a16347810cea8fb210921e26b0328b8f945f1773b159ca7a16c78ff0"
+    },
+    {
+      "asset_id": "bush_small_07",
+      "filename": "bush_small_07.png",
+      "path": "Outdoor-decoration/Bushes/bush_small_07.png",
+      "category": "Bushes",
+      "width": 50,
+      "height": 49,
+      "transparent": true,
+      "sha256": "350f2190215347f906ad3c569af102324afd4d5716dfd60d5309c459fb52782a"
+    },
+    {
+      "asset_id": "bush_small_a",
+      "filename": "bush_small_a.png",
+      "path": "Outdoor-decoration/Bushes/bush_small_a.png",
+      "category": "Bushes",
+      "width": 50,
+      "height": 44,
+      "transparent": true,
+      "sha256": "dca5c17032fa44906fdaf0e4c7dfc086102eba7b51d6fe93a434fbd4c5441791"
+    },
+    {
+      "asset_id": "bush_small_b",
+      "filename": "bush_small_b.png",
+      "path": "Outdoor-decoration/Bushes/bush_small_b.png",
+      "category": "Bushes",
+      "width": 51,
+      "height": 46,
+      "transparent": true,
+      "sha256": "1258a3ea6acb7fc15fc466d23018f9da6621b0b5ebfbae2466ed624247a318e4"
+    },
+    {
+      "asset_id": "bush_small_c",
+      "filename": "bush_small_c.png",
+      "path": "Outdoor-decoration/Bushes/bush_small_c.png",
+      "category": "Bushes",
+      "width": 50,
+      "height": 43,
+      "transparent": true,
+      "sha256": "4e6ae5112b6a6b15c4e90a1d374ad345442b6d4f2e9f4c52321b0f2832c01823"
+    },
+    {
+      "asset_id": "bush_tiny_green",
+      "filename": "bush_tiny_green.png",
+      "path": "Outdoor-decoration/Bushes/bush_tiny_green.png",
+      "category": "Bushes",
+      "width": 46,
+      "height": 48,
+      "transparent": true,
+      "sha256": "3e89914e97ac2a6952c447097feb64eb2a6787eb26a336d0387b37ca9a79555a"
+    },
+    {
+      "asset_id": "bush_white_flowers",
+      "filename": "bush_white_flowers.png",
+      "path": "Outdoor-decoration/Bushes/bush_white_flowers.png",
+      "category": "Bushes",
+      "width": 51,
+      "height": 50,
+      "transparent": true,
+      "sha256": "83ebb6fb3cf98b77e91c9f23ee5494a8cf6acb8b66dc699bc9157df3310775c0"
+    },
+    {
+      "asset_id": "flower_bush_blue",
+      "filename": "flower_bush_blue.png",
+      "path": "Outdoor-decoration/Bushes/flower_bush_blue.png",
+      "category": "Bushes",
+      "width": 51,
+      "height": 51,
+      "transparent": true,
+      "sha256": "92db447cafbda5ec4cbfbfde8b8a15511b33ef36314c4ec681dc8f7953e11268"
+    },
+    {
+      "asset_id": "flower_bush_coral",
+      "filename": "flower_bush_coral.png",
+      "path": "Outdoor-decoration/Bushes/flower_bush_coral.png",
+      "category": "Bushes",
+      "width": 60,
+      "height": 50,
+      "transparent": true,
+      "sha256": "3b8fdf122b1fe337d1c69b116ae5600a99630cbf3a8f00ec972328f99625a082"
+    },
+    {
+      "asset_id": "flower_bush_cyan",
+      "filename": "flower_bush_cyan.png",
+      "path": "Outdoor-decoration/Bushes/flower_bush_cyan.png",
+      "category": "Bushes",
+      "width": 61,
+      "height": 51,
+      "transparent": true,
+      "sha256": "85ceaebc2ed6186301abec09c1b0760bae74a4c5a66b23824533c00632fb04ea"
+    },
+    {
+      "asset_id": "flower_bush_orange",
+      "filename": "flower_bush_orange.png",
+      "path": "Outdoor-decoration/Bushes/flower_bush_orange.png",
+      "category": "Bushes",
+      "width": 49,
+      "height": 51,
+      "transparent": true,
+      "sha256": "a474faab2a74d413a6b0dcafd9e0af47d4eea183359729a38cdab381ee59ddab"
+    },
+    {
+      "asset_id": "flower_bush_pink_a",
+      "filename": "flower_bush_pink_a.png",
+      "path": "Outdoor-decoration/Bushes/flower_bush_pink_a.png",
+      "category": "Bushes",
+      "width": 54,
+      "height": 55,
+      "transparent": true,
+      "sha256": "e6cd3872573e9a35675531ab53a163d9097027e0c687a22fcefdc695db2e80eb"
+    },
+    {
+      "asset_id": "flower_bush_pink_b",
+      "filename": "flower_bush_pink_b.png",
+      "path": "Outdoor-decoration/Bushes/flower_bush_pink_b.png",
+      "category": "Bushes",
+      "width": 51,
+      "height": 53,
+      "transparent": true,
+      "sha256": "b564fd67c1b0b39a67f9be8e019d5647a6e814753ec13f1ae9f40234d21074dc"
+    },
+    {
+      "asset_id": "flower_bush_purple_big",
+      "filename": "flower_bush_purple_big.png",
+      "path": "Outdoor-decoration/Bushes/flower_bush_purple_big.png",
+      "category": "Bushes",
+      "width": 59,
+      "height": 61,
+      "transparent": true,
+      "sha256": "f702f83ff26bb583a8c2dcea315937f9ed87a35936c6020e90fcb6c7b8a0b3bb"
+    },
+    {
+      "asset_id": "flower_bush_red",
+      "filename": "flower_bush_red.png",
+      "path": "Outdoor-decoration/Bushes/flower_bush_red.png",
+      "category": "Bushes",
+      "width": 54,
+      "height": 51,
+      "transparent": true,
+      "sha256": "ee11e06679aea28e138b285e821b05e4b55034f49fa39a44d0e0c7136225cc63"
+    },
+    {
+      "asset_id": "flower_bush_white_a",
+      "filename": "flower_bush_white_a.png",
+      "path": "Outdoor-decoration/Bushes/flower_bush_white_a.png",
+      "category": "Bushes",
+      "width": 44,
+      "height": 50,
+      "transparent": true,
+      "sha256": "e82cf8ba8ca8899a1fb4f352dd1e0412cbb18809236fcab6ea47e13d5b880162"
+    },
+    {
+      "asset_id": "fence_cart_wheel",
+      "filename": "fence_cart_wheel.png",
+      "path": "Outdoor-decoration/Fences-Gates/fence_cart_wheel.png",
+      "category": "Fences-Gates",
+      "width": 228,
+      "height": 83,
+      "transparent": true,
+      "sha256": "52dfd4f3d95a14343908942f815d374cf7165210488b5cba84bfb561bd747356"
+    },
+    {
+      "asset_id": "fence_gate_stone_posts",
+      "filename": "fence_gate_stone_posts.png",
+      "path": "Outdoor-decoration/Fences-Gates/fence_gate_stone_posts.png",
+      "category": "Fences-Gates",
+      "width": 267,
+      "height": 89,
+      "transparent": true,
+      "sha256": "6c85ad784efb1f2519ff15f53cd5c69ea6ae073fdf1bf560b7af034e529bdb7c"
+    },
+    {
+      "asset_id": "fence_stone_wood",
+      "filename": "fence_stone_wood.png",
+      "path": "Outdoor-decoration/Fences-Gates/fence_stone_wood.png",
+      "category": "Fences-Gates",
+      "width": 205,
+      "height": 108,
+      "transparent": true,
+      "sha256": "a5c070bd3b286b3ec3ffe7917e73d09da84ddfadc2705f5e187257f88ed0c9f4"
+    },
+    {
+      "asset_id": "fence_wood_01",
+      "filename": "fence_wood_01.png",
+      "path": "Outdoor-decoration/Fences-Gates/fence_wood_01.png",
+      "category": "Fences-Gates",
+      "width": 164,
+      "height": 67,
+      "transparent": true,
+      "sha256": "09862d4c773329475dae5ba83059ba33878c4872604180aabe00c980d37eab0f"
+    },
+    {
+      "asset_id": "fence_wood_02",
+      "filename": "fence_wood_02.png",
+      "path": "Outdoor-decoration/Fences-Gates/fence_wood_02.png",
+      "category": "Fences-Gates",
+      "width": 166,
+      "height": 71,
+      "transparent": true,
+      "sha256": "7adc44fd2924b7a8948f76213187aaf7c7792555da9c6efeca9cd8f96556f5f9"
+    },
+    {
+      "asset_id": "fence_wood_03",
+      "filename": "fence_wood_03.png",
+      "path": "Outdoor-decoration/Fences-Gates/fence_wood_03.png",
+      "category": "Fences-Gates",
+      "width": 153,
+      "height": 65,
+      "transparent": true,
+      "sha256": "609b324b4d5b7aba624cc1f6f99b059d62ed8deff19ffa2d6e61570be738cd75"
+    },
+    {
+      "asset_id": "fence_wood_end",
+      "filename": "fence_wood_end.png",
+      "path": "Outdoor-decoration/Fences-Gates/fence_wood_end.png",
+      "category": "Fences-Gates",
+      "width": 99,
+      "height": 80,
+      "transparent": true,
+      "sha256": "b7ac9c47c7b837511bdc98e6067cb3d6852254a93b75be1b8b59592f854a8633"
+    },
+    {
+      "asset_id": "fence_wood_long_double",
+      "filename": "fence_wood_long_double.png",
+      "path": "Outdoor-decoration/Fences-Gates/fence_wood_long_double.png",
+      "category": "Fences-Gates",
+      "width": 182,
+      "height": 78,
+      "transparent": true,
+      "sha256": "e41dfd18156a1ee00234ca1c49111bca5609ef17e44811ca663c4071598a1663"
+    },
+    {
+      "asset_id": "fence_wood_short_a",
+      "filename": "fence_wood_short_a.png",
+      "path": "Outdoor-decoration/Fences-Gates/fence_wood_short_a.png",
+      "category": "Fences-Gates",
+      "width": 133,
+      "height": 57,
+      "transparent": true,
+      "sha256": "79b0fa91de0b7a40d7ed4f0666aaf491d41edcae9359d67371bafa5854cc56c3"
+    },
+    {
+      "asset_id": "gate_arch_banners",
+      "filename": "gate_arch_banners.png",
+      "path": "Outdoor-decoration/Fences-Gates/gate_arch_banners.png",
+      "category": "Fences-Gates",
+      "width": 198,
+      "height": 153,
+      "transparent": true,
+      "sha256": "56f6fc0d28dc85641b610cdba8c0c119cd09aac837e377c91b8e636a75a72ee6"
+    },
+    {
+      "asset_id": "gate_wooden",
+      "filename": "gate_wooden.png",
+      "path": "Outdoor-decoration/Fences-Gates/gate_wooden.png",
+      "category": "Fences-Gates",
+      "width": 63,
+      "height": 59,
+      "transparent": true,
+      "sha256": "4ff6303604f690ad06821c7d732067b939ed7a1452ede80fc4930171bc842120"
+    },
+    {
+      "asset_id": "barrel",
+      "filename": "barrel.png",
+      "path": "Outdoor-decoration/Market-Props/barrel.png",
+      "category": "Market-Props",
+      "width": 67,
+      "height": 86,
+      "transparent": true,
+      "sha256": "54c37c96b80f851fe75056ad383e04126484ca669102f758293c6f9e178acdc2"
+    },
+    {
+      "asset_id": "barrel_wooden",
+      "filename": "barrel_wooden.png",
+      "path": "Outdoor-decoration/Market-Props/barrel_wooden.png",
+      "category": "Market-Props",
+      "width": 39,
+      "height": 49,
+      "transparent": true,
+      "sha256": "cacdbfe17dd7768b0a11e6455cb823b084ee88b6b0062194b0c607175374cf78"
+    },
+    {
+      "asset_id": "cage_wooden",
+      "filename": "cage_wooden.png",
+      "path": "Outdoor-decoration/Market-Props/cage_wooden.png",
+      "category": "Market-Props",
+      "width": 96,
+      "height": 83,
+      "transparent": true,
+      "sha256": "25657f47e6e35313e3b7a98520e08f84c7214ef47d36795e16a9d9274649dd5a"
+    },
+    {
+      "asset_id": "cart_wooden",
+      "filename": "cart_wooden.png",
+      "path": "Outdoor-decoration/Market-Props/cart_wooden.png",
+      "category": "Market-Props",
+      "width": 88,
+      "height": 101,
+      "transparent": true,
+      "sha256": "ab209d68573de4fb9f0b070b63a4846a72ac641c7fa862095b61c5578e740261"
+    },
+    {
+      "asset_id": "crate",
+      "filename": "crate.png",
+      "path": "Outdoor-decoration/Market-Props/crate.png",
+      "category": "Market-Props",
+      "width": 99,
+      "height": 63,
+      "transparent": true,
+      "sha256": "a9816ec776e6b7a0984a17e848df0e5963de393176bfa564a1726b88864167d3"
+    },
+    {
+      "asset_id": "crate_barrel_stack",
+      "filename": "crate_barrel_stack.png",
+      "path": "Outdoor-decoration/Market-Props/crate_barrel_stack.png",
+      "category": "Market-Props",
+      "width": 72,
+      "height": 142,
+      "transparent": true,
+      "sha256": "65bddb0a0c8a8266885c2274e3c585e29266ad88cf836a9f96fd04f849f77f63"
+    },
+    {
+      "asset_id": "sack",
+      "filename": "sack.png",
+      "path": "Outdoor-decoration/Market-Props/sack.png",
+      "category": "Market-Props",
+      "width": 60,
+      "height": 59,
+      "transparent": true,
+      "sha256": "684fcf616be4ccce60956c9babc7104c0087dd691b65b51b3afb187aa545f56d"
+    },
+    {
+      "asset_id": "stall_potion_blue",
+      "filename": "stall_potion_blue.png",
+      "path": "Outdoor-decoration/Market-Props/stall_potion_blue.png",
+      "category": "Market-Props",
+      "width": 231,
+      "height": 182,
+      "transparent": true,
+      "sha256": "d097a6918c17e0b3eaf9eee55cf9a6e1a0eb5de97218d5ffc755978440478624"
+    },
+    {
+      "asset_id": "stall_produce_red",
+      "filename": "stall_produce_red.png",
+      "path": "Outdoor-decoration/Market-Props/stall_produce_red.png",
+      "category": "Market-Props",
+      "width": 222,
+      "height": 181,
+      "transparent": true,
+      "sha256": "80a2f3dcddc8f299abdd12d8c997c922240cff3704c0dfaaecea25f241c3d2eb"
+    },
+    {
+      "asset_id": "stall_wooden_roof",
+      "filename": "stall_wooden_roof.png",
+      "path": "Outdoor-decoration/Market-Props/stall_wooden_roof.png",
+      "category": "Market-Props",
+      "width": 86,
+      "height": 103,
+      "transparent": true,
+      "sha256": "c8143b92dfa0c9271909790b7b788b94b3fea7e065b2b083cff7757103625a63"
+    },
+    {
+      "asset_id": "wagon_covered",
+      "filename": "wagon_covered.png",
+      "path": "Outdoor-decoration/Market-Props/wagon_covered.png",
+      "category": "Market-Props",
+      "width": 174,
+      "height": 184,
+      "transparent": true,
+      "sha256": "bf0f1a976b6bc213bcbee13168a92164d0810c19176629d620172ba442cc1619"
+    },
+    {
+      "asset_id": "barrel_flowers_purple",
+      "filename": "barrel_flowers_purple.png",
+      "path": "Outdoor-decoration/Planters/barrel_flowers_purple.png",
+      "category": "Planters",
+      "width": 56,
+      "height": 104,
+      "transparent": true,
+      "sha256": "9924a194093d8693e9b80fb3918289a86b76f5e5ee82685122ec71c53a732862"
+    },
+    {
+      "asset_id": "barrel_flowers_white_01",
+      "filename": "barrel_flowers_white_01.png",
+      "path": "Outdoor-decoration/Planters/barrel_flowers_white_01.png",
+      "category": "Planters",
+      "width": 79,
+      "height": 116,
+      "transparent": true,
+      "sha256": "2283630c845756e236b1871850da0070d551c9bcde003f34287dacff656809f6"
+    },
+    {
+      "asset_id": "barrel_flowers_white_02",
+      "filename": "barrel_flowers_white_02.png",
+      "path": "Outdoor-decoration/Planters/barrel_flowers_white_02.png",
+      "category": "Planters",
+      "width": 83,
+      "height": 99,
+      "transparent": true,
+      "sha256": "60b452608ae74235855140558b856b8d948a3b544805e8c8e74f6868a7981af5"
+    },
+    {
+      "asset_id": "box_flowers_blue",
+      "filename": "box_flowers_blue.png",
+      "path": "Outdoor-decoration/Planters/box_flowers_blue.png",
+      "category": "Planters",
+      "width": 96,
+      "height": 98,
+      "transparent": true,
+      "sha256": "69c2cf75b6e11857f552aa16415afe1d1c932dc2c68bec414747ba86fc5e6196"
+    },
+    {
+      "asset_id": "box_flowers_pink",
+      "filename": "box_flowers_pink.png",
+      "path": "Outdoor-decoration/Planters/box_flowers_pink.png",
+      "category": "Planters",
+      "width": 129,
+      "height": 82,
+      "transparent": true,
+      "sha256": "3de230f14104ab52890ab92a5aa0a0d353e37d0ac83d913071844fa8eeb97f3a"
+    },
+    {
+      "asset_id": "box_flowers_purple",
+      "filename": "box_flowers_purple.png",
+      "path": "Outdoor-decoration/Planters/box_flowers_purple.png",
+      "category": "Planters",
+      "width": 117,
+      "height": 94,
+      "transparent": true,
+      "sha256": "7d4bc9f167e3b2b15558511d2b9bc13bf2734ef4f7b23ae542928a05aa7ec9a2"
+    },
+    {
+      "asset_id": "box_flowers_white",
+      "filename": "box_flowers_white.png",
+      "path": "Outdoor-decoration/Planters/box_flowers_white.png",
+      "category": "Planters",
+      "width": 79,
+      "height": 87,
+      "transparent": true,
+      "sha256": "1040c981d4a48c29b78d01f5cf3246a21cb77eac3e29c13dfc28c9637c72c699"
+    },
+    {
+      "asset_id": "pot_clay_plant",
+      "filename": "pot_clay_plant.png",
+      "path": "Outdoor-decoration/Planters/pot_clay_plant.png",
+      "category": "Planters",
+      "width": 53,
+      "height": 81,
+      "transparent": true,
+      "sha256": "2664ff3e1224164f1b4b231e3cf74768d309d0a947c86cae022cdb0fe8fc132a"
+    },
+    {
+      "asset_id": "pot_flowers_blue",
+      "filename": "pot_flowers_blue.png",
+      "path": "Outdoor-decoration/Planters/pot_flowers_blue.png",
+      "category": "Planters",
+      "width": 76,
+      "height": 107,
+      "transparent": true,
+      "sha256": "9cdde668b8ed379a20b0247e902e65a1618b22737a010b9195ad1e1811d882b3"
+    },
+    {
+      "asset_id": "pot_flowers_red",
+      "filename": "pot_flowers_red.png",
+      "path": "Outdoor-decoration/Planters/pot_flowers_red.png",
+      "category": "Planters",
+      "width": 75,
+      "height": 99,
+      "transparent": true,
+      "sha256": "7e2aab491c1374eec531bc9daede879efadfb91508a517dee781d44afbc93a13"
+    },
+    {
+      "asset_id": "cactus_small",
+      "filename": "cactus_small.png",
+      "path": "Outdoor-decoration/Plants/cactus_small.png",
+      "category": "Plants",
+      "width": 38,
+      "height": 46,
+      "transparent": true,
+      "sha256": "a7b3e1ab3c027f04d922f78f1e53cb6fd163d495ad266073bc46d093f8c2d13d"
+    },
+    {
+      "asset_id": "cliff_grass_block_big",
+      "filename": "cliff_grass_block_big.png",
+      "path": "Outdoor-decoration/Plants/cliff_grass_block_big.png",
+      "category": "Plants",
+      "width": 138,
+      "height": 123,
+      "transparent": true,
+      "sha256": "5b03eefed9d9ba6c451ae551f07d6b6747ca6f4ed6c8a7d2764084d754b7b5e0"
+    },
+    {
+      "asset_id": "fence_wood_grass_top",
+      "filename": "fence_wood_grass_top.png",
+      "path": "Outdoor-decoration/Plants/fence_wood_grass_top.png",
+      "category": "Plants",
+      "width": 164,
+      "height": 77,
+      "transparent": true,
+      "sha256": "62969bacd79f2821a0c3027c79c700c82cd02564103dfd3b3081fb3a29d7b448"
+    },
+    {
+      "asset_id": "flowers_pink_01",
+      "filename": "flowers_pink_01.png",
+      "path": "Outdoor-decoration/Plants/flowers_pink_01.png",
+      "category": "Plants",
+      "width": 61,
+      "height": 55,
+      "transparent": true,
+      "sha256": "af57d47eed610a269f872e08905d38d357cf8bb7c914f48c4eb779aee4ea1a40"
+    },
+    {
+      "asset_id": "flowers_pink_02",
+      "filename": "flowers_pink_02.png",
+      "path": "Outdoor-decoration/Plants/flowers_pink_02.png",
+      "category": "Plants",
+      "width": 66,
+      "height": 58,
+      "transparent": true,
+      "sha256": "15ac98975f631ec9922e1c5af30564a1d1b23ad1ed37c1ef5cb5517aafeec4b5"
+    },
+    {
+      "asset_id": "flowers_pink_blue",
+      "filename": "flowers_pink_blue.png",
+      "path": "Outdoor-decoration/Plants/flowers_pink_blue.png",
+      "category": "Plants",
+      "width": 75,
+      "height": 64,
+      "transparent": true,
+      "sha256": "6910d7068c9c64a99f6afaa7689f3c9840a706e346891f8a90e9a82dbeda0510"
+    },
+    {
+      "asset_id": "flowers_white",
+      "filename": "flowers_white.png",
+      "path": "Outdoor-decoration/Plants/flowers_white.png",
+      "category": "Plants",
+      "width": 79,
+      "height": 56,
+      "transparent": true,
+      "sha256": "df0e0eab9cbf86968d36ad752135a5b957dcd28158e2b8dd6d41cae4a8c2ba90"
+    },
+    {
+      "asset_id": "flowers_white_green",
+      "filename": "flowers_white_green.png",
+      "path": "Outdoor-decoration/Plants/flowers_white_green.png",
+      "category": "Plants",
+      "width": 53,
+      "height": 57,
+      "transparent": true,
+      "sha256": "1bff7a87a18e7238296e5d360ee387542838c082fdb7253e5d4e80a2facdb93e"
+    },
+    {
+      "asset_id": "flowers_white_small",
+      "filename": "flowers_white_small.png",
+      "path": "Outdoor-decoration/Plants/flowers_white_small.png",
+      "category": "Plants",
+      "width": 43,
+      "height": 41,
+      "transparent": true,
+      "sha256": "61ca1255b7f902183fefe0ee121c99417fcc5d04af5df605a880e077691aa543"
+    },
+    {
+      "asset_id": "flowers_yellow",
+      "filename": "flowers_yellow.png",
+      "path": "Outdoor-decoration/Plants/flowers_yellow.png",
+      "category": "Plants",
+      "width": 70,
+      "height": 57,
+      "transparent": true,
+      "sha256": "8f98e51ba37fbf5c1f47184c4b70385af76e4e903edfc85b358c087e35482abb"
+    },
+    {
+      "asset_id": "flowers_yellow_white",
+      "filename": "flowers_yellow_white.png",
+      "path": "Outdoor-decoration/Plants/flowers_yellow_white.png",
+      "category": "Plants",
+      "width": 72,
+      "height": 62,
+      "transparent": true,
+      "sha256": "b8c712ce15d443ec50670fe32a8472e1d6570234d516cd59b81af1c1e76e95bb"
+    },
+    {
+      "asset_id": "grass_01",
+      "filename": "grass_01.png",
+      "path": "Outdoor-decoration/Plants/grass_01.png",
+      "category": "Plants",
+      "width": 48,
+      "height": 41,
+      "transparent": true,
+      "sha256": "1abc68beda0bd23a420ef91e990531c18eeef94437689ae03f52406ffe3063ec"
+    },
+    {
+      "asset_id": "grass_02",
+      "filename": "grass_02.png",
+      "path": "Outdoor-decoration/Plants/grass_02.png",
+      "category": "Plants",
+      "width": 46,
+      "height": 40,
+      "transparent": true,
+      "sha256": "62bc62d5f6913dd47f0649983dcda2af67546aed3b763401ae87083e8feb18f5"
+    },
+    {
+      "asset_id": "grass_03",
+      "filename": "grass_03.png",
+      "path": "Outdoor-decoration/Plants/grass_03.png",
+      "category": "Plants",
+      "width": 56,
+      "height": 49,
+      "transparent": true,
+      "sha256": "0a6d6040a99f062c689f567459a0b5243c9a3e38301dc9041e7f8c728379c2ec"
+    },
+    {
+      "asset_id": "grass_04",
+      "filename": "grass_04.png",
+      "path": "Outdoor-decoration/Plants/grass_04.png",
+      "category": "Plants",
+      "width": 51,
+      "height": 51,
+      "transparent": true,
+      "sha256": "fd72fee475409a3a43d26b68376429d0d9c1574670a778a915889d5b730fde91"
+    },
+    {
+      "asset_id": "grass_05",
+      "filename": "grass_05.png",
+      "path": "Outdoor-decoration/Plants/grass_05.png",
+      "category": "Plants",
+      "width": 50,
+      "height": 42,
+      "transparent": true,
+      "sha256": "13c0cfe66608e30d029adeab5406c4592da1ea28a38225211eb87d4d12ab1b1d"
+    },
+    {
+      "asset_id": "grass_06",
+      "filename": "grass_06.png",
+      "path": "Outdoor-decoration/Plants/grass_06.png",
+      "category": "Plants",
+      "width": 56,
+      "height": 43,
+      "transparent": true,
+      "sha256": "6798e27f5e9d58ff0c741b566fe2c02a262315f54bb98136e509b1529cefb061"
+    },
+    {
+      "asset_id": "grass_07",
+      "filename": "grass_07.png",
+      "path": "Outdoor-decoration/Plants/grass_07.png",
+      "category": "Plants",
+      "width": 42,
+      "height": 45,
+      "transparent": true,
+      "sha256": "5e6fd9b02477919f41b01bc0538887542ffbe8d3679cc13287b9ac9f99b6961c"
+    },
+    {
+      "asset_id": "grass_08",
+      "filename": "grass_08.png",
+      "path": "Outdoor-decoration/Plants/grass_08.png",
+      "category": "Plants",
+      "width": 53,
+      "height": 55,
+      "transparent": true,
+      "sha256": "ed85fac7a0a293887f4059728a8ca53b85a66b765590bf1500ac1d91a8b6a911"
+    },
+    {
+      "asset_id": "grass_09",
+      "filename": "grass_09.png",
+      "path": "Outdoor-decoration/Plants/grass_09.png",
+      "category": "Plants",
+      "width": 67,
+      "height": 64,
+      "transparent": true,
+      "sha256": "96342ab7453c0aa863a8d3cfceb7b6da8d0b5849a12b2c74a51abbd130068963"
+    },
+    {
+      "asset_id": "grass_10",
+      "filename": "grass_10.png",
+      "path": "Outdoor-decoration/Plants/grass_10.png",
+      "category": "Plants",
+      "width": 65,
+      "height": 57,
+      "transparent": true,
+      "sha256": "2c2d11c42f3efc28474f46aeaf7457402d38bc7a39c5e77fd4bcb8c81b0dad0e"
+    },
+    {
+      "asset_id": "grass_11",
+      "filename": "grass_11.png",
+      "path": "Outdoor-decoration/Plants/grass_11.png",
+      "category": "Plants",
+      "width": 40,
+      "height": 36,
+      "transparent": true,
+      "sha256": "db6ab03fb76f7e9057207dc046d34dca8fe40880821a704c0cb6193f6b825173"
+    },
+    {
+      "asset_id": "grass_12",
+      "filename": "grass_12.png",
+      "path": "Outdoor-decoration/Plants/grass_12.png",
+      "category": "Plants",
+      "width": 34,
+      "height": 30,
+      "transparent": true,
+      "sha256": "c23eed7646bb0ca7a4cf23dda9c2192a4e39dc0b250aa4bb515fec3a0742b45a"
+    },
+    {
+      "asset_id": "grass_flower_01",
+      "filename": "grass_flower_01.png",
+      "path": "Outdoor-decoration/Plants/grass_flower_01.png",
+      "category": "Plants",
+      "width": 80,
+      "height": 45,
+      "transparent": true,
+      "sha256": "0451f9471764f29580607fea0c056de061a6359c803b30ea2e13809916204d23"
+    },
+    {
+      "asset_id": "grass_flower_02",
+      "filename": "grass_flower_02.png",
+      "path": "Outdoor-decoration/Plants/grass_flower_02.png",
+      "category": "Plants",
+      "width": 57,
+      "height": 46,
+      "transparent": true,
+      "sha256": "1f0f33b29c71ef52e1904c005360b66867d4d8923aacd27a190501b743ad7703"
+    },
+    {
+      "asset_id": "grass_flower_03",
+      "filename": "grass_flower_03.png",
+      "path": "Outdoor-decoration/Plants/grass_flower_03.png",
+      "category": "Plants",
+      "width": 41,
+      "height": 40,
+      "transparent": true,
+      "sha256": "6c50309ca2e57a5641713f23e45379e3f7de4dfc05760f2769dcea591a03196f"
+    },
+    {
+      "asset_id": "grass_flower_04",
+      "filename": "grass_flower_04.png",
+      "path": "Outdoor-decoration/Plants/grass_flower_04.png",
+      "category": "Plants",
+      "width": 43,
+      "height": 58,
+      "transparent": true,
+      "sha256": "a07eb65fc5cdd6f39f6b4948004cca6ac2c9ad0c02e4121d045c91af3766edf5"
+    },
+    {
+      "asset_id": "grass_tuft_green",
+      "filename": "grass_tuft_green.png",
+      "path": "Outdoor-decoration/Plants/grass_tuft_green.png",
+      "category": "Plants",
+      "width": 41,
+      "height": 46,
+      "transparent": true,
+      "sha256": "476d596359b9f38761dd2405d837d3721c57e34f107a42b49b546a8bfddf2865"
+    },
+    {
+      "asset_id": "grass_tuft_small",
+      "filename": "grass_tuft_small.png",
+      "path": "Outdoor-decoration/Plants/grass_tuft_small.png",
+      "category": "Plants",
+      "width": 55,
+      "height": 33,
+      "transparent": true,
+      "sha256": "530e38a4510a77152269b3c52911b5aea92dd8291b585b75d4517140304f7e1e"
+    },
+    {
+      "asset_id": "mushroom_orange",
+      "filename": "mushroom_orange.png",
+      "path": "Outdoor-decoration/Plants/mushroom_orange.png",
+      "category": "Plants",
+      "width": 49,
+      "height": 45,
+      "transparent": true,
+      "sha256": "9753c53446dceba715b3f4c38d953022a07fa3817c75546a613366f9304a1881"
+    },
+    {
+      "asset_id": "mushroom_red",
+      "filename": "mushroom_red.png",
+      "path": "Outdoor-decoration/Plants/mushroom_red.png",
+      "category": "Plants",
+      "width": 50,
+      "height": 42,
+      "transparent": true,
+      "sha256": "dcd40c529980e313f3de5906d70b575f5f3646a5d5f34902c313deb113bd7594"
+    },
+    {
+      "asset_id": "mushroom_red_01",
+      "filename": "mushroom_red_01.png",
+      "path": "Outdoor-decoration/Plants/mushroom_red_01.png",
+      "category": "Plants",
+      "width": 54,
+      "height": 56,
+      "transparent": true,
+      "sha256": "209b8b73e0ed6de090626ad43b98736c860f9896e67762e18779431a5a58a3c4"
+    },
+    {
+      "asset_id": "mushroom_red_02",
+      "filename": "mushroom_red_02.png",
+      "path": "Outdoor-decoration/Plants/mushroom_red_02.png",
+      "category": "Plants",
+      "width": 39,
+      "height": 56,
+      "transparent": true,
+      "sha256": "6bfbd7a9c7a12c57a1463faacd3c0b34ffdd098abc3248fa200e8d9033552018"
+    },
+    {
+      "asset_id": "mushroom_stump",
+      "filename": "mushroom_stump.png",
+      "path": "Outdoor-decoration/Plants/mushroom_stump.png",
+      "category": "Plants",
+      "width": 51,
+      "height": 51,
+      "transparent": true,
+      "sha256": "ff08e08410086c19b4ac1d83e6cc2010878c3d736cd43febc307069e0b2f5d91"
+    },
+    {
+      "asset_id": "boulder_sandstone",
+      "filename": "boulder_sandstone.png",
+      "path": "Outdoor-decoration/Rocks/boulder_sandstone.png",
+      "category": "Rocks",
+      "width": 76,
+      "height": 80,
+      "transparent": true,
+      "sha256": "6a55c7e28b24ad6e8d87f24ca70e58478f053578b7e12cfb5ac15765c47ebe10"
+    },
+    {
+      "asset_id": "cliff_cap_a",
+      "filename": "cliff_cap_a.png",
+      "path": "Outdoor-decoration/Rocks/cliff_cap_a.png",
+      "category": "Rocks",
+      "width": 108,
+      "height": 82,
+      "transparent": true,
+      "sha256": "f64df35e33f618f8fe845c54474a6d9600924058560c02880b4f59742492bbe9"
+    },
+    {
+      "asset_id": "cliff_cap_b",
+      "filename": "cliff_cap_b.png",
+      "path": "Outdoor-decoration/Rocks/cliff_cap_b.png",
+      "category": "Rocks",
+      "width": 109,
+      "height": 82,
+      "transparent": true,
+      "sha256": "4a22c47dfe039abe245459672d2bed82f30e7aec97e965c67e76ec9527e11ce4"
+    },
+    {
+      "asset_id": "cliff_cap_c",
+      "filename": "cliff_cap_c.png",
+      "path": "Outdoor-decoration/Rocks/cliff_cap_c.png",
+      "category": "Rocks",
+      "width": 101,
+      "height": 82,
+      "transparent": true,
+      "sha256": "26e57dfcbd0942bc98394a95ce674d638342e12f19f2294f9a9d5c99864d63d4"
+    },
+    {
+      "asset_id": "cliff_cap_d",
+      "filename": "cliff_cap_d.png",
+      "path": "Outdoor-decoration/Rocks/cliff_cap_d.png",
+      "category": "Rocks",
+      "width": 96,
+      "height": 82,
+      "transparent": true,
+      "sha256": "c064241c3b5fc2cad23bbf687d674d92fa17543b90e5470eed5123936f68c3cb"
+    },
+    {
+      "asset_id": "pebble_01",
+      "filename": "pebble_01.png",
+      "path": "Outdoor-decoration/Rocks/pebble_01.png",
+      "category": "Rocks",
+      "width": 31,
+      "height": 30,
+      "transparent": true,
+      "sha256": "1367bc53e5041a5d0e2e3505ddbc80afe9a4fa49f1c59dd70a3ee8e2a9bb96ad"
+    },
+    {
+      "asset_id": "pebble_02",
+      "filename": "pebble_02.png",
+      "path": "Outdoor-decoration/Rocks/pebble_02.png",
+      "category": "Rocks",
+      "width": 26,
+      "height": 22,
+      "transparent": true,
+      "sha256": "5b29058bb68ad33d02756a18d75719dea9d06b37bbc9660cd8ceba4013b62dd9"
+    },
+    {
+      "asset_id": "rock_cluster_small",
+      "filename": "rock_cluster_small.png",
+      "path": "Outdoor-decoration/Rocks/rock_cluster_small.png",
+      "category": "Rocks",
+      "width": 92,
+      "height": 61,
+      "transparent": true,
+      "sha256": "e2ce9cb8d9700f697cc1aaa6295d96729d6c6a6fdf247b80e72ff0f2dab4e2e0"
+    },
+    {
+      "asset_id": "rock_gray_01",
+      "filename": "rock_gray_01.png",
+      "path": "Outdoor-decoration/Rocks/rock_gray_01.png",
+      "category": "Rocks",
+      "width": 91,
+      "height": 67,
+      "transparent": true,
+      "sha256": "50584c6bc5c133de6753c2c25b242839feeeab9be50c7bd9cfc2195e7ef80eac"
+    },
+    {
+      "asset_id": "rock_gray_02",
+      "filename": "rock_gray_02.png",
+      "path": "Outdoor-decoration/Rocks/rock_gray_02.png",
+      "category": "Rocks",
+      "width": 88,
+      "height": 77,
+      "transparent": true,
+      "sha256": "53a5eaaad4f8dc630d841e3843c3559be40f6cbc9e1d22998141021f4bba398f"
+    },
+    {
+      "asset_id": "rock_gray_03",
+      "filename": "rock_gray_03.png",
+      "path": "Outdoor-decoration/Rocks/rock_gray_03.png",
+      "category": "Rocks",
+      "width": 72,
+      "height": 79,
+      "transparent": true,
+      "sha256": "d304558974cadca521364d62f18d732db1d9f9544899124b8ae45dd632b75ac1"
+    },
+    {
+      "asset_id": "rock_gray_cluster",
+      "filename": "rock_gray_cluster.png",
+      "path": "Outdoor-decoration/Rocks/rock_gray_cluster.png",
+      "category": "Rocks",
+      "width": 62,
+      "height": 59,
+      "transparent": true,
+      "sha256": "b444dd2e4beff26f5f3d50d2e193348fdebee57b42e6c3882f33a0d6337c5764"
+    },
+    {
+      "asset_id": "rock_gray_cluster_small",
+      "filename": "rock_gray_cluster_small.png",
+      "path": "Outdoor-decoration/Rocks/rock_gray_cluster_small.png",
+      "category": "Rocks",
+      "width": 39,
+      "height": 45,
+      "transparent": true,
+      "sha256": "aa1219719a777a759da95a5c2a52c2b1a03ea148d80f054a511d096e12711395"
+    },
+    {
+      "asset_id": "rock_gray_medium",
+      "filename": "rock_gray_medium.png",
+      "path": "Outdoor-decoration/Rocks/rock_gray_medium.png",
+      "category": "Rocks",
+      "width": 56,
+      "height": 55,
+      "transparent": true,
+      "sha256": "1e444417869637cdfe4fd2147ebba1e511c6ca2b86dba4002ede6d73e672abb4"
+    },
+    {
+      "asset_id": "rock_mossy_01",
+      "filename": "rock_mossy_01.png",
+      "path": "Outdoor-decoration/Rocks/rock_mossy_01.png",
+      "category": "Rocks",
+      "width": 96,
+      "height": 82,
+      "transparent": true,
+      "sha256": "144ebc84e03308628f3e8474ad450641bd2a5134407a420e10b070fd7d5d9f95"
+    },
+    {
+      "asset_id": "rock_mossy_02",
+      "filename": "rock_mossy_02.png",
+      "path": "Outdoor-decoration/Rocks/rock_mossy_02.png",
+      "category": "Rocks",
+      "width": 116,
+      "height": 84,
+      "transparent": true,
+      "sha256": "91139ae37534a138eb3b2ed94b07500b8c6104c446a80b22635e2297f680c004"
+    },
+    {
+      "asset_id": "rock_mossy_03",
+      "filename": "rock_mossy_03.png",
+      "path": "Outdoor-decoration/Rocks/rock_mossy_03.png",
+      "category": "Rocks",
+      "width": 121,
+      "height": 81,
+      "transparent": true,
+      "sha256": "8726feda1af7067ef85d6b73d3b15ac6066c68ed53e2a63a0ad0d6b7da40a3a5"
+    },
+    {
+      "asset_id": "rock_mossy_dark",
+      "filename": "rock_mossy_dark.png",
+      "path": "Outdoor-decoration/Rocks/rock_mossy_dark.png",
+      "category": "Rocks",
+      "width": 64,
+      "height": 58,
+      "transparent": true,
+      "sha256": "049a2b9bfa0b1b73ab8bfd9bbd0f24c240d1e4182dac2f7aa478a97021abbc04"
+    },
+    {
+      "asset_id": "rock_mossy_large",
+      "filename": "rock_mossy_large.png",
+      "path": "Outdoor-decoration/Rocks/rock_mossy_large.png",
+      "category": "Rocks",
+      "width": 125,
+      "height": 88,
+      "transparent": true,
+      "sha256": "2ab7bcf996e45098bf321a0891915b0c596d616f680c6fa83c8adc49765b9709"
+    },
+    {
+      "asset_id": "rocks_on_sand_small",
+      "filename": "rocks_on_sand_small.png",
+      "path": "Outdoor-decoration/Rocks/rocks_on_sand_small.png",
+      "category": "Rocks",
+      "width": 52,
+      "height": 64,
+      "transparent": true,
+      "sha256": "c2245f670146d7013de9fba5f39d000f236ab82d349ee4466ae6e453eed7f7bb"
+    },
+    {
+      "asset_id": "ruin_wall_mossy",
+      "filename": "ruin_wall_mossy.png",
+      "path": "Outdoor-decoration/Rocks/ruin_wall_mossy.png",
+      "category": "Rocks",
+      "width": 193,
+      "height": 75,
+      "transparent": true,
+      "sha256": "48c145865ddf438a1203b149899acb85610ac76f5d6d072cc6118299a0aa8ba9"
+    },
+    {
+      "asset_id": "banner_pole_blue",
+      "filename": "banner_pole_blue.png",
+      "path": "Outdoor-decoration/Street-Decor/banner_pole_blue.png",
+      "category": "Street-Decor",
+      "width": 67,
+      "height": 220,
+      "transparent": true,
+      "sha256": "51f201cca91014adf9268b45a42de96267713c1cb24e4f8acec5dad677549ef7"
+    },
+    {
+      "asset_id": "banner_signpost_blue",
+      "filename": "banner_signpost_blue.png",
+      "path": "Outdoor-decoration/Street-Decor/banner_signpost_blue.png",
+      "category": "Street-Decor",
+      "width": 105,
+      "height": 205,
+      "transparent": true,
+      "sha256": "60d0d769690241044f529cff56d5931a93195c409c24efd319bc76aeda654d5f"
+    },
+    {
+      "asset_id": "bench_stone",
+      "filename": "bench_stone.png",
+      "path": "Outdoor-decoration/Street-Decor/bench_stone.png",
+      "category": "Street-Decor",
+      "width": 92,
+      "height": 72,
+      "transparent": true,
+      "sha256": "ee81b71b522a971d34b1977d726760d575d0c5c41a306df3afe240db479bdad4"
+    },
+    {
+      "asset_id": "bench_wood",
+      "filename": "bench_wood.png",
+      "path": "Outdoor-decoration/Street-Decor/bench_wood.png",
+      "category": "Street-Decor",
+      "width": 141,
+      "height": 97,
+      "transparent": true,
+      "sha256": "e64b4cf49e3fdd7120d7dee187eeaa0f6ae7e4c0ab027b688fbd36991eb74cf3"
+    },
+    {
+      "asset_id": "fountain",
+      "filename": "fountain.png",
+      "path": "Outdoor-decoration/Street-Decor/fountain.png",
+      "category": "Street-Decor",
+      "width": 254,
+      "height": 227,
+      "transparent": true,
+      "sha256": "290a6b31fe9d296655a3fb8a874775371b1e49cc7ccf48d5b523e0435c6dbc37"
+    },
+    {
+      "asset_id": "lamp_post_hanging",
+      "filename": "lamp_post_hanging.png",
+      "path": "Outdoor-decoration/Street-Decor/lamp_post_hanging.png",
+      "category": "Street-Decor",
+      "width": 74,
+      "height": 190,
+      "transparent": true,
+      "sha256": "32a9884368f5a967cc849066d36b685448f430e513280b3039790b31e9740bd6"
+    },
+    {
+      "asset_id": "lamp_post_iron_small",
+      "filename": "lamp_post_iron_small.png",
+      "path": "Outdoor-decoration/Street-Decor/lamp_post_iron_small.png",
+      "category": "Street-Decor",
+      "width": 35,
+      "height": 115,
+      "transparent": true,
+      "sha256": "a75c3b84e38bf0c69427103de15b91ca6afde1f4507d0d26dc18f87231302527"
+    },
+    {
+      "asset_id": "lamp_post_iron_tall",
+      "filename": "lamp_post_iron_tall.png",
+      "path": "Outdoor-decoration/Street-Decor/lamp_post_iron_tall.png",
+      "category": "Street-Decor",
+      "width": 58,
+      "height": 217,
+      "transparent": true,
+      "sha256": "eff9d298984fd572a212f3f588b90b3eb8a4d174bf4e04b1f6ddf8781b1491f0"
+    },
+    {
+      "asset_id": "lantern_pillar_stone_01",
+      "filename": "lantern_pillar_stone_01.png",
+      "path": "Outdoor-decoration/Street-Decor/lantern_pillar_stone_01.png",
+      "category": "Street-Decor",
+      "width": 64,
+      "height": 188,
+      "transparent": true,
+      "sha256": "ce082395359a79bc3c95275adc18be165310c3ecbfcfb2eaed1b0986a5b124a5"
+    },
+    {
+      "asset_id": "lantern_pillar_stone_02",
+      "filename": "lantern_pillar_stone_02.png",
+      "path": "Outdoor-decoration/Street-Decor/lantern_pillar_stone_02.png",
+      "category": "Street-Decor",
+      "width": 51,
+      "height": 112,
+      "transparent": true,
+      "sha256": "a2d74827c5a76924b9cbc526ed2accd0250a3768c8a4e97866c8d8df16bebff7"
+    },
+    {
+      "asset_id": "lantern_pillar_stone_03",
+      "filename": "lantern_pillar_stone_03.png",
+      "path": "Outdoor-decoration/Street-Decor/lantern_pillar_stone_03.png",
+      "category": "Street-Decor",
+      "width": 61,
+      "height": 119,
+      "transparent": true,
+      "sha256": "32514a132394c076e6b9c51baca1210e79f3761585825029417393c8d959df63"
+    },
+    {
+      "asset_id": "notice_board_01",
+      "filename": "notice_board_01.png",
+      "path": "Outdoor-decoration/Street-Decor/notice_board_01.png",
+      "category": "Street-Decor",
+      "width": 174,
+      "height": 134,
+      "transparent": true,
+      "sha256": "ad1048bf0f39122fde2bd4755198d72d50b7b542df5f476da5f170d3b1ad4652"
+    },
+    {
+      "asset_id": "notice_board_02",
+      "filename": "notice_board_02.png",
+      "path": "Outdoor-decoration/Street-Decor/notice_board_02.png",
+      "category": "Street-Decor",
+      "width": 149,
+      "height": 132,
+      "transparent": true,
+      "sha256": "57e77a3b0d709769d00e2a5d22ae825eb7444c2fa01a9c3fd02ce07b2eb1eefb"
+    },
+    {
+      "asset_id": "sign_hanging_shop",
+      "filename": "sign_hanging_shop.png",
+      "path": "Outdoor-decoration/Street-Decor/sign_hanging_shop.png",
+      "category": "Street-Decor",
+      "width": 105,
+      "height": 187,
+      "transparent": true,
+      "sha256": "84a69d2535b0a47202816b7084c145e8278a7cb8c727e203b3f750c4216d514f"
+    },
+    {
+      "asset_id": "well",
+      "filename": "well.png",
+      "path": "Outdoor-decoration/Street-Decor/well.png",
+      "category": "Street-Decor",
+      "width": 130,
+      "height": 162,
+      "transparent": true,
+      "sha256": "c3060499c0447b313dc4847f16e53b882465bc785678a22ce427266844c66bda"
+    },
+    {
+      "asset_id": "bridge_stone",
+      "filename": "bridge_stone.png",
+      "path": "Outdoor-decoration/Structures/bridge_stone.png",
+      "category": "Structures",
+      "width": 224,
+      "height": 130,
+      "transparent": true,
+      "sha256": "55565566c169e6d206fc05a09a5f4e1b5a3ebb7d41de04a959a271aea1e80ee8"
+    },
+    {
+      "asset_id": "bridge_wooden_arch",
+      "filename": "bridge_wooden_arch.png",
+      "path": "Outdoor-decoration/Structures/bridge_wooden_arch.png",
+      "category": "Structures",
+      "width": 122,
+      "height": 82,
+      "transparent": true,
+      "sha256": "d6bb30f1e5d9cb02ffd757719f8ee52b818bfc718f142241b098ecdf608a9dd5"
+    },
+    {
+      "asset_id": "farm_plot",
+      "filename": "farm_plot.png",
+      "path": "Outdoor-decoration/Structures/farm_plot.png",
+      "category": "Structures",
+      "width": 324,
+      "height": 147,
+      "transparent": true,
+      "sha256": "a8a42e26b0b3a6ca0cf415bad2b0e16cd8cb2844499b0b4c81087e273cd35e01"
+    },
+    {
+      "asset_id": "haystack",
+      "filename": "haystack.png",
+      "path": "Outdoor-decoration/Structures/haystack.png",
+      "category": "Structures",
+      "width": 101,
+      "height": 103,
+      "transparent": true,
+      "sha256": "f79eb7efd30807641ff9d6977753202681ff08520f379368e80696900fc66dcb"
+    },
+    {
+      "asset_id": "stairs_wooden",
+      "filename": "stairs_wooden.png",
+      "path": "Outdoor-decoration/Structures/stairs_wooden.png",
+      "category": "Structures",
+      "width": 96,
+      "height": 120,
+      "transparent": true,
+      "sha256": "1dc6b48e2ccb4fc88bca5d3b63f95991f3bb4b13ac11b95f8958fbb02f9170e7"
+    },
+    {
+      "asset_id": "wooden_platform_wide",
+      "filename": "wooden_platform_wide.png",
+      "path": "Outdoor-decoration/Structures/wooden_platform_wide.png",
+      "category": "Structures",
+      "width": 176,
+      "height": 86,
+      "transparent": true,
+      "sha256": "77fa93f14c814629e65c7a72a261a470111b8fae9e7cc6a56ef35483d7e40e6c"
+    },
+    {
+      "asset_id": "birch",
+      "filename": "birch.png",
+      "path": "Outdoor-decoration/Trees/birch.png",
+      "category": "Trees",
+      "width": 158,
+      "height": 241,
+      "transparent": true,
+      "sha256": "6fc1106c89025c56f862237f0b927d0b3f830f910e8734fa065cecfb18238a5f"
+    },
+    {
+      "asset_id": "cherry_blossom",
+      "filename": "cherry_blossom.png",
+      "path": "Outdoor-decoration/Trees/cherry_blossom.png",
+      "category": "Trees",
+      "width": 190,
+      "height": 231,
+      "transparent": true,
+      "sha256": "85cff5b11a9ccecf49b9868a7b4af48124059842ac34f6eaa7ca698915141888"
+    },
+    {
+      "asset_id": "oak_autumn",
+      "filename": "oak_autumn.png",
+      "path": "Outdoor-decoration/Trees/oak_autumn.png",
+      "category": "Trees",
+      "width": 163,
+      "height": 236,
+      "transparent": true,
+      "sha256": "23e68a76091f4bac1197c7c85ae709624eb506615c29945f6fdd27afd57932aa"
+    },
+    {
+      "asset_id": "oak_green",
+      "filename": "oak_green.png",
+      "path": "Outdoor-decoration/Trees/oak_green.png",
+      "category": "Trees",
+      "width": 235,
+      "height": 244,
+      "transparent": true,
+      "sha256": "482debe8f40cb655475ac0c6be3f86fdea75cbf9557f28390b837b0327f63ccc"
+    },
+    {
+      "asset_id": "pine_green",
+      "filename": "pine_green.png",
+      "path": "Outdoor-decoration/Trees/pine_green.png",
+      "category": "Trees",
+      "width": 153,
+      "height": 241,
+      "transparent": true,
+      "sha256": "82ea2015f7220aba911d75b39f035bc38ad868f144fd89086d7e306d071b2ee7"
+    },
+    {
+      "asset_id": "pine_snow",
+      "filename": "pine_snow.png",
+      "path": "Outdoor-decoration/Trees/pine_snow.png",
+      "category": "Trees",
+      "width": 162,
+      "height": 247,
+      "transparent": true,
+      "sha256": "7f503f410017555e2d14f7903b2906abda2a8fe771ecb93e5b67a27e7c83b8c1"
+    },
+    {
+      "asset_id": "tree_stump",
+      "filename": "tree_stump.png",
+      "path": "Outdoor-decoration/Trees/tree_stump.png",
+      "category": "Trees",
+      "width": 90,
+      "height": 58,
+      "transparent": true,
+      "sha256": "fb605e9d991f500a745c3dad26c4c07d75fa0cba51b665471f131f4840bc6293"
+    },
+    {
+      "asset_id": "willow",
+      "filename": "willow.png",
+      "path": "Outdoor-decoration/Trees/willow.png",
+      "category": "Trees",
+      "width": 179,
+      "height": 235,
+      "transparent": true,
+      "sha256": "00b7d54eb92f3164d60ee13d1ef36bf425b1d3981d7c0a2d44602eb82e8b9639"
+    },
+    {
+      "asset_id": "asset_01",
+      "filename": "asset_01.png",
+      "path": "Outdoor-decoration/Unsorted-Legacy/asset_01.png",
+      "category": "Unsorted-Legacy",
+      "width": 361,
+      "height": 279,
+      "transparent": true,
+      "sha256": "87b930edc34aad758078e2b1201a11b4e948ec91d1a41ca8e5f1ff22cd920750"
+    },
+    {
+      "asset_id": "asset_02",
+      "filename": "asset_02.png",
+      "path": "Outdoor-decoration/Unsorted-Legacy/asset_02.png",
+      "category": "Unsorted-Legacy",
+      "width": 261,
+      "height": 257,
+      "transparent": true,
+      "sha256": "c48ae81d10a4458ad66c1d40c132f6d2cc13e3d5ab75da5118d0c87184484a71"
+    },
+    {
+      "asset_id": "asset_03",
+      "filename": "asset_03.png",
+      "path": "Outdoor-decoration/Unsorted-Legacy/asset_03.png",
+      "category": "Unsorted-Legacy",
+      "width": 256,
+      "height": 294,
+      "transparent": true,
+      "sha256": "58310bea52801dc35a8b8acc5583057ef973d235da1744d003929359eaddbbb9"
+    },
+    {
+      "asset_id": "asset_04",
+      "filename": "asset_04.png",
+      "path": "Outdoor-decoration/Unsorted-Legacy/asset_04.png",
+      "category": "Unsorted-Legacy",
+      "width": 233,
+      "height": 248,
+      "transparent": true,
+      "sha256": "dfbba77522f07e866ed2e1e463145a5010ad1d8be0063c9583ac4aa800f442de"
+    },
+    {
+      "asset_id": "asset_05",
+      "filename": "asset_05.png",
+      "path": "Outdoor-decoration/Unsorted-Legacy/asset_05.png",
+      "category": "Unsorted-Legacy",
+      "width": 237,
+      "height": 202,
+      "transparent": true,
+      "sha256": "bcb16e75c83f30e3dc3f35326292566a7de995e2fa1995a5ca9f60968a0df3f6"
+    },
+    {
+      "asset_id": "asset_07",
+      "filename": "asset_07.png",
+      "path": "Outdoor-decoration/Unsorted-Legacy/asset_07.png",
+      "category": "Unsorted-Legacy",
+      "width": 286,
+      "height": 232,
+      "transparent": true,
+      "sha256": "8e4e9fab3903b33637a38af6a13eff5ffd334c8b1fc748d770cc67df52662bbd"
+    },
+    {
+      "asset_id": "asset_08",
+      "filename": "asset_08.png",
+      "path": "Outdoor-decoration/Unsorted-Legacy/asset_08.png",
+      "category": "Unsorted-Legacy",
+      "width": 240,
+      "height": 215,
+      "transparent": true,
+      "sha256": "cd9818f6d797f67f9bb0fd682c683ef4ad31e969a7c2e439bad45e367ada7b5e"
+    },
+    {
+      "asset_id": "asset_12",
+      "filename": "asset_12.png",
+      "path": "Outdoor-decoration/Unsorted-Legacy/asset_12.png",
+      "category": "Unsorted-Legacy",
+      "width": 276,
+      "height": 193,
+      "transparent": true,
+      "sha256": "5d3cef6a19a1d0ec5e5fa1832a6238a4dd76f36e36571b762ad8789e13c85010"
+    },
+    {
+      "asset_id": "asset_16",
+      "filename": "asset_16.png",
+      "path": "Outdoor-decoration/Unsorted-Legacy/asset_16.png",
+      "category": "Unsorted-Legacy",
+      "width": 49,
+      "height": 62,
+      "transparent": true,
+      "sha256": "944d5c38d688c481cad92c3f107ca6f4c9626e83f0b9ceb3cb679c766b5f4fab"
+    },
+    {
+      "asset_id": "asset_22",
+      "filename": "asset_22.png",
+      "path": "Outdoor-decoration/Unsorted-Legacy/asset_22.png",
+      "category": "Unsorted-Legacy",
+      "width": 90,
+      "height": 86,
+      "transparent": true,
+      "sha256": "c233c65e20ba64fe10a105a372730504a6e3200c2f52cc66ebeea5f8143add26"
+    },
+    {
+      "asset_id": "asset_27",
+      "filename": "asset_27.png",
+      "path": "Outdoor-decoration/Unsorted-Legacy/asset_27.png",
+      "category": "Unsorted-Legacy",
+      "width": 102,
+      "height": 126,
+      "transparent": true,
+      "sha256": "36077c412cb6a8cea786a3cfc2239ca44b59534114bb120fbd3e50d654a062fa"
+    },
+    {
+      "asset_id": "asset_30",
+      "filename": "asset_30.png",
+      "path": "Outdoor-decoration/Unsorted-Legacy/asset_30.png",
+      "category": "Unsorted-Legacy",
+      "width": 63,
+      "height": 103,
+      "transparent": true,
+      "sha256": "67cfc4dfbea8536f32ff81ff4c0f85b40c7ea6cbabf16d8de05fe39111a53513"
+    },
+    {
+      "asset_id": "asset_34",
+      "filename": "asset_34.png",
+      "path": "Outdoor-decoration/Unsorted-Legacy/asset_34.png",
+      "category": "Unsorted-Legacy",
+      "width": 86,
+      "height": 156,
+      "transparent": true,
+      "sha256": "9cf2046daf0dc08068c343d42226277c6a190693804467a71156fa5e23f5efcf"
+    },
+    {
+      "asset_id": "asset_40",
+      "filename": "asset_40.png",
+      "path": "Outdoor-decoration/Unsorted-Legacy/asset_40.png",
+      "category": "Unsorted-Legacy",
+      "width": 74,
+      "height": 119,
+      "transparent": true,
+      "sha256": "eff102edad4ad9c4e8325bacc8c1a81a9a8529437cbe57ca7cf0212d8422bd3f"
+    },
+    {
+      "asset_id": "crystal_small_green",
+      "filename": "crystal_small_green.png",
+      "path": "Outdoor-decoration/Unsorted-Legacy/crystal_small_green.png",
+      "category": "Unsorted-Legacy",
+      "width": 37,
+      "height": 48,
+      "transparent": true,
+      "sha256": "33e7a8ac661abad0c2c56b01de1075350eb9f734062fd089eaf7f0dc1d415a16"
+    },
+    {
+      "asset_id": "stone_well",
+      "filename": "stone_well.png",
+      "path": "Outdoor-decoration/Water-Decor/stone_well.png",
+      "category": "Water-Decor",
+      "width": 90,
+      "height": 109,
+      "transparent": true,
+      "sha256": "aa5f0ce18b5db30e7e83ec9c12f63e8226e733cb6446e0f961728b04ec0b3639"
+    }
+  ]
+}
