@@ -1,0 +1,79 @@
+
+name: Extract Gold Shop Assets
+
+on:
+  workflow_dispatch:
+
+  push:
+    branches:
+      - main
+    paths:
+      - "Gold shop.zip"
+
+permissions:
+  contents: write
+
+jobs:
+  extract-gold-shop:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Check ZIP File
+        run: |
+          if [ ! -f "Gold shop.zip" ]; then
+            echo "Gold shop.zip not found!"
+            exit 1
+          fi
+
+      - name: Validate ZIP
+        run: |
+          unzip -t "Gold shop.zip"
+
+      - name: Create Gold Shop Folder
+        run: |
+          mkdir -p "Gold Shop"
+
+      - name: Extract Gold Shop Assets
+        run: |
+          unzip -o "Gold shop.zip" -d "Gold Shop"
+
+      - name: Generate README
+        run: |
+          cat > "Gold Shop/README.md" << 'EOF'
+          # Fidoria Online - Gold Shop
+
+          Premium Gold Shop assets.
+
+          Categories:
+          - Skins
+          - Mounts
+          - Bundles
+          - Badges
+          - Icons
+          - Previews
+
+          Source: Gold shop.zip
+          Repository: ZeeyAl/fidoria-assets
+          Branch: main
+
+          All original asset files should be preserved.
+          EOF
+
+      - name: Commit Extracted Assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add "Gold Shop/"
+
+          if ! git diff --cached --quiet; then
+            git commit -m "assets: update Gold Shop"
+            git push origin main
+          else
+            echo "No changes detected."
+          fi
