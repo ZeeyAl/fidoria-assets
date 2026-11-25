@@ -1,0 +1,174 @@
+{
+  "name": "Fidoria Gold Shop UI (UHD)",
+  "resolution": [
+    3840,
+    2160
+  ],
+  "virtual_grid": [
+    480,
+    270
+  ],
+  "pixel_scale": 8,
+  "note": "v2: grid 480x270 x8. Semua koordinat dalam px UHD. TIDAK ADA harga/saldo yang di-bake: isi sendiri pada slot kosong.",
+  "currency": {
+    "old": "premium_gems (diamond/gems)",
+    "new": "gold"
+  },
+  "window": {
+    "x": 160,
+    "y": 72,
+    "w": 3520,
+    "h": 2016
+  },
+  "colors": {
+    "gold_hi": "#ffe878",
+    "gold": "#ffca34",
+    "gold_mid": "#eea01e",
+    "gold_dark": "#b26410",
+    "bg": "#1e1c30",
+    "premium": "#60b0ff",
+    "epic": "#ba68ff",
+    "legendary": "#ff8a30"
+  },
+  "text_baked": "Versi bertulisan (labeled/populated) memakai font pixel 5x7 buatan sendiri; versi blank/ untuk teks dari font game.",
+  "tabs": [
+    {
+      "id": "skins",
+      "x": 240,
+      "y": 344,
+      "w": 592,
+      "h": 128
+    },
+    {
+      "id": "mounts",
+      "x": 864,
+      "y": 344,
+      "w": 592,
+      "h": 128
+    },
+    {
+      "id": "badges",
+      "x": 1488,
+      "y": 344,
+      "w": 592,
+      "h": 128
+    },
+    {
+      "id": "bundles",
+      "x": 2112,
+      "y": 344,
+      "w": 592,
+      "h": 128
+    }
+  ],
+  "toolbar": {
+    "search": {
+      "x": 240,
+      "y": 496,
+      "w": 720,
+      "h": 96
+    },
+    "filters": {
+      "x": 1008,
+      "y": 496,
+      "h": 96
+    },
+    "sort": {
+      "x": 2256,
+      "y": 496,
+      "w": 560,
+      "h": 96
+    }
+  },
+  "card_canvas": {
+    "w": 672,
+    "h": 736,
+    "origin_in_canvas": {
+      "x": 32,
+      "y": 72
+    },
+    "note": "kartu 608x624 UHD dalam canvas; margin utk lift/ring/shadow semua state"
+  },
+  "card_slots_origin": [
+    {
+      "i": 0,
+      "x": 240,
+      "y": 640
+    },
+    {
+      "i": 1,
+      "x": 896,
+      "y": 640
+    },
+    {
+      "i": 2,
+      "x": 1552,
+      "y": 640
+    },
+    {
+      "i": 3,
+      "x": 2208,
+      "y": 640
+    },
+    {
+      "i": 4,
+      "x": 240,
+      "y": 1304
+    },
+    {
+      "i": 5,
+      "x": 896,
+      "y": 1304
+    },
+    {
+      "i": 6,
+      "x": 1552,
+      "y": 1304
+    },
+    {
+      "i": 7,
+      "x": 2208,
+      "y": 1304
+    }
+  ],
+  "card_price_well": {
+    "x_in_card": 32,
+    "y_in_card": 512,
+    "w": 544,
+    "h": 88,
+    "note": "kosong, taruh koin + harga"
+  },
+  "header_balance_pill": {
+    "x": 2544,
+    "y": 152,
+    "w": 864,
+    "h": 120,
+    "note": "kosong, plus button di kanan"
+  },
+  "detail_panel": {
+    "x": 2872,
+    "y": 344,
+    "w": 752,
+    "h": 1688,
+    "stage": {
+      "x": 2896,
+      "y": 368,
+      "w": 704,
+      "h": 528
+    },
+    "price_well": {
+      "x": 2904,
+      "y": 1768,
+      "w": 688,
+      "h": 112
+    },
+    "buttons_y": 1912,
+    "note": "tab mounts memakai stage_tall (tanpa baris compare)"
+  },
+  "pager": {
+    "x": 1200,
+    "y": 1960,
+    "w": 656,
+    "h": 80
+  }
+}
