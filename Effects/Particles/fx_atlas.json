@@ -1,0 +1,220 @@
+{
+  "fx_hit_spark.png": {
+    "cell_w": 64,
+    "cell_h": 64,
+    "frames_per_row": 6,
+    "rows": [
+      "neutral",
+      "fire",
+      "water",
+      "ice",
+      "earth",
+      "wind",
+      "lightning",
+      "poison"
+    ],
+    "fps": 24,
+    "loop": false,
+    "tintable": "row neutral = putih-hangat, bisa di-tint",
+    "note": "Spawn di titik kena musuh. Pilih row sesuai elemen serangan. Pusat sel = titik tumbukan."
+  },
+  "fx_crit_burst.png": {
+    "cell_w": 128,
+    "cell_h": 128,
+    "frames_per_row": 6,
+    "rows": [
+      "gold"
+    ],
+    "fps": 22,
+    "loop": false,
+    "tintable": false,
+    "note": "Pengganti/tambahan hit spark untuk critical hit. Pusat sel = titik tumbukan."
+  },
+  "fx_loot_glint.png": {
+    "cell_w": 64,
+    "cell_h": 64,
+    "frames_per_row": 8,
+    "rows": [
+      "common",
+      "uncommon",
+      "rare",
+      "epic",
+      "legendary"
+    ],
+    "fps": 10,
+    "loop": true,
+    "tintable": false,
+    "note": "Loop di atas item drop (offset acak per item supaya tidak serempak). Pilih row sesuai kelangkaan."
+  },
+  "fx_pickup_pop.png": {
+    "cell_w": 64,
+    "cell_h": 64,
+    "frames_per_row": 6,
+    "rows": [
+      "common",
+      "uncommon",
+      "rare",
+      "epic",
+      "legendary"
+    ],
+    "fps": 18,
+    "loop": false,
+    "tintable": false,
+    "note": "Dimainkan saat item diambil (item melayang ke pemain, lalu pop di posisi pemain)."
+  },
+  "fx_levelup_ring.png": {
+    "cell_w": 128,
+    "cell_h": 128,
+    "frames_per_row": 8,
+    "rows": [
+      "gold"
+    ],
+    "fps": 16,
+    "loop": false,
+    "tintable": false,
+    "note": "Ring melebar dari kaki pemain. Skala sumbu Y ~0.5 kalau sudut pandang miring."
+  },
+  "fx_levelup_pillar.png": {
+    "cell_w": 64,
+    "cell_h": 128,
+    "frames_per_row": 6,
+    "rows": [
+      "gold"
+    ],
+    "fps": 12,
+    "loop": false,
+    "tintable": false,
+    "note": "Pilar cahaya naik. Titik dasar sel (y=118) diletakkan di kaki pemain."
+  },
+  "fx_levelup_particles.png": {
+    "cell_w": 32,
+    "cell_h": 32,
+    "frames_per_row": 6,
+    "rows": [
+      "gold"
+    ],
+    "fps": 0,
+    "loop": false,
+    "tintable": false,
+    "note": "Bukan animasi: 6 sprite statis emas (bintang, titik glow, berlian, plus, titik). Gerakkan lewat kode: naik, goyang, fade, skala mengecil."
+  },
+  "fx_slime_burst.png": {
+    "cell_w": 96,
+    "cell_h": 96,
+    "frames_per_row": 8,
+    "rows": [
+      "green",
+      "blue"
+    ],
+    "fps": 18,
+    "loop": false,
+    "tintable": false,
+    "note": "Dimainkan saat slime mati, dipadukan dengan slime_shatter / splash_burst. Pusat genangan ada di (48,54)."
+  },
+  "fx_arrow_trail.png": {
+    "cell_w": 64,
+    "cell_h": 24,
+    "frames_per_row": 6,
+    "rows": [
+      "neutral",
+      "wind",
+      "fire",
+      "lightning"
+    ],
+    "fps": 24,
+    "loop": false,
+    "tintable": false,
+    "note": "Spawn tiap ~2 frame di belakang panah, putar sesuai arah terbang. Kepala goresan (x=54,y=12) = posisi panah."
+  },
+  "fx_muzzle_flash.png": {
+    "cell_w": 96,
+    "cell_h": 96,
+    "frames_per_row": 5,
+    "rows": [
+      "neutral",
+      "wind",
+      "fire",
+      "lightning"
+    ],
+    "fps": 30,
+    "loop": false,
+    "tintable": false,
+    "note": "Kilatan di busur, menghadap kanan. Titik asal (16,48) diletakkan di ujung busur, putar sesuai arah tembak."
+  },
+  "fx_dust_puff.png": {
+    "cell_w": 48,
+    "cell_h": 48,
+    "frames_per_row": 6,
+    "rows": [
+      "tan",
+      "light"
+    ],
+    "fps": 16,
+    "loop": false,
+    "tintable": "row light bisa di-tint",
+    "note": "Debu langkah di kaki pemain. Spawn tiap 1 langkah (bukan tiap frame)."
+  },
+  "fx_grass_leaf.png": {
+    "cell_w": 32,
+    "cell_h": 32,
+    "frames_per_row": 8,
+    "rows": [
+      "sprites"
+    ],
+    "fps": 0,
+    "loop": false,
+    "tintable": false,
+    "note": "Statis: 4 daun, 2 helai rumput, 2 serpihan. Loncatkan kecil + putar + jatuh + fade saat pemain jalan di rumput."
+  },
+  "fx_ambient.png": {
+    "cell_w": 32,
+    "cell_h": 32,
+    "frames_per_row": 8,
+    "rows": [
+      "firefly",
+      "pollen",
+      "spore"
+    ],
+    "fps": 8,
+    "loop": true,
+    "tintable": false,
+    "note": "Ambient Whispering Forest. Gerakkan pelan (drift sinus) sambil loop. firefly = kunang-kunang, pollen = serbuk, spore = spora magis kebiruan."
+  },
+  "fx_fifi_trail.png": {
+    "cell_w": 32,
+    "cell_h": 32,
+    "frames_per_row": 6,
+    "rows": [
+      "pink",
+      "aqua"
+    ],
+    "fps": 14,
+    "loop": false,
+    "tintable": false,
+    "note": "Spawn di posisi Fifi tiap ~80ms, diam di tempat sementara animasinya jalan. Selaras dengan fx_sparkle_dust."
+  },
+  "fx_death_smoke.png": {
+    "cell_w": 96,
+    "cell_h": 96,
+    "frames_per_row": 8,
+    "rows": [
+      "smoke"
+    ],
+    "fps": 16,
+    "loop": false,
+    "tintable": "bisa di-tint",
+    "note": "Kepulan saat musuh biasa mati (selain slime). Pusat ~ (48,52)."
+  },
+  "fx_heal_plus.png": {
+    "cell_w": 48,
+    "cell_h": 48,
+    "frames_per_row": 6,
+    "rows": [
+      "green"
+    ],
+    "fps": 12,
+    "loop": false,
+    "tintable": false,
+    "note": "Tanda + hijau naik dari pemain saat heal / pakai makanan."
+  }
+}

@@ -1,0 +1,969 @@
+{
+ "frame_size": [
+  96,
+  96
+ ],
+ "columns": 8,
+ "rows": 8,
+ "directions": {
+  "down": {
+   "idle_row": 0,
+   "attack_row": 1
+  },
+  "up": {
+   "idle_row": 2,
+   "attack_row": 3
+  },
+  "left": {
+   "idle_row": 4,
+   "attack_row": 5
+  },
+  "right": {
+   "idle_row": 6,
+   "attack_row": 7
+  }
+ },
+ "animations": {
+  "idle": {
+   "frames": 6,
+   "fps": 8,
+   "loop": true
+  },
+  "attack": {
+   "frames": 8,
+   "fps": 14,
+   "loop": false
+  }
+ },
+ "layer": {
+  "down": "front",
+  "left": "front",
+  "right": "front",
+  "up": "behind_character"
+ },
+ "grip_pixel": {
+  "Warrior": {
+   "right": [
+    [
+     48,
+     48
+    ]
+   ],
+   "down": [
+    [
+     48,
+     48
+    ]
+   ],
+   "up": [
+    [
+     48,
+     48
+    ]
+   ],
+   "left": [
+    [
+     47,
+     48
+    ]
+   ]
+  },
+  "Mage": {
+   "right": [
+    [
+     48,
+     62
+    ]
+   ],
+   "down": [
+    [
+     48,
+     62
+    ]
+   ],
+   "up": [
+    [
+     48,
+     62
+    ]
+   ],
+   "left": [
+    [
+     47,
+     62
+    ]
+   ]
+  },
+  "Archer": {
+   "right": [
+    [
+     48,
+     48
+    ]
+   ],
+   "down": [
+    [
+     48,
+     48
+    ]
+   ],
+   "up": [
+    [
+     48,
+     48
+    ]
+   ],
+   "left": [
+    [
+     47,
+     48
+    ]
+   ]
+  },
+  "Assassin": {
+   "right": [
+    [
+     58,
+     52
+    ],
+    [
+     35,
+     52
+    ]
+   ],
+   "down": [
+    [
+     58,
+     52
+    ],
+    [
+     35,
+     52
+    ]
+   ],
+   "up": [
+    [
+     58,
+     52
+    ],
+    [
+     35,
+     52
+    ]
+   ],
+   "left": [
+    [
+     37,
+     52
+    ],
+    [
+     60,
+     52
+    ]
+   ]
+  }
+ },
+ "note": "Sheet 768x768 = 8 cols x 8 rows. Rows: down idle/attack, up idle/attack, left idle/attack, right idle/attack. Idle uses 6 frames (cols 0-5), attack 8 frames. Left is an exact horizontal mirror of right. grip_pixel = pixel in the frame to align with the character hand (Assassin lists [main hand, off hand]).",
+ "weapons": [
+  {
+   "id": "warrior_common_01",
+   "name": "Rusty Sword",
+   "job": "Warrior",
+   "rarity": "common",
+   "file": "Item/Weapon_4Dir/Warrior/common/warrior_common_01_rusty_sword.png",
+   "element": "stone"
+  },
+  {
+   "id": "warrior_common_02",
+   "name": "Iron Gladius",
+   "job": "Warrior",
+   "rarity": "common",
+   "file": "Item/Weapon_4Dir/Warrior/common/warrior_common_02_iron_gladius.png",
+   "element": "stone"
+  },
+  {
+   "id": "warrior_common_03",
+   "name": "Bronze Falchion",
+   "job": "Warrior",
+   "rarity": "common",
+   "file": "Item/Weapon_4Dir/Warrior/common/warrior_common_03_bronze_falchion.png",
+   "element": "stone"
+  },
+  {
+   "id": "warrior_common_04",
+   "name": "Soldier's Cleaver",
+   "job": "Warrior",
+   "rarity": "common",
+   "file": "Item/Weapon_4Dir/Warrior/common/warrior_common_04_soldier_cleaver.png",
+   "element": "stone"
+  },
+  {
+   "id": "warrior_common_05",
+   "name": "Bone Blade",
+   "job": "Warrior",
+   "rarity": "common",
+   "file": "Item/Weapon_4Dir/Warrior/common/warrior_common_05_bone_blade.png",
+   "element": "stone"
+  },
+  {
+   "id": "warrior_uncommon_01",
+   "name": "Forest Edge",
+   "job": "Warrior",
+   "rarity": "uncommon",
+   "file": "Item/Weapon_4Dir/Warrior/uncommon/warrior_uncommon_01_forest_edge.png",
+   "element": "nature"
+  },
+  {
+   "id": "warrior_uncommon_02",
+   "name": "Frostbite Sword",
+   "job": "Warrior",
+   "rarity": "uncommon",
+   "file": "Item/Weapon_4Dir/Warrior/uncommon/warrior_uncommon_02_frostbite_sword.png",
+   "element": "ice"
+  },
+  {
+   "id": "warrior_uncommon_03",
+   "name": "Storm Saber",
+   "job": "Warrior",
+   "rarity": "uncommon",
+   "file": "Item/Weapon_4Dir/Warrior/uncommon/warrior_uncommon_03_storm_saber.png",
+   "element": "storm"
+  },
+  {
+   "id": "warrior_uncommon_04",
+   "name": "Knight's Longsword",
+   "job": "Warrior",
+   "rarity": "uncommon",
+   "file": "Item/Weapon_4Dir/Warrior/uncommon/warrior_uncommon_04_knight_longsword.png",
+   "element": "storm"
+  },
+  {
+   "id": "warrior_uncommon_05",
+   "name": "Ember Cleaver",
+   "job": "Warrior",
+   "rarity": "uncommon",
+   "file": "Item/Weapon_4Dir/Warrior/uncommon/warrior_uncommon_05_ember_cleaver.png",
+   "element": "fire"
+  },
+  {
+   "id": "warrior_rare_01",
+   "name": "Azure Claymore",
+   "job": "Warrior",
+   "rarity": "rare",
+   "file": "Item/Weapon_4Dir/Warrior/rare/warrior_rare_01_azure_claymore.png",
+   "element": "ice"
+  },
+  {
+   "id": "warrior_rare_02",
+   "name": "Flamberge",
+   "job": "Warrior",
+   "rarity": "rare",
+   "file": "Item/Weapon_4Dir/Warrior/rare/warrior_rare_02_flamberge.png",
+   "element": "fire"
+  },
+  {
+   "id": "warrior_rare_03",
+   "name": "Thunder Katana",
+   "job": "Warrior",
+   "rarity": "rare",
+   "file": "Item/Weapon_4Dir/Warrior/rare/warrior_rare_03_thunder_katana.png",
+   "element": "storm"
+  },
+  {
+   "id": "warrior_rare_04",
+   "name": "Venom Leaf Blade",
+   "job": "Warrior",
+   "rarity": "rare",
+   "file": "Item/Weapon_4Dir/Warrior/rare/warrior_rare_04_venom_leaf_blade.png",
+   "element": "nature"
+  },
+  {
+   "id": "warrior_rare_05",
+   "name": "Crystal Blade",
+   "job": "Warrior",
+   "rarity": "rare",
+   "file": "Item/Weapon_4Dir/Warrior/rare/warrior_rare_05_crystal_blade.png",
+   "element": "ice"
+  },
+  {
+   "id": "warrior_epic_01",
+   "name": "Void Reaver",
+   "job": "Warrior",
+   "rarity": "epic",
+   "file": "Item/Weapon_4Dir/Warrior/epic/warrior_epic_01_void_reaver.png",
+   "element": "shadow"
+  },
+  {
+   "id": "warrior_epic_02",
+   "name": "Inferno Greatsword",
+   "job": "Warrior",
+   "rarity": "epic",
+   "file": "Item/Weapon_4Dir/Warrior/epic/warrior_epic_02_inferno_greatsword.png",
+   "element": "fire"
+  },
+  {
+   "id": "warrior_epic_03",
+   "name": "Stormbringer",
+   "job": "Warrior",
+   "rarity": "epic",
+   "file": "Item/Weapon_4Dir/Warrior/epic/warrior_epic_03_stormbringer.png",
+   "element": "storm"
+  },
+  {
+   "id": "warrior_epic_04",
+   "name": "Arcane Edge",
+   "job": "Warrior",
+   "rarity": "epic",
+   "file": "Item/Weapon_4Dir/Warrior/epic/warrior_epic_04_arcane_edge.png",
+   "element": "arcane"
+  },
+  {
+   "id": "warrior_epic_05",
+   "name": "Dragonbone Cleaver",
+   "job": "Warrior",
+   "rarity": "epic",
+   "file": "Item/Weapon_4Dir/Warrior/epic/warrior_epic_05_dragonbone_cleaver.png",
+   "element": "fire"
+  },
+  {
+   "id": "warrior_legendary_01",
+   "name": "Solaris Brand",
+   "job": "Warrior",
+   "rarity": "legendary",
+   "file": "Item/Weapon_4Dir/Warrior/legendary/warrior_legendary_01_solaris_brand.png",
+   "element": "holy"
+  },
+  {
+   "id": "warrior_legendary_02",
+   "name": "Dawnbreaker",
+   "job": "Warrior",
+   "rarity": "legendary",
+   "file": "Item/Weapon_4Dir/Warrior/legendary/warrior_legendary_02_dawnbreaker.png",
+   "element": "holy"
+  },
+  {
+   "id": "warrior_legendary_03",
+   "name": "Ragnarok Edge",
+   "job": "Warrior",
+   "rarity": "legendary",
+   "file": "Item/Weapon_4Dir/Warrior/legendary/warrior_legendary_03_ragnarok_edge.png",
+   "element": "fire"
+  },
+  {
+   "id": "warrior_legendary_04",
+   "name": "Eclipse Blade",
+   "job": "Warrior",
+   "rarity": "legendary",
+   "file": "Item/Weapon_4Dir/Warrior/legendary/warrior_legendary_04_eclipse_blade.png",
+   "element": "shadow"
+  },
+  {
+   "id": "warrior_legendary_05",
+   "name": "Aether Sovereign",
+   "job": "Warrior",
+   "rarity": "legendary",
+   "file": "Item/Weapon_4Dir/Warrior/legendary/warrior_legendary_05_aether_sovereign.png",
+   "element": "arcane"
+  },
+  {
+   "id": "mage_common_01",
+   "name": "Apprentice Staff",
+   "job": "Mage",
+   "rarity": "common",
+   "file": "Item/Weapon_4Dir/Mage/common/mage_common_01_apprentice_staff.png",
+   "element": "stone"
+  },
+  {
+   "id": "mage_common_02",
+   "name": "Oak Rod",
+   "job": "Mage",
+   "rarity": "common",
+   "file": "Item/Weapon_4Dir/Mage/common/mage_common_02_oak_rod.png",
+   "element": "stone"
+  },
+  {
+   "id": "mage_common_03",
+   "name": "Crooked Branch",
+   "job": "Mage",
+   "rarity": "common",
+   "file": "Item/Weapon_4Dir/Mage/common/mage_common_03_crooked_branch.png",
+   "element": "stone"
+  },
+  {
+   "id": "mage_common_04",
+   "name": "Bone Staff",
+   "job": "Mage",
+   "rarity": "common",
+   "file": "Item/Weapon_4Dir/Mage/common/mage_common_04_bone_staff.png",
+   "element": "shadow"
+  },
+  {
+   "id": "mage_common_05",
+   "name": "Candle Staff",
+   "job": "Mage",
+   "rarity": "common",
+   "file": "Item/Weapon_4Dir/Mage/common/mage_common_05_candle_staff.png",
+   "element": "fire"
+  },
+  {
+   "id": "mage_uncommon_01",
+   "name": "Leaf Staff",
+   "job": "Mage",
+   "rarity": "uncommon",
+   "file": "Item/Weapon_4Dir/Mage/uncommon/mage_uncommon_01_leaf_staff.png",
+   "element": "nature"
+  },
+  {
+   "id": "mage_uncommon_02",
+   "name": "Frost Wand",
+   "job": "Mage",
+   "rarity": "uncommon",
+   "file": "Item/Weapon_4Dir/Mage/uncommon/mage_uncommon_02_frost_wand.png",
+   "element": "ice"
+  },
+  {
+   "id": "mage_uncommon_03",
+   "name": "Spark Rod",
+   "job": "Mage",
+   "rarity": "uncommon",
+   "file": "Item/Weapon_4Dir/Mage/uncommon/mage_uncommon_03_spark_rod.png",
+   "element": "storm"
+  },
+  {
+   "id": "mage_uncommon_04",
+   "name": "Pine Orb Staff",
+   "job": "Mage",
+   "rarity": "uncommon",
+   "file": "Item/Weapon_4Dir/Mage/uncommon/mage_uncommon_04_pine_orb_staff.png",
+   "element": "nature"
+  },
+  {
+   "id": "mage_uncommon_05",
+   "name": "Ember Staff",
+   "job": "Mage",
+   "rarity": "uncommon",
+   "file": "Item/Weapon_4Dir/Mage/uncommon/mage_uncommon_05_ember_staff.png",
+   "element": "fire"
+  },
+  {
+   "id": "mage_rare_01",
+   "name": "Moonlit Staff",
+   "job": "Mage",
+   "rarity": "rare",
+   "file": "Item/Weapon_4Dir/Mage/rare/mage_rare_01_moonlit_staff.png",
+   "element": "ice"
+  },
+  {
+   "id": "mage_rare_02",
+   "name": "Sage's Crystal",
+   "job": "Mage",
+   "rarity": "rare",
+   "file": "Item/Weapon_4Dir/Mage/rare/mage_rare_02_sage_crystal.png",
+   "element": "arcane"
+  },
+  {
+   "id": "mage_rare_03",
+   "name": "Flame Warden",
+   "job": "Mage",
+   "rarity": "rare",
+   "file": "Item/Weapon_4Dir/Mage/rare/mage_rare_03_flame_warden.png",
+   "element": "fire"
+  },
+  {
+   "id": "mage_rare_04",
+   "name": "Tempest Rod",
+   "job": "Mage",
+   "rarity": "rare",
+   "file": "Item/Weapon_4Dir/Mage/rare/mage_rare_04_tempest_rod.png",
+   "element": "storm"
+  },
+  {
+   "id": "mage_rare_05",
+   "name": "Verdant Heart",
+   "job": "Mage",
+   "rarity": "rare",
+   "file": "Item/Weapon_4Dir/Mage/rare/mage_rare_05_verdant_heart.png",
+   "element": "nature"
+  },
+  {
+   "id": "mage_epic_01",
+   "name": "Shadow Moon",
+   "job": "Mage",
+   "rarity": "epic",
+   "file": "Item/Weapon_4Dir/Mage/epic/mage_epic_01_shadow_moon.png",
+   "element": "shadow"
+  },
+  {
+   "id": "mage_epic_02",
+   "name": "Starcaller",
+   "job": "Mage",
+   "rarity": "epic",
+   "file": "Item/Weapon_4Dir/Mage/epic/mage_epic_02_starcaller.png",
+   "element": "arcane"
+  },
+  {
+   "id": "mage_epic_03",
+   "name": "Glacier Spire",
+   "job": "Mage",
+   "rarity": "epic",
+   "file": "Item/Weapon_4Dir/Mage/epic/mage_epic_03_glacier_spire.png",
+   "element": "ice"
+  },
+  {
+   "id": "mage_epic_04",
+   "name": "Pyroclasm",
+   "job": "Mage",
+   "rarity": "epic",
+   "file": "Item/Weapon_4Dir/Mage/epic/mage_epic_04_pyroclasm.png",
+   "element": "fire"
+  },
+  {
+   "id": "mage_epic_05",
+   "name": "Storm Conduit",
+   "job": "Mage",
+   "rarity": "epic",
+   "file": "Item/Weapon_4Dir/Mage/epic/mage_epic_05_storm_conduit.png",
+   "element": "storm"
+  },
+  {
+   "id": "mage_legendary_01",
+   "name": "Celestial Scepter",
+   "job": "Mage",
+   "rarity": "legendary",
+   "file": "Item/Weapon_4Dir/Mage/legendary/mage_legendary_01_celestial_scepter.png",
+   "element": "holy"
+  },
+  {
+   "id": "mage_legendary_02",
+   "name": "Archmage's Eternity",
+   "job": "Mage",
+   "rarity": "legendary",
+   "file": "Item/Weapon_4Dir/Mage/legendary/mage_legendary_02_archmage_eternity.png",
+   "element": "arcane"
+  },
+  {
+   "id": "mage_legendary_03",
+   "name": "Phoenix Heart",
+   "job": "Mage",
+   "rarity": "legendary",
+   "file": "Item/Weapon_4Dir/Mage/legendary/mage_legendary_03_phoenix_heart.png",
+   "element": "fire"
+  },
+  {
+   "id": "mage_legendary_04",
+   "name": "Worldtree Staff",
+   "job": "Mage",
+   "rarity": "legendary",
+   "file": "Item/Weapon_4Dir/Mage/legendary/mage_legendary_04_worldtree_staff.png",
+   "element": "nature"
+  },
+  {
+   "id": "mage_legendary_05",
+   "name": "Cataclysm Spire",
+   "job": "Mage",
+   "rarity": "legendary",
+   "file": "Item/Weapon_4Dir/Mage/legendary/mage_legendary_05_cataclysm_spire.png",
+   "element": "shadow"
+  },
+  {
+   "id": "archer_common_01",
+   "name": "Short Bow",
+   "job": "Archer",
+   "rarity": "common",
+   "file": "Item/Weapon_4Dir/Archer/common/archer_common_01_short_bow.png",
+   "element": "stone"
+  },
+  {
+   "id": "archer_common_02",
+   "name": "Hunter's Bow",
+   "job": "Archer",
+   "rarity": "common",
+   "file": "Item/Weapon_4Dir/Archer/common/archer_common_02_hunter_bow.png",
+   "element": "stone"
+  },
+  {
+   "id": "archer_common_03",
+   "name": "Oak Bow",
+   "job": "Archer",
+   "rarity": "common",
+   "file": "Item/Weapon_4Dir/Archer/common/archer_common_03_oak_bow.png",
+   "element": "stone"
+  },
+  {
+   "id": "archer_common_04",
+   "name": "Training Bow",
+   "job": "Archer",
+   "rarity": "common",
+   "file": "Item/Weapon_4Dir/Archer/common/archer_common_04_training_bow.png",
+   "element": "stone"
+  },
+  {
+   "id": "archer_common_05",
+   "name": "Bone Bow",
+   "job": "Archer",
+   "rarity": "common",
+   "file": "Item/Weapon_4Dir/Archer/common/archer_common_05_bone_bow.png",
+   "element": "shadow"
+  },
+  {
+   "id": "archer_uncommon_01",
+   "name": "Elm Longbow",
+   "job": "Archer",
+   "rarity": "uncommon",
+   "file": "Item/Weapon_4Dir/Archer/uncommon/archer_uncommon_01_elm_longbow.png",
+   "element": "nature"
+  },
+  {
+   "id": "archer_uncommon_02",
+   "name": "Frost Recurve",
+   "job": "Archer",
+   "rarity": "uncommon",
+   "file": "Item/Weapon_4Dir/Archer/uncommon/archer_uncommon_02_frost_recurve.png",
+   "element": "ice"
+  },
+  {
+   "id": "archer_uncommon_03",
+   "name": "Wind Bow",
+   "job": "Archer",
+   "rarity": "uncommon",
+   "file": "Item/Weapon_4Dir/Archer/uncommon/archer_uncommon_03_wind_bow.png",
+   "element": "storm"
+  },
+  {
+   "id": "archer_uncommon_04",
+   "name": "Ember Bow",
+   "job": "Archer",
+   "rarity": "uncommon",
+   "file": "Item/Weapon_4Dir/Archer/uncommon/archer_uncommon_04_ember_bow.png",
+   "element": "fire"
+  },
+  {
+   "id": "archer_uncommon_05",
+   "name": "Composite Bow",
+   "job": "Archer",
+   "rarity": "uncommon",
+   "file": "Item/Weapon_4Dir/Archer/uncommon/archer_uncommon_05_composite_bow.png",
+   "element": "storm"
+  },
+  {
+   "id": "archer_rare_01",
+   "name": "Ranger's Recurve",
+   "job": "Archer",
+   "rarity": "rare",
+   "file": "Item/Weapon_4Dir/Archer/rare/archer_rare_01_ranger_recurve.png",
+   "element": "ice"
+  },
+  {
+   "id": "archer_rare_02",
+   "name": "Sunfire Bow",
+   "job": "Archer",
+   "rarity": "rare",
+   "file": "Item/Weapon_4Dir/Archer/rare/archer_rare_02_sunfire_bow.png",
+   "element": "fire"
+  },
+  {
+   "id": "archer_rare_03",
+   "name": "Viper Bow",
+   "job": "Archer",
+   "rarity": "rare",
+   "file": "Item/Weapon_4Dir/Archer/rare/archer_rare_03_viper_bow.png",
+   "element": "nature"
+  },
+  {
+   "id": "archer_rare_04",
+   "name": "Stormstring",
+   "job": "Archer",
+   "rarity": "rare",
+   "file": "Item/Weapon_4Dir/Archer/rare/archer_rare_04_stringstorm.png",
+   "element": "storm"
+  },
+  {
+   "id": "archer_rare_05",
+   "name": "Crystal Bow",
+   "job": "Archer",
+   "rarity": "rare",
+   "file": "Item/Weapon_4Dir/Archer/rare/archer_rare_05_crystal_bow.png",
+   "element": "ice"
+  },
+  {
+   "id": "archer_epic_01",
+   "name": "Shadow Reaver",
+   "job": "Archer",
+   "rarity": "epic",
+   "file": "Item/Weapon_4Dir/Archer/epic/archer_epic_01_shadow_reaver_bow.png",
+   "element": "shadow"
+  },
+  {
+   "id": "archer_epic_02",
+   "name": "Glacier Longbow",
+   "job": "Archer",
+   "rarity": "epic",
+   "file": "Item/Weapon_4Dir/Archer/epic/archer_epic_02_glacier_longbow.png",
+   "element": "ice"
+  },
+  {
+   "id": "archer_epic_03",
+   "name": "Inferno Recurve",
+   "job": "Archer",
+   "rarity": "epic",
+   "file": "Item/Weapon_4Dir/Archer/epic/archer_epic_03_inferno_recurve.png",
+   "element": "fire"
+  },
+  {
+   "id": "archer_epic_04",
+   "name": "Thunder Wing",
+   "job": "Archer",
+   "rarity": "epic",
+   "file": "Item/Weapon_4Dir/Archer/epic/archer_epic_04_thunder_wing.png",
+   "element": "storm"
+  },
+  {
+   "id": "archer_epic_05",
+   "name": "Arcane Composite",
+   "job": "Archer",
+   "rarity": "epic",
+   "file": "Item/Weapon_4Dir/Archer/epic/archer_epic_05_arcane_composite.png",
+   "element": "arcane"
+  },
+  {
+   "id": "archer_legendary_01",
+   "name": "Celestial Bow",
+   "job": "Archer",
+   "rarity": "legendary",
+   "file": "Item/Weapon_4Dir/Archer/legendary/archer_legendary_01_celestial_bow.png",
+   "element": "holy"
+  },
+  {
+   "id": "archer_legendary_02",
+   "name": "Phoenix Wing Bow",
+   "job": "Archer",
+   "rarity": "legendary",
+   "file": "Item/Weapon_4Dir/Archer/legendary/archer_legendary_02_phoenix_wing_bow.png",
+   "element": "fire"
+  },
+  {
+   "id": "archer_legendary_03",
+   "name": "Yggdrasil Bow",
+   "job": "Archer",
+   "rarity": "legendary",
+   "file": "Item/Weapon_4Dir/Archer/legendary/archer_legendary_03_yggdrasil_bow.png",
+   "element": "nature"
+  },
+  {
+   "id": "archer_legendary_04",
+   "name": "Eclipse Bow",
+   "job": "Archer",
+   "rarity": "legendary",
+   "file": "Item/Weapon_4Dir/Archer/legendary/archer_legendary_04_eclipse_bow.png",
+   "element": "shadow"
+  },
+  {
+   "id": "archer_legendary_05",
+   "name": "Aether Bow",
+   "job": "Archer",
+   "rarity": "legendary",
+   "file": "Item/Weapon_4Dir/Archer/legendary/archer_legendary_05_aether_bow.png",
+   "element": "arcane"
+  },
+  {
+   "id": "assassin_common_01",
+   "name": "Rusty Dagger",
+   "job": "Assassin",
+   "rarity": "common",
+   "file": "Item/Weapon_4Dir/Assassin/common/assassin_common_01_rusty_dagger.png",
+   "element": "stone"
+  },
+  {
+   "id": "assassin_common_02",
+   "name": "Iron Knife",
+   "job": "Assassin",
+   "rarity": "common",
+   "file": "Item/Weapon_4Dir/Assassin/common/assassin_common_02_iron_knife.png",
+   "element": "stone"
+  },
+  {
+   "id": "assassin_common_03",
+   "name": "Hunter's Knife",
+   "job": "Assassin",
+   "rarity": "common",
+   "file": "Item/Weapon_4Dir/Assassin/common/assassin_common_03_hunter_knife.png",
+   "element": "stone"
+  },
+  {
+   "id": "assassin_common_04",
+   "name": "Bone Shiv",
+   "job": "Assassin",
+   "rarity": "common",
+   "file": "Item/Weapon_4Dir/Assassin/common/assassin_common_04_bone_shiv.png",
+   "element": "stone"
+  },
+  {
+   "id": "assassin_common_05",
+   "name": "Bronze Dirk",
+   "job": "Assassin",
+   "rarity": "common",
+   "file": "Item/Weapon_4Dir/Assassin/common/assassin_common_05_bronze_dirk.png",
+   "element": "stone"
+  },
+  {
+   "id": "assassin_uncommon_01",
+   "name": "Venom Fang",
+   "job": "Assassin",
+   "rarity": "uncommon",
+   "file": "Item/Weapon_4Dir/Assassin/uncommon/assassin_uncommon_01_venom_fang.png",
+   "element": "nature"
+  },
+  {
+   "id": "assassin_uncommon_02",
+   "name": "Frost Stiletto",
+   "job": "Assassin",
+   "rarity": "uncommon",
+   "file": "Item/Weapon_4Dir/Assassin/uncommon/assassin_uncommon_02_frost_stiletto.png",
+   "element": "ice"
+  },
+  {
+   "id": "assassin_uncommon_03",
+   "name": "Shock Kunai",
+   "job": "Assassin",
+   "rarity": "uncommon",
+   "file": "Item/Weapon_4Dir/Assassin/uncommon/assassin_uncommon_03_shock_kunai.png",
+   "element": "storm"
+  },
+  {
+   "id": "assassin_uncommon_04",
+   "name": "Night Kris",
+   "job": "Assassin",
+   "rarity": "uncommon",
+   "file": "Item/Weapon_4Dir/Assassin/uncommon/assassin_uncommon_04_night_kris.png",
+   "element": "shadow"
+  },
+  {
+   "id": "assassin_uncommon_05",
+   "name": "Ember Tanto",
+   "job": "Assassin",
+   "rarity": "uncommon",
+   "file": "Item/Weapon_4Dir/Assassin/uncommon/assassin_uncommon_05_ember_tanto.png",
+   "element": "fire"
+  },
+  {
+   "id": "assassin_rare_01",
+   "name": "Twin Fangs",
+   "job": "Assassin",
+   "rarity": "rare",
+   "file": "Item/Weapon_4Dir/Assassin/rare/assassin_rare_01_twin_fangs.png",
+   "element": "ice"
+  },
+  {
+   "id": "assassin_rare_02",
+   "name": "Viper Kris",
+   "job": "Assassin",
+   "rarity": "rare",
+   "file": "Item/Weapon_4Dir/Assassin/rare/assassin_rare_02_viper_kris.png",
+   "element": "nature"
+  },
+  {
+   "id": "assassin_rare_03",
+   "name": "Stormtalon",
+   "job": "Assassin",
+   "rarity": "rare",
+   "file": "Item/Weapon_4Dir/Assassin/rare/assassin_rare_03_stormtalon.png",
+   "element": "storm"
+  },
+  {
+   "id": "assassin_rare_04",
+   "name": "Glacier Edge",
+   "job": "Assassin",
+   "rarity": "rare",
+   "file": "Item/Weapon_4Dir/Assassin/rare/assassin_rare_04_glacier_edge.png",
+   "element": "ice"
+  },
+  {
+   "id": "assassin_rare_05",
+   "name": "Crimson Stiletto",
+   "job": "Assassin",
+   "rarity": "rare",
+   "file": "Item/Weapon_4Dir/Assassin/rare/assassin_rare_05_crimson_stiletto.png",
+   "element": "fire"
+  },
+  {
+   "id": "assassin_epic_01",
+   "name": "Shadow Fangs",
+   "job": "Assassin",
+   "rarity": "epic",
+   "file": "Item/Weapon_4Dir/Assassin/epic/assassin_epic_01_shadow_fangs.png",
+   "element": "shadow"
+  },
+  {
+   "id": "assassin_epic_02",
+   "name": "Blood Reaper",
+   "job": "Assassin",
+   "rarity": "epic",
+   "file": "Item/Weapon_4Dir/Assassin/epic/assassin_epic_02_blood_reaper.png",
+   "element": "fire"
+  },
+  {
+   "id": "assassin_epic_03",
+   "name": "Void Kris",
+   "job": "Assassin",
+   "rarity": "epic",
+   "file": "Item/Weapon_4Dir/Assassin/epic/assassin_epic_03_void_kris.png",
+   "element": "arcane"
+  },
+  {
+   "id": "assassin_epic_04",
+   "name": "Thunder Talon",
+   "job": "Assassin",
+   "rarity": "epic",
+   "file": "Item/Weapon_4Dir/Assassin/epic/assassin_epic_04_thunder_talon.png",
+   "element": "storm"
+  },
+  {
+   "id": "assassin_epic_05",
+   "name": "Arcane Needle",
+   "job": "Assassin",
+   "rarity": "epic",
+   "file": "Item/Weapon_4Dir/Assassin/epic/assassin_epic_05_arcane_needle.png",
+   "element": "arcane"
+  },
+  {
+   "id": "assassin_legendary_01",
+   "name": "Reaper's Embrace",
+   "job": "Assassin",
+   "rarity": "legendary",
+   "file": "Item/Weapon_4Dir/Assassin/legendary/assassin_legendary_01_reaper_embrace.png",
+   "element": "shadow"
+  },
+  {
+   "id": "assassin_legendary_02",
+   "name": "Phantom Edge",
+   "job": "Assassin",
+   "rarity": "legendary",
+   "file": "Item/Weapon_4Dir/Assassin/legendary/assassin_legendary_02_phantom_edge.png",
+   "element": "arcane"
+  },
+  {
+   "id": "assassin_legendary_03",
+   "name": "Solar Talon",
+   "job": "Assassin",
+   "rarity": "legendary",
+   "file": "Item/Weapon_4Dir/Assassin/legendary/assassin_legendary_03_solar_talon.png",
+   "element": "holy"
+  },
+  {
+   "id": "assassin_legendary_04",
+   "name": "Eclipse Fangs",
+   "job": "Assassin",
+   "rarity": "legendary",
+   "file": "Item/Weapon_4Dir/Assassin/legendary/assassin_legendary_04_eclipse_fangs.png",
+   "element": "holy"
+  },
+  {
+   "id": "assassin_legendary_05",
+   "name": "Aether Twin",
+   "job": "Assassin",
+   "rarity": "legendary",
+   "file": "Item/Weapon_4Dir/Assassin/legendary/assassin_legendary_05_aether_twin.png",
+   "element": "arcane"
+  }
+ ]
+}

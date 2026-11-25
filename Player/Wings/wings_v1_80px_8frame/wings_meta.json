@@ -1,0 +1,59 @@
+{
+  "frame_size": [
+    80,
+    80
+  ],
+  "frames_per_loop": 8,
+  "fps": 8,
+  "sheet_layout": "kolom = frame 0-7 (loop), baris = arah",
+  "direction_rows": [
+    "S",
+    "SW",
+    "W",
+    "NW",
+    "N",
+    "NE",
+    "E",
+    "SE"
+  ],
+  "body_frame": {
+    "size": [
+      32,
+      32
+    ],
+    "place_at_top_left": [
+      24,
+      26
+    ],
+    "note": "tempel frame karakter 32x32 di (24,26) pada kanvas 80x80; titik bahu = (39.5, 46), kaki = y 57"
+  },
+  "layer_draw_order": [
+    "ground_fx",
+    "wing_back",
+    "<BODY>",
+    "wing_front",
+    "halo_fx"
+  ],
+  "rarities": [
+    "basic",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+  ],
+  "sheet_files": {
+    "wing_back": "<rarity>_wing_back.png",
+    "wing_front": "<rarity>_wing_front.png",
+    "halo_fx": "<rarity>_halo_fx.png",
+    "ground_fx": "<rarity>_ground_fx.png"
+  },
+  "tier_features": {
+    "basic": "sayap putih polos, glow tipis, 3 percikan",
+    "uncommon": "hijau, glow, halo tipis, percikan",
+    "rare": "biru, glow + rim light, halo, orb naik",
+    "epic": "ungu, glow kuat, kilau ujung bulu, halo ganda, orb mengorbit, lingkaran sihir di tanah",
+    "legendary": "emas, glow tebal, sinar cahaya berputar, halo bergerigi, bulu jatuh, 3 orb mengorbit, lingkaran sihir ganda",
+    "mythic": "pelangi iridescent berganti warna, 4 sayap (pasangan kecil di bawah), halo 3 cincin + mahkota cahaya, bintang, 4 orb berekor, heksagram di tanah"
+  }
+}

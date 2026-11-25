@@ -1,0 +1,38 @@
+{
+  "cell": 64,
+  "frames": 6,
+  "fps": 9,
+  "directions_columns": [
+    "S",
+    "SE",
+    "E",
+    "NE",
+    "N",
+    "NW",
+    "W",
+    "SW"
+  ],
+  "rows": "animation frames 0-5 (loop)",
+  "overlay_offset_on_32px_character_cell": [
+    -16,
+    -16
+  ],
+  "layer": {
+    "S": "behind (gambar di BAWAH karakter)",
+    "SE": "behind (gambar di BAWAH karakter)",
+    "E": "behind (gambar di BAWAH karakter)",
+    "NE": "front (gambar di ATAS karakter)",
+    "N": "front (gambar di ATAS karakter)",
+    "NW": "front (gambar di ATAS karakter)",
+    "W": "behind (gambar di BAWAH karakter)",
+    "SW": "behind (gambar di BAWAH karakter)"
+  },
+  "rarities": [
+    "basic",
+    "uncommon",
+    "rare",
+    "epic",
+    "legendary",
+    "mythic"
+  ]
+}
