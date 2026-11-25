@@ -1,0 +1,203 @@
+{
+  "currency": "premium_gems",
+  "note": "premium_only: tidak bisa didapat dari drop/gold/trade; hanya dibeli dengan currency berbayar",
+  "mount_sheet": {
+    "cell": 48,
+    "cols": 4,
+    "rows": [
+      "down",
+      "left",
+      "right",
+      "up"
+    ],
+    "frames": "4 frame jalan per baris; frame 0 = idle",
+    "bob_per_frame": [
+      0,
+      -1,
+      0,
+      -1
+    ],
+    "ground_y": 44
+  },
+  "rider": {
+    "note": "gambar skin rider di atas mount; sembunyikan baris kaki (y>=26 pada cell 32x32)",
+    "sprite_cell": 32,
+    "anchor": "pinggul rider = seat; cell rider origin = seat - (16, 23); tambahkan bob mount"
+  },
+  "fx": {
+    "frame_size": 64,
+    "frames": 12,
+    "fps": 10,
+    "mount_cell_origin": [
+      8,
+      12
+    ],
+    "layers": [
+      "back",
+      "front"
+    ]
+  },
+  "mounts": [
+    {
+      "id": "nightmare",
+      "name": "Nightmare Steed",
+      "rarity": "legendary",
+      "price_premium": 1480,
+      "premium_only": true,
+      "tradable": false,
+      "description": "Kuda bayangan dengan surai & kuku api ungu.",
+      "sheet": "mounts/nightmare.png",
+      "fx_back": "particles/nightmare_fx_back.png",
+      "fx_front": "particles/nightmare_fx_front.png",
+      "seat_side": [
+        21,
+        22
+      ],
+      "seat_front_back": [
+        24,
+        23
+      ],
+      "seat_left_mirror_x": 26,
+      "suggested_skin_pair": "goth_m",
+      "preview": "preview/nightmare_preview.gif"
+    },
+    {
+      "id": "pegasus",
+      "name": "Celestial Pegasus",
+      "rarity": "epic",
+      "price_premium": 1180,
+      "premium_only": true,
+      "tradable": false,
+      "description": "Kuda putih bersayap, meninggalkan bulu cahaya.",
+      "sheet": "mounts/pegasus.png",
+      "fx_back": "particles/pegasus_fx_back.png",
+      "fx_front": "particles/pegasus_fx_front.png",
+      "seat_side": [
+        21,
+        22
+      ],
+      "seat_front_back": [
+        24,
+        23
+      ],
+      "seat_left_mirror_x": 26,
+      "suggested_skin_pair": "angel",
+      "preview": "preview/pegasus_preview.gif"
+    },
+    {
+      "id": "unicorn",
+      "name": "Royal Unicorn",
+      "rarity": "epic",
+      "price_premium": 1180,
+      "premium_only": true,
+      "tradable": false,
+      "description": "Unicorn bersurai pelangi, jejak bintang & hati.",
+      "sheet": "mounts/unicorn.png",
+      "fx_back": "particles/unicorn_fx_back.png",
+      "fx_front": "particles/unicorn_fx_front.png",
+      "seat_side": [
+        21,
+        22
+      ],
+      "seat_front_back": [
+        24,
+        23
+      ],
+      "seat_left_mirror_x": 26,
+      "suggested_skin_pair": "bride",
+      "preview": "preview/unicorn_preview.gif"
+    },
+    {
+      "id": "drake",
+      "name": "Ember Drake",
+      "rarity": "legendary",
+      "price_premium": 1680,
+      "premium_only": true,
+      "tradable": false,
+      "description": "Naga merah bersayap, napas bara & asap.",
+      "sheet": "mounts/drake.png",
+      "fx_back": "particles/drake_fx_back.png",
+      "fx_front": "particles/drake_fx_front.png",
+      "seat_side": [
+        20,
+        22
+      ],
+      "seat_front_back": [
+        24,
+        23
+      ],
+      "seat_left_mirror_x": 27,
+      "suggested_skin_pair": "dragon",
+      "preview": "preview/drake_preview.gif"
+    },
+    {
+      "id": "direwolf",
+      "name": "Frost Direwolf",
+      "rarity": "epic",
+      "price_premium": 980,
+      "premium_only": true,
+      "tradable": false,
+      "description": "Serigala es raksasa, jejak kristal beku.",
+      "sheet": "mounts/direwolf.png",
+      "fx_back": "particles/direwolf_fx_back.png",
+      "fx_front": "particles/direwolf_fx_front.png",
+      "seat_side": [
+        20,
+        27
+      ],
+      "seat_front_back": [
+        24,
+        27
+      ],
+      "seat_left_mirror_x": 27,
+      "suggested_skin_pair": "frost",
+      "preview": "preview/direwolf_preview.gif"
+    },
+    {
+      "id": "fox",
+      "name": "Sakura Spirit Fox",
+      "rarity": "epic",
+      "price_premium": 980,
+      "premium_only": true,
+      "tradable": false,
+      "description": "Rubah roh bersurai sakura, api biru mengorbit.",
+      "sheet": "mounts/fox.png",
+      "fx_back": "particles/fox_fx_back.png",
+      "fx_front": "particles/fox_fx_front.png",
+      "seat_side": [
+        20,
+        27
+      ],
+      "seat_front_back": [
+        24,
+        27
+      ],
+      "seat_left_mirror_x": 27,
+      "suggested_skin_pair": "kitsune",
+      "preview": "preview/fox_preview.gif"
+    },
+    {
+      "id": "hoverbike",
+      "name": "Neon Hoverbike",
+      "rarity": "premium",
+      "price_premium": 780,
+      "premium_only": true,
+      "tradable": false,
+      "description": "Hoverbike neon cyan melayang, jejak glitch.",
+      "sheet": "mounts/hoverbike.png",
+      "fx_back": "particles/hoverbike_fx_back.png",
+      "fx_front": "particles/hoverbike_fx_front.png",
+      "seat_side": [
+        18,
+        28
+      ],
+      "seat_front_back": [
+        24,
+        28
+      ],
+      "seat_left_mirror_x": 29,
+      "suggested_skin_pair": "ninja",
+      "preview": "preview/hoverbike_preview.gif"
+    }
+  ]
+}
