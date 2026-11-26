@@ -1,0 +1,46 @@
+
+name: Import Fidoria Login UI
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import-login-ui:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Main Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Download Fidoria UI Assets
+        uses: actions/checkout@v4
+        with:
+          repository: ZeeyAI/fidoria-assets
+          ref: main
+          path: temp-assets
+
+      - name: Copy Login UI Assets
+        run: |
+          mkdir -p "UI & UHD/Login UI"
+          cp -a temp-assets/fidoria_ui/. "UI & UHD/Login UI/"
+
+      - name: Commit and Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "UI & UHD/Login UI"
+          if ! git diff --cached --quiet; then
+            git commit -m "Add Fidoria Login UI assets"
+            git push
+          else
+            echo "No asset changes detected."
+          fi
+
+      - name: Cleanup
+        if: always()
+        run: rm -rf temp-assets
