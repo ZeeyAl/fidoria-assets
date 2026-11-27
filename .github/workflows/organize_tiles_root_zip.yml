@@ -1,0 +1,113 @@
+name: Extract and Organize Tiles ZIP
+
+on:
+  push:
+    paths:
+      - 'fidoria_autotiles*.zip'
+      - '.github/workflows/organize_tiles_root_zip.yml'
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  organize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Extract ZIP and organize into tiles
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile
+          import shutil
+
+          zips = sorted(Path(".").glob("fidoria_autotiles*.zip"))
+          if not zips:
+              print("No fidoria_autotiles ZIP found in repository root.")
+              raise SystemExit(1)
+
+          target = Path("tiles")
+          target.mkdir(exist_ok=True)
+
+          categories = {
+              "base": ["grass", "dirt", "cobble", "stone", "water", "sand"],
+              "transitions": ["transition", "autotile", "edge", "corner"],
+              "elevation": ["cliff", "stair", "stairs", "wall"],
+              "misc": [],
+          }
+
+          def category_for(name):
+              lower = name.lower()
+              for folder, keywords in categories.items():
+                  if any(k in lower for k in keywords):
+                      return folder
+              return "misc"
+
+          extracted = 0
+          for archive in zips:
+              print(f"Processing {archive}")
+              with ZipFile(archive) as zf:
+                  for member in zf.infolist():
+                      if member.is_dir():
+                          continue
+                      # Skip hidden/system files commonly found in ZIPs.
+                      raw = member.filename.replace("\\", "/")
+                      parts = [part for part in raw.split("/") if part and part not in (".", "..")]
+                      if not parts or any(part.startswith("__MACOSX") for part in parts):
+                          continue
+                      filename = parts[-1]
+                      if filename.startswith(".") or filename == "Thumbs.db":
+                          continue
+
+                      # Only import image files.
+                      if Path(filename).suffix.lower() not in {".png", ".jpg", ".jpeg", ".webp", ".gif"}:
+                          continue
+
+                      folder = category_for(filename)
+                      dest_dir = target / folder
+                      dest_dir.mkdir(parents=True, exist_ok=True)
+                      dest = dest_dir / filename
+
+                      data = zf.read(member)
+                      if dest.exists() and dest.read_bytes() == data:
+                          print(f"Already imported: {dest}")
+                          continue
+
+                      # If name collision, add a numbered suffix.
+                      if dest.exists():
+                          stem, suffix = dest.stem, dest.suffix
+                          n = 2
+                          while (dest_dir / f"{stem}_{n}{suffix}").exists():
+                              n += 1
+                          dest = dest_dir / f"{stem}_{n}{suffix}"
+
+                      dest.write_bytes(data)
+                      print(f"Imported: {raw} -> {dest}")
+                      extracted += 1
+
+          for folder in categories:
+              path = target / folder
+              path.mkdir(parents=True, exist_ok=True)
+              readme = path / "README.md"
+              if not readme.exists():
+                  readme.write_text(f"# tiles/{folder}\n\nImported tile images.\n", encoding="utf-8")
+
+          print(f"Imported {extracted} image(s).")
+          PY
+
+      - name: Commit tiles folder
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tiles/
+          if git diff --cached --quiet; then
+            echo "No new tile assets to commit."
+          else
+            git commit -m "Extract autotile assets into tiles/"
+            git push
+          fi
