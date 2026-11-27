@@ -1,0 +1,74 @@
+
+name: Extract tiles zip
+
+on:
+  push:
+    paths:
+      - 'fidoria_tiles*.zip'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: extract-tiles
+  cancel-in-progress: false
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Ekstrak zip ke tiles/
+        shell: bash
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          zips=(fidoria_tiles*.zip)
+          if [ ${#zips[@]} -eq 0 ]; then
+            echo "Tidak ada fidoria_tiles*.zip di root repo, selesai."
+            exit 0
+          fi
+          mkdir -p tiles
+          for z in "${zips[@]}"; do
+            echo "== $z"
+            tmp=$(mktemp -d)
+            unzip -q -o "$z" -d "$tmp"
+            root="$tmp"
+            entries=("$tmp"/*)
+            # kalau isi zip dibungkus 1 folder luar (tanpa tiles/ di atasnya), masuk ke folder itu
+            if [ ${#entries[@]} -eq 1 ] && [ -d "${entries[0]}" ] && [ ! -d "$tmp/tiles" ]; then
+              root="${entries[0]}"
+            fi
+            if [ ! -d "$root/tiles" ]; then
+              echo "::error::$z tidak punya folder tiles/ di dalamnya. Isi zip:"
+              ls -la "$root"
+              exit 1
+            fi
+            cp -a "$root/tiles/." tiles/
+            # rules + tools ikut masuk tiles/ (paket mandiri). Path di rules dibuat relatif ke tiles/
+            if [ -f "$root/autotile_rules.json" ]; then
+              sed 's#tiles/{size}/#{size}/#g' "$root/autotile_rules.json" > tiles/autotile_rules.json
+            fi
+            if [ -d "$root/tools" ]; then mkdir -p tiles/tools && cp -a "$root/tools/." tiles/tools/; fi
+            if [ -f "$root/README.md" ]; then cp "$root/README.md" tiles/README.md; fi
+            if [ -d "$root/previews" ]; then mkdir -p tiles/previews && cp -a "$root/previews/." tiles/previews/; fi
+            rm -rf "$tmp"
+          done
+          # hapus zip dari repo setelah sukses (hapus baris di bawah kalau zip mau disimpan)
+          git rm -q -- "${zips[@]}"
+          echo "Total file di tiles/: $(find tiles -type f | wc -l)"
+
+      - name: Commit & push
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Tidak ada perubahan."
+          else
+            git commit -m "Extract tiles zip ke tiles/"
+            git push
+          fi
