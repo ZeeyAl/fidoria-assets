@@ -1,0 +1,293 @@
+{
+ "name": "fidoria-terrain-autotile",
+ "version": 2,
+ "projection": "top-down (orthographic), tile persegi",
+ "sizes": [
+  512,
+  128,
+  64,
+  32
+ ],
+ "default_size": 512,
+ "method": "dual-grid (vertex autotile)",
+ "how_it_works": [
+  "Terrain disimpan per CELL di grid dunia (x = kolom, y = baris, y ke bawah).",
+  "Tile digambar per VERTEX (titik pertemuan 4 cell), bukan per cell.",
+  "Untuk vertex (vx,vy), 4 cell sekitarnya jadi 4 kuadran: NW=(vx-1,vy-1) NE=(vx,vy-1) SE=(vx,vy) SW=(vx-1,vy).",
+  "Keempat kuadran sama -> tile base terrain itu.",
+  "Ada 2 terrain dan pasangannya ada di \"pairs\": bikin mask 4 huruf urutan [NW,NE,SE,SW]; \"a\" = terrain a, \"b\" = terrain b; cari pairs[].tiles[mask].",
+  "Mask diagonal (\"abab\"/\"baba\") tidak punya tile -> lihat \"fallback\"."
+ ],
+ "placement": {
+  "formula": "px = vx*size - size/2 ; py = vy*size - size/2",
+  "note": "(px,py) = pojok kiri-atas gambar tile. Tile vertex digeser setengah tile ke kiri-atas dari tile \"per cell\". Grid vertex berukuran (kolom+1) x (baris+1)."
+ },
+ "directions": "N = atas layar (-y), E = kanan (+x), S = bawah (+y), W = kiri (-x)",
+ "terrains": {
+  "grass": {
+   "base": "{size}/base/grass.png"
+  },
+  "dirt": {
+   "base": "{size}/base/dirt.png",
+   "variants": [
+    "{size}/base/dirt.png",
+    "{size}/base/dirt_alt.png"
+   ]
+  },
+  "sand": {
+   "base": "{size}/base/sand.png"
+  },
+  "water": {
+   "base": "{size}/base/water.png",
+   "note": "base baru: master 256 (tanpa 512); 512 -> upscale 256 atau pakai 128/64/32",
+   "max_base_size": 256
+  },
+  "cobblestone": {
+   "base": "{size}/base/cobblestone.png",
+   "note": "base baru: master 256 (tanpa 512); transisi ada ke dirt, grass, sand, water",
+   "max_base_size": 256
+  },
+  "rocky": {
+   "base": "{size}/base/rocky.png",
+   "note": "base baru: master 256 (tanpa 512); transisi ada ke grass dan dirt",
+   "max_base_size": 256
+  }
+ },
+ "ascii_legend": {
+  "g": "grass",
+  "d": "dirt",
+  "s": "sand",
+  "w": "water",
+  "c": "cobblestone",
+  "r": "rocky"
+ },
+ "priority": [
+  "water",
+  "sand",
+  "dirt",
+  "grass",
+  "rocky",
+  "cobblestone"
+ ],
+ "pairs": [
+  {
+   "id": "grass_dirt",
+   "a": "grass",
+   "b": "dirt",
+   "tiles": {
+    "aabb": "{size}/transitions/grass_dirt/grass_dirt_edge_grassN.png",
+    "baab": "{size}/transitions/grass_dirt/grass_dirt_edge_grassE.png",
+    "bbaa": "{size}/transitions/grass_dirt/grass_dirt_edge_grassS.png",
+    "abba": "{size}/transitions/grass_dirt/grass_dirt_edge_grassW.png",
+    "abbb": "{size}/transitions/grass_dirt/grass_dirt_corner_grassNW.png",
+    "babb": "{size}/transitions/grass_dirt/grass_dirt_corner_grassNE.png",
+    "bbab": "{size}/transitions/grass_dirt/grass_dirt_corner_grassSE.png",
+    "bbba": "{size}/transitions/grass_dirt/grass_dirt_corner_grassSW.png",
+    "aaba": "{size}/transitions/grass_dirt/grass_dirt_corner_dirtSE.png",
+    "aaab": "{size}/transitions/grass_dirt/grass_dirt_corner_dirtSW.png",
+    "baaa": "{size}/transitions/grass_dirt/grass_dirt_corner_dirtNW.png",
+    "abaa": "{size}/transitions/grass_dirt/grass_dirt_corner_dirtNE.png"
+   }
+  },
+  {
+   "id": "dirt_sand",
+   "a": "dirt",
+   "b": "sand",
+   "tiles": {
+    "aabb": "{size}/transitions/dirt_sand/dirt_sand_edge_dirtN.png",
+    "baab": "{size}/transitions/dirt_sand/dirt_sand_edge_dirtE.png",
+    "bbaa": "{size}/transitions/dirt_sand/dirt_sand_edge_dirtS.png",
+    "abba": "{size}/transitions/dirt_sand/dirt_sand_edge_dirtW.png",
+    "abbb": "{size}/transitions/dirt_sand/dirt_sand_corner_dirtNW.png",
+    "babb": "{size}/transitions/dirt_sand/dirt_sand_corner_dirtNE.png",
+    "bbab": "{size}/transitions/dirt_sand/dirt_sand_corner_dirtSE.png",
+    "bbba": "{size}/transitions/dirt_sand/dirt_sand_corner_dirtSW.png",
+    "aaba": "{size}/transitions/dirt_sand/dirt_sand_corner_sandSE.png",
+    "aaab": "{size}/transitions/dirt_sand/dirt_sand_corner_sandSW.png",
+    "baaa": "{size}/transitions/dirt_sand/dirt_sand_corner_sandNW.png",
+    "abaa": "{size}/transitions/dirt_sand/dirt_sand_corner_sandNE.png"
+   }
+  },
+  {
+   "id": "grass_sand",
+   "a": "grass",
+   "b": "sand",
+   "tiles": {
+    "aabb": "{size}/transitions/grass_sand/grass_sand_edge_grassN.png",
+    "baab": "{size}/transitions/grass_sand/grass_sand_edge_grassE.png",
+    "bbaa": "{size}/transitions/grass_sand/grass_sand_edge_grassS.png",
+    "abba": "{size}/transitions/grass_sand/grass_sand_edge_grassW.png",
+    "abbb": "{size}/transitions/grass_sand/grass_sand_corner_grassNW.png",
+    "babb": "{size}/transitions/grass_sand/grass_sand_corner_grassNE.png",
+    "bbab": "{size}/transitions/grass_sand/grass_sand_corner_grassSE.png",
+    "bbba": "{size}/transitions/grass_sand/grass_sand_corner_grassSW.png",
+    "aaba": "{size}/transitions/grass_sand/grass_sand_corner_sandSE.png",
+    "aaab": "{size}/transitions/grass_sand/grass_sand_corner_sandSW.png",
+    "baaa": "{size}/transitions/grass_sand/grass_sand_corner_sandNW.png",
+    "abaa": "{size}/transitions/grass_sand/grass_sand_corner_sandNE.png"
+   }
+  },
+  {
+   "id": "sand_water",
+   "a": "sand",
+   "b": "water",
+   "tiles": {
+    "aabb": "{size}/transitions/sand_water/sand_water_edge_sandN.png",
+    "baab": "{size}/transitions/sand_water/sand_water_edge_sandE.png",
+    "bbaa": "{size}/transitions/sand_water/sand_water_edge_sandS.png",
+    "abba": "{size}/transitions/sand_water/sand_water_edge_sandW.png",
+    "abbb": "{size}/transitions/sand_water/sand_water_corner_sandNW.png",
+    "babb": "{size}/transitions/sand_water/sand_water_corner_sandNE.png",
+    "bbab": "{size}/transitions/sand_water/sand_water_corner_sandSE.png",
+    "bbba": "{size}/transitions/sand_water/sand_water_corner_sandSW.png",
+    "aaba": "{size}/transitions/sand_water/sand_water_corner_waterSE.png",
+    "aaab": "{size}/transitions/sand_water/sand_water_corner_waterSW.png",
+    "baaa": "{size}/transitions/sand_water/sand_water_corner_waterNW.png",
+    "abaa": "{size}/transitions/sand_water/sand_water_corner_waterNE.png"
+   }
+  },
+  {
+   "id": "grass_water",
+   "a": "grass",
+   "b": "water",
+   "tiles": {
+    "aabb": "{size}/transitions/grass_water/grass_water_edge_grassN.png",
+    "baab": "{size}/transitions/grass_water/grass_water_edge_grassE.png",
+    "bbaa": "{size}/transitions/grass_water/grass_water_edge_grassS.png",
+    "abba": "{size}/transitions/grass_water/grass_water_edge_grassW.png",
+    "abbb": "{size}/transitions/grass_water/grass_water_corner_grassNW.png",
+    "babb": "{size}/transitions/grass_water/grass_water_corner_grassNE.png",
+    "bbab": "{size}/transitions/grass_water/grass_water_corner_grassSE.png",
+    "bbba": "{size}/transitions/grass_water/grass_water_corner_grassSW.png",
+    "aaba": "{size}/transitions/grass_water/grass_water_corner_waterSE.png",
+    "aaab": "{size}/transitions/grass_water/grass_water_corner_waterSW.png",
+    "baaa": "{size}/transitions/grass_water/grass_water_corner_waterNW.png",
+    "abaa": "{size}/transitions/grass_water/grass_water_corner_waterNE.png"
+   }
+  },
+  {
+   "id": "dirt_cobblestone",
+   "a": "dirt",
+   "b": "cobblestone",
+   "tiles": {
+    "aabb": "{size}/transitions/dirt_cobblestone/dirt_cobblestone_edge_dirtN.png",
+    "baab": "{size}/transitions/dirt_cobblestone/dirt_cobblestone_edge_dirtE.png",
+    "bbaa": "{size}/transitions/dirt_cobblestone/dirt_cobblestone_edge_dirtS.png",
+    "abba": "{size}/transitions/dirt_cobblestone/dirt_cobblestone_edge_dirtW.png",
+    "abbb": "{size}/transitions/dirt_cobblestone/dirt_cobblestone_corner_dirtNW.png",
+    "babb": "{size}/transitions/dirt_cobblestone/dirt_cobblestone_corner_dirtNE.png",
+    "bbab": "{size}/transitions/dirt_cobblestone/dirt_cobblestone_corner_dirtSE.png",
+    "bbba": "{size}/transitions/dirt_cobblestone/dirt_cobblestone_corner_dirtSW.png",
+    "aaba": "{size}/transitions/dirt_cobblestone/dirt_cobblestone_corner_cobblestoneSE.png",
+    "aaab": "{size}/transitions/dirt_cobblestone/dirt_cobblestone_corner_cobblestoneSW.png",
+    "baaa": "{size}/transitions/dirt_cobblestone/dirt_cobblestone_corner_cobblestoneNW.png",
+    "abaa": "{size}/transitions/dirt_cobblestone/dirt_cobblestone_corner_cobblestoneNE.png"
+   }
+  },
+  {
+   "id": "grass_cobblestone",
+   "a": "grass",
+   "b": "cobblestone",
+   "tiles": {
+    "aabb": "{size}/transitions/grass_cobblestone/grass_cobblestone_edge_grassN.png",
+    "baab": "{size}/transitions/grass_cobblestone/grass_cobblestone_edge_grassE.png",
+    "bbaa": "{size}/transitions/grass_cobblestone/grass_cobblestone_edge_grassS.png",
+    "abba": "{size}/transitions/grass_cobblestone/grass_cobblestone_edge_grassW.png",
+    "abbb": "{size}/transitions/grass_cobblestone/grass_cobblestone_corner_grassNW.png",
+    "babb": "{size}/transitions/grass_cobblestone/grass_cobblestone_corner_grassNE.png",
+    "bbab": "{size}/transitions/grass_cobblestone/grass_cobblestone_corner_grassSE.png",
+    "bbba": "{size}/transitions/grass_cobblestone/grass_cobblestone_corner_grassSW.png",
+    "aaba": "{size}/transitions/grass_cobblestone/grass_cobblestone_corner_cobblestoneSE.png",
+    "aaab": "{size}/transitions/grass_cobblestone/grass_cobblestone_corner_cobblestoneSW.png",
+    "baaa": "{size}/transitions/grass_cobblestone/grass_cobblestone_corner_cobblestoneNW.png",
+    "abaa": "{size}/transitions/grass_cobblestone/grass_cobblestone_corner_cobblestoneNE.png"
+   }
+  },
+  {
+   "id": "sand_cobblestone",
+   "a": "sand",
+   "b": "cobblestone",
+   "tiles": {
+    "aabb": "{size}/transitions/sand_cobblestone/sand_cobblestone_edge_sandN.png",
+    "baab": "{size}/transitions/sand_cobblestone/sand_cobblestone_edge_sandE.png",
+    "bbaa": "{size}/transitions/sand_cobblestone/sand_cobblestone_edge_sandS.png",
+    "abba": "{size}/transitions/sand_cobblestone/sand_cobblestone_edge_sandW.png",
+    "abbb": "{size}/transitions/sand_cobblestone/sand_cobblestone_corner_sandNW.png",
+    "babb": "{size}/transitions/sand_cobblestone/sand_cobblestone_corner_sandNE.png",
+    "bbab": "{size}/transitions/sand_cobblestone/sand_cobblestone_corner_sandSE.png",
+    "bbba": "{size}/transitions/sand_cobblestone/sand_cobblestone_corner_sandSW.png",
+    "aaba": "{size}/transitions/sand_cobblestone/sand_cobblestone_corner_cobblestoneSE.png",
+    "aaab": "{size}/transitions/sand_cobblestone/sand_cobblestone_corner_cobblestoneSW.png",
+    "baaa": "{size}/transitions/sand_cobblestone/sand_cobblestone_corner_cobblestoneNW.png",
+    "abaa": "{size}/transitions/sand_cobblestone/sand_cobblestone_corner_cobblestoneNE.png"
+   }
+  },
+  {
+   "id": "water_cobblestone",
+   "a": "water",
+   "b": "cobblestone",
+   "tiles": {
+    "aabb": "{size}/transitions/water_cobblestone/water_cobblestone_edge_waterN.png",
+    "baab": "{size}/transitions/water_cobblestone/water_cobblestone_edge_waterE.png",
+    "bbaa": "{size}/transitions/water_cobblestone/water_cobblestone_edge_waterS.png",
+    "abba": "{size}/transitions/water_cobblestone/water_cobblestone_edge_waterW.png",
+    "abbb": "{size}/transitions/water_cobblestone/water_cobblestone_corner_waterNW.png",
+    "babb": "{size}/transitions/water_cobblestone/water_cobblestone_corner_waterNE.png",
+    "bbab": "{size}/transitions/water_cobblestone/water_cobblestone_corner_waterSE.png",
+    "bbba": "{size}/transitions/water_cobblestone/water_cobblestone_corner_waterSW.png",
+    "aaba": "{size}/transitions/water_cobblestone/water_cobblestone_corner_cobblestoneSE.png",
+    "aaab": "{size}/transitions/water_cobblestone/water_cobblestone_corner_cobblestoneSW.png",
+    "baaa": "{size}/transitions/water_cobblestone/water_cobblestone_corner_cobblestoneNW.png",
+    "abaa": "{size}/transitions/water_cobblestone/water_cobblestone_corner_cobblestoneNE.png"
+   }
+  },
+  {
+   "id": "grass_rocky",
+   "a": "grass",
+   "b": "rocky",
+   "tiles": {
+    "aabb": "{size}/transitions/grass_rocky/grass_rocky_edge_grassN.png",
+    "baab": "{size}/transitions/grass_rocky/grass_rocky_edge_grassE.png",
+    "bbaa": "{size}/transitions/grass_rocky/grass_rocky_edge_grassS.png",
+    "abba": "{size}/transitions/grass_rocky/grass_rocky_edge_grassW.png",
+    "abbb": "{size}/transitions/grass_rocky/grass_rocky_corner_grassNW.png",
+    "babb": "{size}/transitions/grass_rocky/grass_rocky_corner_grassNE.png",
+    "bbab": "{size}/transitions/grass_rocky/grass_rocky_corner_grassSE.png",
+    "bbba": "{size}/transitions/grass_rocky/grass_rocky_corner_grassSW.png",
+    "aaba": "{size}/transitions/grass_rocky/grass_rocky_corner_rockySE.png",
+    "aaab": "{size}/transitions/grass_rocky/grass_rocky_corner_rockySW.png",
+    "baaa": "{size}/transitions/grass_rocky/grass_rocky_corner_rockyNW.png",
+    "abaa": "{size}/transitions/grass_rocky/grass_rocky_corner_rockyNE.png"
+   }
+  },
+  {
+   "id": "dirt_rocky",
+   "a": "dirt",
+   "b": "rocky",
+   "tiles": {
+    "aabb": "{size}/transitions/dirt_rocky/dirt_rocky_edge_dirtN.png",
+    "baab": "{size}/transitions/dirt_rocky/dirt_rocky_edge_dirtE.png",
+    "bbaa": "{size}/transitions/dirt_rocky/dirt_rocky_edge_dirtS.png",
+    "abba": "{size}/transitions/dirt_rocky/dirt_rocky_edge_dirtW.png",
+    "abbb": "{size}/transitions/dirt_rocky/dirt_rocky_corner_dirtNW.png",
+    "babb": "{size}/transitions/dirt_rocky/dirt_rocky_corner_dirtNE.png",
+    "bbab": "{size}/transitions/dirt_rocky/dirt_rocky_corner_dirtSE.png",
+    "bbba": "{size}/transitions/dirt_rocky/dirt_rocky_corner_dirtSW.png",
+    "aaba": "{size}/transitions/dirt_rocky/dirt_rocky_corner_rockySE.png",
+    "aaab": "{size}/transitions/dirt_rocky/dirt_rocky_corner_rockySW.png",
+    "baaa": "{size}/transitions/dirt_rocky/dirt_rocky_corner_rockyNW.png",
+    "abaa": "{size}/transitions/dirt_rocky/dirt_rocky_corner_rockyNE.png"
+   }
+  }
+ ],
+ "unsupported_pairs": [
+  "dirt+water",
+  "rocky+(selain grass, dirt)"
+ ],
+ "fallback": {
+  "diagonal_mask": "satu kuadran terrain berprioritas lebih rendah diganti terrain lain agar mask valid",
+  "pair_not_available": "kolaps ke terrain dengan kuadran terbanyak (seri: priority lebih tinggi) -> tepi keras",
+  "three_or_more_terrains": "buang terrain dengan kuadran paling sedikit (seri: priority lebih rendah), ganti ke terrain mayoritas",
+  "advice": "hindari kasus ini di editor map: jalankan autotile.py --validate untuk daftar vertex yang kena fallback"
+ }
+}
