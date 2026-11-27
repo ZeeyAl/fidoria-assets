@@ -1,0 +1,144 @@
+name: Rebuild Fidoria Tiles
+
+"on":
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "fidoria_tiles_topdown.zip"
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild-tiles:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Verify ZIP
+        run: |
+          set -e
+          test -f fidoria_tiles_topdown.zip
+          unzip -t fidoria_tiles_topdown.zip
+
+      - name: Extract ZIP
+        run: |
+          set -e
+          mkdir -p /tmp/fidoria_package
+          unzip -oq fidoria_tiles_topdown.zip -d /tmp/fidoria_package
+
+      - name: Locate tiles
+        run: |
+          set -e
+
+          TILE_DIR=$(find /tmp/fidoria_package \
+            -type d -name tiles -print -quit)
+
+          if [ -z "$TILE_DIR" ]; then
+            echo "Tiles folder not found."
+            exit 1
+          fi
+
+          echo "TILE_DIR=$TILE_DIR" >> "$GITHUB_ENV"
+          echo "PACKAGE_ROOT=$(dirname "$TILE_DIR")" >> "$GITHUB_ENV"
+
+      - name: Validate assets
+        run: |
+          set -e
+
+          BASE_COUNT=$(find "$TILE_DIR" \
+            -type d -name base | wc -l)
+
+          TRANSITION_COUNT=$(find "$TILE_DIR" \
+            -type d -name transitions | wc -l)
+
+          PNG_COUNT=$(find "$TILE_DIR" \
+            -type f -iname "*.png" | wc -l)
+
+          echo "Base folders: $BASE_COUNT"
+          echo "Transition folders: $TRANSITION_COUNT"
+          echo "PNG files: $PNG_COUNT"
+
+          test "$BASE_COUNT" -gt 0
+          test "$TRANSITION_COUNT" -gt 0
+          test "$PNG_COUNT" -gt 0
+
+      - name: Locate rules
+        run: |
+          set -e
+
+          RULES=$(find /tmp/fidoria_package \
+            -type f -name autotile_rules.json -print -quit)
+
+          if [ -z "$RULES" ]; then
+            echo "Rules file not found."
+            exit 1
+          fi
+
+          echo "RULES=$RULES" >> "$GITHUB_ENV"
+
+      - name: Install assets
+        run: |
+          set -e
+
+          rm -rf tiles
+          cp -a "$TILE_DIR" tiles
+
+          cp "$RULES" autotile_rules.json
+
+          README=$(find /tmp/fidoria_package \
+            -type f -name README.md -print -quit)
+
+          if [ -n "$README" ]; then
+            cp "$README" README.md
+          fi
+
+          PREVIEWS=$(find /tmp/fidoria_package \
+            -type d -name previews -print -quit)
+
+          if [ -n "$PREVIEWS" ]; then
+            rm -rf previews
+            cp -a "$PREVIEWS" previews
+          fi
+
+          TOOLS=$(find /tmp/fidoria_package \
+            -type d -name tools -print -quit)
+
+          if [ -n "$TOOLS" ]; then
+            rm -rf tools
+            cp -a "$TOOLS" tools
+          fi
+
+      - name: Verify copied tiles
+        run: |
+          set -e
+
+          COUNT=$(find tiles \
+            -type f -iname "*.png" | wc -l)
+
+          echo "Copied PNG files: $COUNT"
+          test "$COUNT" -gt 0
+
+      - name: Commit changes
+        run: |
+          set -e
+
+          git config user.name "github-actions[bot]"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+
+          if git diff --cached --quiet; then
+            echo "No changes detected."
+            exit 0
+          fi
+
+          git commit -m "Rebuild Fidoria terrain assets"
+          git push origin main
